@@ -1,0 +1,158 @@
+{
+  "updated": "2026-05-16",
+  "version": "2",
+  "categories": [
+    {
+      "id": "main",
+      "name_ro": "Referințe principale (homework echipă)",
+      "name_ru": "Главные референсы (homework команды)",
+      "description_ro": "Fiecare membru al echipei petrece 30 minute studiind aceste conturi.",
+      "description_ru": "Каждый член команды тратит 30 минут на изучение этих аккаунтов."
+    },
+    {
+      "id": "designer-led",
+      "name_ro": "Designer-Led Pivot",
+      "name_ru": "Designer-Led Pivot",
+      "description_ro": "Referințe pentru pivot strategic — founder/designer pe cameră.",
+      "description_ru": "Референсы для стратегического pivot — founder/designer на камере."
+    },
+    {
+      "id": "candidates",
+      "name_ro": "Candidați pentru evaluare",
+      "name_ru": "Кандидаты для оценки",
+      "description_ro": "Conturi noi care pot înlocui pe cele existente. CEO decide.",
+      "description_ru": "Новые аккаунты которые могут заменить существующие. CEO решает."
+    }
+  ],
+  "references": [
+    {
+      "id": "lifeinthewolds",
+      "category": "main",
+      "name": "@lifeinthewolds",
+      "emoji": "🌿",
+      "url": "https://www.tiktok.com/@lifeinthewolds",
+      "country": "UK",
+      "niche_ro": "Slow living warm interior",
+      "niche_ru": "Slow living тёплый интерьер",
+      "patterns": [
+        { "code": "L1", "name_ro": "Documentary domestic moment", "name_ru": "Documentary бытовой момент" },
+        { "code": "L2", "name_ro": "Voice + walking tour", "name_ru": "Голос + walking tour" }
+      ],
+      "badge_ro": "Difficulty: EASY — already used by team",
+      "badge_ru": "Сложность: EASY — уже используется командой",
+      "badge_color": "green",
+      "adaptability": 9,
+      "status": "active"
+    },
+    {
+      "id": "minotti",
+      "category": "main",
+      "name": "Minotti",
+      "emoji": "🇮🇹",
+      "url": "https://www.instagram.com/minotti_spa/",
+      "country": "Italia",
+      "niche_ro": "Brand-tier benchmark Italian (485K)",
+      "niche_ru": "Бренд-tier benchmark итальянский (485K)",
+      "patterns": [
+        { "code": "M1", "name_ro": "Static photography moving", "name_ru": "Статичная фотография с движением" },
+        { "code": "M2", "name_ro": "Craftsmanship close-up", "name_ru": "Крафт close-up" }
+      ],
+      "badge_ro": "Use as: Aspirational filter, not 1-to-1 clone",
+      "badge_ru": "Использовать как: aspirational фильтр, не 1-к-1 клон",
+      "badge_color": "blue",
+      "adaptability": 7,
+      "status": "active"
+    },
+    {
+      "id": "studio-mcgee",
+      "category": "designer-led",
+      "name": "@studio.mcgee",
+      "emoji": "🎓",
+      "url": "https://www.tiktok.com/@studio.mcgee/video/7398192962200505630",
+      "country": "US",
+      "niche_ro": "Insider tip vignette · designer-led",
+      "niche_ru": "Insider tip vignette · designer-led",
+      "patterns": [
+        { "code": "S1", "name_ro": "«Two design details you'll want to add»", "name_ru": "«Two design details you'll want to add»" }
+      ],
+      "badge_ro": "US 358K · pure Insider archetype",
+      "badge_ru": "US 358K · чистый Insider архетип",
+      "badge_color": "gold",
+      "adaptability": 9,
+      "status": "active"
+    },
+    {
+      "id": "artem-chiba",
+      "category": "designer-led",
+      "name": "@artem_chiba",
+      "emoji": "🔨",
+      "url": "https://www.tiktok.com/@artem_chiba",
+      "country": "RU",
+      "niche_ro": "Founder-led process documentation · phone-quality",
+      "niche_ru": "Founder-led документация процесса · phone-quality",
+      "patterns": [
+        { "code": "AC1", "name_ro": "Atelier process timelapse", "name_ru": "Atelier process timelapse" },
+        { "code": "AC2", "name_ro": "Hands-on demo with founder voice", "name_ru": "Hands-on demo с голосом founder" }
+      ],
+      "badge_ro": "RU 1.8M · 1.6M avg views · Builder precedent",
+      "badge_ru": "RU 1.8M · 1.6M avg views · Builder прецедент",
+      "badge_color": "terra",
+      "adaptability": 10,
+      "status": "active"
+    },
+    {
+      "id": "cheia-imobiliarelor",
+      "category": "designer-led",
+      "name": "@cheia.imobiliarelor",
+      "emoji": "🛡",
+      "url": "https://www.tiktok.com/@cheia.imobiliarelor/video/7439734742515256608",
+      "country": "RO",
+      "niche_ro": "11-bullet trust block RO local benchmark",
+      "niche_ru": "11-bullet trust block RO локальный benchmark",
+      "patterns": [
+        { "code": "CI1", "name_ro": "«Ce include renovarea completă?» 11-bullet caption", "name_ru": "«Ce include renovarea completă?» 11-bullet caption" }
+      ],
+      "badge_ro": "RO benchmark — addresses turnkey trust deficit",
+      "badge_ru": "RO benchmark — закрывает trust deficit на turnkey",
+      "badge_color": "green",
+      "adaptability": 10,
+      "status": "active"
+    },
+    {
+      "id": "kunkel-meble",
+      "category": "designer-led",
+      "name": "@kunkel.meble",
+      "emoji": "🔧",
+      "url": "https://www.tiktok.com/@kunkel.meble/video/7552489203334925590",
+      "country": "PL",
+      "niche_ro": "Premium spec micro-tour cu supplier tags",
+      "niche_ru": "Premium spec micro-tour с supplier tags",
+      "patterns": [
+        { "code": "K1", "name_ro": "«Hidden handles Schüco» — name 3 specifics", "name_ru": "«Hidden handles Schüco» — назови 3 specifics" }
+      ],
+      "badge_ro": "PL · Premium vocab education = self-qualifying buyers",
+      "badge_ru": "PL · Premium vocab education = self-qualifying buyers",
+      "badge_color": "blue",
+      "adaptability": 9,
+      "status": "active"
+    },
+    {
+      "id": "flexform-placeholder",
+      "category": "candidates",
+      "name": "Flexform Official (evaluare)",
+      "emoji": "🛋",
+      "url": "https://www.instagram.com/flexform_official/",
+      "country": "Italia",
+      "niche_ro": "Italian premium furniture brand benchmark",
+      "niche_ru": "Italian premium furniture brand benchmark",
+      "patterns": [
+        { "code": "FX1", "name_ro": "Showroom slow-pan reveals", "name_ru": "Showroom slow-pan reveals" }
+      ],
+      "badge_ro": "Candidate · CEO review needed",
+      "badge_ru": "Кандидат · нужна оценка CEO",
+      "badge_color": "yellow",
+      "adaptability": null,
+      "status": "candidate"
+    }
+  ]
+}

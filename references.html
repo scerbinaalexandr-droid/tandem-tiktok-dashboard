@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa 360° — Referințe TikTok</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --brand: #4f4f4f; --brand-light: #636363;
+    --bg: #f5f0eb; --bg-card: #ffffff;
+    --gold: #b89968; --terra: #c97b5c;
+    --green: #6a8e6e; --blue: #6b8aa8;
+    --text: #2a2a2a; --text-muted: #6b6b6b;
+    --border: #e4ddd3;
+  }
+  body { font-family: 'Raleway', sans-serif; background: var(--bg); color: var(--text); }
+  .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+  .gradient-gold { background: linear-gradient(135deg, #b89968 0%, #d4b87a 100%); }
+  .card-shadow { box-shadow: 0 1px 2px rgba(79,79,79,0.04), 0 4px 16px rgba(79,79,79,0.06); }
+  .card-shadow-hover:hover { box-shadow: 0 4px 12px rgba(79,79,79,0.1), 0 12px 32px rgba(79,79,79,0.14); transform: translateY(-2px); }
+  .stat-num { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; color: var(--brand); }
+  .text-brand { color: var(--brand); } .bg-brand { background: var(--brand); }
+  .text-gold { color: var(--gold); } .bg-gold { background: var(--gold); }
+  .text-muted { color: var(--text-muted); }
+  .bg-cream { background: #f5f0eb; } .bg-cream-deep { background: #ebe2d4; }
+  .bg-card { background: var(--bg-card); }
+  .border-soft { border-color: var(--border); }
+  .lang-btn { transition: all 0.15s; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .lang-btn.active { background: var(--brand); color: white; }
+  .lang-btn:not(.active) { color: var(--text-muted); background: transparent; }
+  .lang-btn:not(.active):hover { background: #ede4d6; color: var(--brand); }
+  .filter-btn { transition: all 0.2s; border: 1px solid var(--border); background: var(--bg-card); color: var(--text); }
+  .filter-btn.active { background: var(--brand); color: white; border-color: var(--brand); }
+  .filter-btn:not(.active):hover { background: #ede4d6; }
+  .badge-green { background: #dde7df; color: #2d5a2d; }
+  .badge-blue { background: #e3ecf3; color: #2d4a6b; }
+  .badge-gold { background: #f5ebd4; color: #7a5d2a; }
+  .badge-terra { background: #f5e2d9; color: #8c4a30; }
+  .badge-yellow { background: #fef3c7; color: #78461d; }
+  .status-active { background: #dde7df; color: #2d5a2d; }
+  .status-candidate { background: #fef3c7; color: #78461d; }
+  .status-deprecated { background: #fee2e2; color: #991b1b; text-decoration: line-through; }
+  .adaptability-bar { background: linear-gradient(to right, var(--green) var(--p,0%), #ede4d6 var(--p,0%)); }
+</style>
+</head>
+<body>
+
+<!-- ============== NAV ============== -->
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-2">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded gradient-gold flex items-center justify-center font-serif text-white font-bold">TC</div>
+      <div>
+        <div class="font-serif text-lg leading-tight text-brand">TANDEM CASA</div>
+        <div class="text-xs text-muted" data-ro="Referințe TikTok" data-ru="Референсы TikTok">Referințe TikTok</div>
+      </div>
+    </div>
+    <a href="./" class="text-sm text-muted hover:text-gold transition" data-ro="← Înapoi la Dashboard" data-ru="← Назад к Dashboard">← Înapoi la Dashboard</a>
+    <div class="flex items-center gap-1 bg-cream rounded-lg p-1">
+      <button class="lang-btn active" data-lang="ro">RO</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============== HEADER ============== -->
+<section class="py-16 px-4 bg-cream-deep/40">
+  <div class="max-w-7xl mx-auto text-center">
+    <h1 class="font-serif text-5xl mb-4 text-brand" data-ro="Bibliotecă de Referințe TikTok" data-ru="Библиотека референсов TikTok">Bibliotecă de Referințe TikTok</h1>
+    <p class="text-xl text-muted max-w-3xl mx-auto"
+       data-ro="Conturi virale studiate pentru pattern adaptation. CEO poate cere modificări — adăugare, ștergere, înlocuire — orice referință poate fi schimbată."
+       data-ru="Виральные аккаунты для адаптации паттернов. CEO может запросить изменения — добавить, удалить, заменить — любой референс изменяемый.">
+      Conturi virale studiate pentru pattern adaptation. CEO poate cere modificări — adăugare, ștergere, înlocuire — orice referință poate fi schimbată.
+    </p>
+    <div class="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-card rounded-full border border-soft text-sm">
+      <span class="text-gold font-bold">📝</span>
+      <span class="text-muted" data-ro="Actualizat:" data-ru="Обновлено:">Actualizat:</span>
+      <span class="font-bold text-brand" id="last-updated">2026-05-16</span>
+      <span class="text-muted">·</span>
+      <span class="text-muted" data-ro="Versiune:" data-ru="Версия:">Versiune:</span>
+      <span class="font-bold text-brand" id="version">v2</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FILTERS ============== -->
+<section class="py-8 px-4 bg-white border-y border-soft">
+  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-2">
+    <button class="filter-btn active px-4 py-2 rounded-full text-sm" data-filter="all" data-ro="Toate" data-ru="Все">Toate</button>
+    <button class="filter-btn px-4 py-2 rounded-full text-sm" data-filter="main" data-ro="Principale" data-ru="Главные">Principale</button>
+    <button class="filter-btn px-4 py-2 rounded-full text-sm" data-filter="designer-led">Designer-Led</button>
+    <button class="filter-btn px-4 py-2 rounded-full text-sm" data-filter="candidates" data-ro="Candidați" data-ru="Кандидаты">Candidați</button>
+  </div>
+</section>
+
+<!-- ============== REFERENCES GRID ============== -->
+<section class="py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div id="categories-container"></div>
+  </div>
+</section>
+
+<!-- ============== MANAGEMENT INSTRUCTIONS ============== -->
+<section class="py-16 px-4 bg-cream-deep/40">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="font-serif text-3xl mb-6 text-center text-brand"
+        data-ro="Cum modifici referințele" data-ru="Как менять референсы">Cum modifici referințele</h2>
+
+    <div class="bg-card rounded-2xl p-8 card-shadow border border-soft">
+      <p class="text-muted mb-6"
+         data-ro="Conține lista de referințe în <code class='bg-cream px-2 rounded'>references.json</code>. CEO trimite un mesaj de tip:"
+         data-ru="Список референсов хранится в <code class='bg-cream px-2 rounded'>references.json</code>. CEO отправляет сообщение типа:">
+        Conține lista de referințe în <code class='bg-cream px-2 rounded'>references.json</code>. CEO trimite un mesaj de tip:
+      </p>
+
+      <div class="space-y-4">
+        <div class="bg-cream rounded-xl p-4 border-l-4 border-gold">
+          <div class="text-xs uppercase text-gold font-bold mb-1" data-ro="EXEMPLU 1" data-ru="ПРИМЕР 1">EXEMPLU 1</div>
+          <div class="font-mono text-sm text-brand"
+               data-ro="«Scoate @artin.one — nu-mi place. Adaugă @luxe_furniture în loc.»"
+               data-ru="«Убери @artin.one — не нравится. Добавь @luxe_furniture вместо.»">«Scoate @artin.one — nu-mi place. Adaugă @luxe_furniture în loc.»</div>
+        </div>
+
+        <div class="bg-cream rounded-xl p-4 border-l-4" style="border-color:var(--green)">
+          <div class="text-xs uppercase font-bold mb-1" style="color:var(--green)" data-ro="EXEMPLU 2" data-ru="ПРИМЕР 2">EXEMPLU 2</div>
+          <div class="font-mono text-sm text-brand"
+               data-ro="«Adaugă 3 conturi RO de mobilă în categorie 'candidates'.»"
+               data-ru="«Добавь 3 RO аккаунта мебели в категорию 'candidates'.»">«Adaugă 3 conturi RO de mobilă în categorie 'candidates'.»</div>
+        </div>
+
+        <div class="bg-cream rounded-xl p-4 border-l-4" style="border-color:var(--terra)">
+          <div class="text-xs uppercase font-bold mb-1" style="color:var(--terra)" data-ro="EXEMPLU 3" data-ru="ПРИМЕР 3">EXEMPLU 3</div>
+          <div class="font-mono text-sm text-brand"
+               data-ro="«Promovează @kunkel.meble din candidates la designer-led.»"
+               data-ru="«Переведи @kunkel.meble из candidates в designer-led.»">«Promovează @kunkel.meble din candidates la designer-led.»</div>
+        </div>
+
+        <div class="bg-cream rounded-xl p-4 border-l-4" style="border-color:var(--blue)">
+          <div class="text-xs uppercase font-bold mb-1" style="color:var(--blue)" data-ro="EXEMPLU 4" data-ru="ПРИМЕР 4">EXEMPLU 4</div>
+          <div class="font-mono text-sm text-brand"
+               data-ro="«Marchează @minotti ca deprecated — am găsit un brand mai bun.»"
+               data-ru="«Пометь @minotti как deprecated — нашёл бренд получше.»">«Marchează @minotti ca deprecated — am găsit un brand mai bun.»</div>
+        </div>
+      </div>
+
+      <div class="mt-8 p-4 rounded-xl" style="background:var(--brand);color:white">
+        <div class="text-sm text-gold mb-2" data-ro="⏱ Ce se întâmplă:" data-ru="⏱ Что происходит:">⏱ Ce se întâmplă:</div>
+        <ol class="space-y-2 text-sm">
+          <li>1. <span data-ro="Claude editează" data-ru="Claude редактирует">Claude editează</span> <code class="bg-stone-700 px-2 rounded">references.json</code></li>
+          <li>2. <span data-ro="Git commit + push în repo" data-ru="Git commit + push в репо">Git commit + push în repo</span></li>
+          <li>3. <span data-ro="GitHub Pages auto-deploy ~30 sec" data-ru="GitHub Pages auto-deploy ~30 сек">GitHub Pages auto-deploy ~30 sec</span></li>
+          <li>4. <span data-ro="Pagina actualizată — share URL la echipă" data-ru="Страница обновлена — share URL команде">Pagina actualizată — share URL la echipă</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-8 px-4 bg-cream-deep text-center">
+  <a href="./" class="text-sm text-brand hover:text-gold transition" data-ro="← Înapoi la Dashboard principal" data-ru="← Назад к главному Dashboard">← Înapoi la Dashboard principal</a>
+</footer>
+
+<script>
+// Language switcher
+function switchLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-ro][data-ru]').forEach(el => {
+    const text = el.getAttribute('data-' + lang);
+    if (text) el.innerHTML = text;
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  localStorage.setItem('tandem-tiktok-lang', lang);
+  if (window.__refsData) renderReferences(window.__refsData);
+}
+document.querySelectorAll('.lang-btn').forEach(btn => btn.addEventListener('click', () => switchLang(btn.dataset.lang)));
+const savedLang = localStorage.getItem('tandem-tiktok-lang') || 'ro';
+
+// Filter buttons
+let currentFilter = 'all';
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.filter;
+    if (window.__refsData) renderReferences(window.__refsData);
+  });
+});
+
+// Render references from JSON
+function renderReferences(data) {
+  const lang = document.documentElement.lang || 'ro';
+  const container = document.getElementById('categories-container');
+  container.innerHTML = '';
+
+  document.getElementById('last-updated').textContent = data.updated;
+  document.getElementById('version').textContent = 'v' + data.version;
+
+  data.categories.forEach(cat => {
+    const refs = data.references.filter(r => r.category === cat.id);
+    if (currentFilter !== 'all' && currentFilter !== cat.id) return;
+    if (refs.length === 0) return;
+
+    const catDiv = document.createElement('div');
+    catDiv.className = 'mb-12';
+    catDiv.innerHTML = `
+      <div class="mb-6">
+        <h2 class="font-serif text-3xl text-brand mb-2">${cat['name_' + lang] || cat.name_ro}</h2>
+        <p class="text-muted text-sm">${cat['description_' + lang] || cat.description_ro}</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="refs-${cat.id}"></div>
+    `;
+    container.appendChild(catDiv);
+
+    const grid = document.getElementById('refs-' + cat.id);
+    refs.forEach(ref => {
+      const niche = ref['niche_' + lang] || ref.niche_ro;
+      const badge = ref['badge_' + lang] || ref.badge_ro;
+      const card = document.createElement('a');
+      card.href = ref.url;
+      card.target = '_blank';
+      card.rel = 'noopener';
+      card.className = 'bg-card rounded-2xl p-6 card-shadow card-shadow-hover transition block border border-soft';
+      const statusClass = `status-${ref.status}`;
+      const statusLabel = {
+        'active': lang === 'ro' ? 'ACTIV' : 'АКТИВНЫЙ',
+        'candidate': lang === 'ro' ? 'CANDIDAT' : 'КАНДИДАТ',
+        'deprecated': lang === 'ro' ? 'ELIMINAT' : 'УДАЛЁН'
+      }[ref.status] || ref.status;
+
+      const adaptBar = ref.adaptability ? `
+        <div class="mt-3">
+          <div class="flex justify-between text-xs mb-1">
+            <span class="text-muted">${lang === 'ro' ? 'Adaptabilitate' : 'Адаптируемость'}</span>
+            <span class="font-bold text-brand">${ref.adaptability}/10</span>
+          </div>
+          <div class="h-2 rounded-full adaptability-bar" style="--p:${ref.adaptability * 10}%"></div>
+        </div>
+      ` : '';
+
+      const patternsHtml = ref.patterns.map(p => `
+        <div class="px-3 py-2 bg-cream rounded text-xs"><strong>${p.code}:</strong> ${p['name_' + lang] || p.name_ro}</div>
+      `).join('');
+
+      card.innerHTML = `
+        <div class="flex justify-between items-start mb-3">
+          <div class="text-4xl">${ref.emoji}</div>
+          <span class="text-xs px-2 py-1 rounded ${statusClass} font-bold">${statusLabel}</span>
+        </div>
+        <h3 class="font-serif text-2xl mb-1 text-brand">${ref.name}</h3>
+        <div class="text-sm text-muted mb-3">${ref.country} · ${niche}</div>
+        <div class="text-xs space-y-2 mb-3">${patternsHtml}</div>
+        <div class="px-3 py-2 rounded badge-${ref.badge_color} text-xs">${badge}</div>
+        ${adaptBar}
+        <div class="mt-4 text-gold text-sm font-bold">${lang === 'ro' ? 'Deschide →' : 'Открыть →'}</div>
+      `;
+      grid.appendChild(card);
+    });
+  });
+}
+
+// Load JSON and render
+fetch('./references.json?v=' + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    window.__refsData = data;
+    switchLang(savedLang);
+  })
+  .catch(e => {
+    document.getElementById('categories-container').innerHTML =
+      '<div class="text-center text-red-600 py-8">Eroare la încărcare references.json: ' + e.message + '</div>';
+  });
+</script>
+
+</body>
+</html>

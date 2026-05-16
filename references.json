@@ -1,6 +1,6 @@
 {
   "updated": "2026-05-16",
-  "version": "4",
+  "version": "5",
   "categories": [
     {
       "id": "ro-md-active",
@@ -272,24 +272,6 @@
       "badge_ru": "PENDING · Прямой turnkey конкурент-параллель ✓ · TikTok handle нужно проверить",
       "badge_color": "yellow",
       "adaptability": 10,
-      "status": "candidate"
-    },
-    {
-      "id": "natalia-shelkovskaya",
-      "category": "candidates",
-      "name": "Natalia Shelkovskaya",
-      "emoji": "✨",
-      "url": "https://www.tiktok.com/search?q=Natalia+Shelkovskaya",
-      "country": "Rusia",
-      "niche_ro": "Designer interior — «dream home» philosophy + design psychology",
-      "niche_ru": "Дизайнер интерьеров — «дом мечты» философия + дизайн-психология",
-      "patterns": [
-        { "code": "NS1", "name_ro": "Philosophical narrative around design choices", "name_ru": "Философский narrative вокруг design choices" }
-      ],
-      "badge_ro": "PENDING · Known designer (other platforms) · TikTok handle de verificat",
-      "badge_ru": "PENDING · Известный дизайнер (другие платформы) · TikTok handle нужно проверить",
-      "badge_color": "yellow",
-      "adaptability": 7,
       "status": "candidate"
     }
   ]

@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Casa 360° TikTok Content Factory — strategie completă, 4 variants, calendar, KPI, roadmap">
+<title>Casa 360° — TikTok Strategy Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+<style>
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #F8F5F0; }
+  .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+  .gradient-hero {
+    background: linear-gradient(135deg, #1F1B17 0%, #2D2620 50%, #1F1B17 100%);
+  }
+  .gradient-gold { background: linear-gradient(135deg, #C9A66B 0%, #D4B47A 100%); }
+  .card-shadow { box-shadow: 0 1px 3px rgba(31,27,23,0.06), 0 4px 16px rgba(31,27,23,0.08); }
+  .card-shadow-hover:hover { box-shadow: 0 4px 12px rgba(31,27,23,0.12), 0 12px 32px rgba(31,27,23,0.16); transform: translateY(-2px); }
+  .variant-v1 { background: linear-gradient(135deg, #EFE3C2 0%, #F2EBDC 100%); border-color: #C9A66B; }
+  .variant-v2 { background: linear-gradient(135deg, #D1E7FD 0%, #E3F0FE 100%); border-color: #5B8DBC; }
+  .variant-v3 { background: linear-gradient(135deg, #EFD3CB 0%, #F4E0DA 100%); border-color: #C97B5C; }
+  .variant-v4 { background: linear-gradient(135deg, #D4EDDA 0%, #E2F1E6 100%); border-color: #4A7C59; }
+  .stat-num { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
+  .scroll-smooth { scroll-behavior: smooth; }
+  .nav-link { transition: all 0.2s; }
+  .nav-link:hover { color: #C9A66B; }
+  .nav-link.active { color: #C9A66B; border-bottom: 2px solid #C9A66B; }
+  details summary { cursor: pointer; list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  details[open] summary .chevron { transform: rotate(90deg); }
+  .chevron { transition: transform 0.2s; display: inline-block; }
+  .calendar-day { transition: all 0.15s; }
+  .calendar-day:hover { transform: scale(1.05); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+  .pulse-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #4A7C59; display: inline-block; margin-right: 6px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  .filter-btn {
+    transition: all 0.2s;
+    border: 2px solid transparent;
+  }
+  .filter-btn.active {
+    background: #1F1B17;
+    color: #F8F5F0;
+    border-color: #C9A66B;
+  }
+  .filter-btn:not(.active):hover {
+    background: #F2EBDC;
+  }
+  @media print {
+    .no-print { display: none; }
+    body { background: white; }
+  }
+</style>
+</head>
+<body class="scroll-smooth text-stone-900">
+
+<!-- ============== NAV ============== -->
+<nav class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur text-stone-50 shadow-lg no-print">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-2">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded gradient-gold flex items-center justify-center font-serif text-stone-900 font-bold">TC</div>
+      <div>
+        <div class="font-serif text-lg leading-tight">Casa 360°</div>
+        <div class="text-xs text-stone-400">TikTok Content Factory</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-4 text-sm flex-wrap">
+      <a href="#hero" class="nav-link">Главное</a>
+      <a href="#groups" class="nav-link">Группы</a>
+      <a href="#variants" class="nav-link">Варианты</a>
+      <a href="#calendar" class="nav-link">Календарь</a>
+      <a href="#pipeline" class="nav-link">Конвейер</a>
+      <a href="#kpi" class="nav-link">KPI</a>
+      <a href="#roadmap" class="nav-link">Roadmap</a>
+      <a href="#team" class="nav-link">Команда</a>
+      <a href="#refs" class="nav-link">Референсы</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============== HERO ============== -->
+<section id="hero" class="gradient-hero text-stone-100 py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-stone-800/50 border border-amber-500/30 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-4">
+        <span class="pulse-dot" style="background:#fbbf24"></span>
+        Phase 1 — Pilot Batch Active
+      </div>
+      <h1 class="font-serif text-5xl md:text-6xl mb-4">Content Factory pentru TikTok</h1>
+      <p class="text-xl text-stone-400 max-w-3xl mx-auto">
+        Strategie completă, 4 variante A/B, 3 grupe de produse, calendar săptămânal —
+        totul gata pentru echipa de producție. Quiet luxury × viral algorithm.
+      </p>
+    </div>
+
+    <!-- Big stats grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+      <div class="bg-stone-800/50 rounded-lg p-6 border border-amber-500/20 text-center">
+        <div class="stat-num text-5xl text-amber-400 mb-2">4</div>
+        <div class="text-stone-400 text-sm">Variante A/B pe shoot day</div>
+      </div>
+      <div class="bg-stone-800/50 rounded-lg p-6 border border-amber-500/20 text-center">
+        <div class="stat-num text-5xl text-amber-400 mb-2">3</div>
+        <div class="text-stone-400 text-sm">Grupe de produse</div>
+      </div>
+      <div class="bg-stone-800/50 rounded-lg p-6 border border-amber-500/20 text-center">
+        <div class="stat-num text-5xl text-amber-400 mb-2">30</div>
+        <div class="text-stone-400 text-sm">Scripturi gata (10 SKU × 3 tracks)</div>
+      </div>
+      <div class="bg-stone-800/50 rounded-lg p-6 border border-amber-500/20 text-center">
+        <div class="stat-num text-5xl text-amber-400 mb-2">7</div>
+        <div class="text-stone-400 text-sm">Designer-led scripts</div>
+      </div>
+      <div class="bg-stone-800/50 rounded-lg p-6 border border-amber-500/20 text-center">
+        <div class="stat-num text-5xl text-amber-400 mb-2">6</div>
+        <div class="text-stone-400 text-sm">Showroom-uri active</div>
+      </div>
+      <div class="bg-stone-800/50 rounded-lg p-6 border border-amber-500/20 text-center">
+        <div class="stat-num text-5xl text-amber-400 mb-2">12</div>
+        <div class="text-stone-400 text-sm">Săptămâni Phase 1</div>
+      </div>
+      <div class="bg-stone-800/50 rounded-lg p-6 border border-amber-500/20 text-center">
+        <div class="stat-num text-5xl text-amber-400 mb-2">50K</div>
+        <div class="text-stone-400 text-sm">Target followers Month 3</div>
+      </div>
+      <div class="bg-stone-800/50 rounded-lg p-6 border border-amber-500/20 text-center">
+        <div class="stat-num text-5xl text-amber-400 mb-2">300K+</div>
+        <div class="text-stone-400 text-sm">Target followers Month 12</div>
+      </div>
+    </div>
+
+    <!-- Big idea -->
+    <div class="mt-12 max-w-4xl mx-auto text-center">
+      <div class="font-serif italic text-3xl md:text-4xl text-amber-200">
+        «Designul nu e ce adaugi.<br>E ce alegi să păstrezi.»
+      </div>
+      <div class="text-stone-500 mt-3 text-sm">Big idea — quote-as-hero anchor pentru toate variantele</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== 3 GROUPS OF PRODUCTS ============== -->
+<section id="groups" class="py-16 px-4 bg-stone-100">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-4xl mb-3">3 Grupe de Produse</h2>
+      <p class="text-stone-600">Fiecare grupă — propria strategie de content + 4 variante A/B</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Group 1 -->
+      <div class="bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition border-t-4 border-amber-600">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs uppercase tracking-wider text-amber-600 font-bold">Grupa 1</span>
+          <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">✓ Ready</span>
+        </div>
+        <h3 class="font-serif text-2xl mb-2">Exclusive Sale / Lichidare</h3>
+        <div class="text-3xl stat-num text-stone-900 mb-1">15 <span class="text-base text-stone-500">SKU</span></div>
+        <div class="text-sm text-stone-600 mb-4">Reduceri operaționale: −20% până la −50%</div>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between"><span class="text-stone-500">−50% SKU:</span><span class="font-bold">8</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">−40% SKU:</span><span class="font-bold">3</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">−30% SKU:</span><span class="font-bold">3</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">−20% SKU:</span><span class="font-bold">1</span></div>
+          <div class="flex justify-between pt-2 border-t border-stone-200"><span class="text-stone-700 font-semibold">Hero SKU pentru video:</span><span class="font-bold text-amber-600">10</span></div>
+        </div>
+        <div class="mt-4 p-3 bg-amber-50 rounded text-xs text-stone-700">
+          <strong>Frame strategic:</strong> «Facem loc colecției inspirate de la Milano» — nu reducere, ci tranziție operațională.
+        </div>
+      </div>
+
+      <!-- Group 2 -->
+      <div class="bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition border-t-4 border-blue-600">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs uppercase tracking-wider text-blue-600 font-bold">Grupa 2</span>
+          <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⏳ Data pending</span>
+        </div>
+        <h3 class="font-serif text-2xl mb-2">Per-Showroom Stock</h3>
+        <div class="text-3xl stat-num text-stone-900 mb-1">6 <span class="text-base text-stone-500">showroom-uri</span></div>
+        <div class="text-sm text-stone-600 mb-4">Selecție locală per showroom</div>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between"><span class="text-stone-500">📍 Băneasa</span><span>Bucharest</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">📍 Ghencea Danielli</span><span>Bucharest</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">📍 Ghencea Mall</span><span>Bucharest</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">📍 Ghencea Elite</span><span>Bucharest</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">📍 Brașov (Albumo)</span><span>Brașov</span></div>
+          <div class="flex justify-between"><span class="text-stone-500">📍 Chișinău flagship</span><span>Moldova</span></div>
+        </div>
+        <div class="mt-4 p-3 bg-blue-50 rounded text-xs text-stone-700">
+          <strong>Frame strategic:</strong> «Showroom-ul tău are propria selecție» — 9-15 video per showroom.
+        </div>
+      </div>
+
+      <!-- Group 3 -->
+      <div class="bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition border-t-4 border-pink-600">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs uppercase tracking-wider text-pink-600 font-bold">Grupa 3</span>
+          <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">⏳ Data pending</span>
+        </div>
+        <h3 class="font-serif text-2xl mb-2">Spring Sale Multi-Tier</h3>
+        <div class="text-3xl stat-num text-stone-900 mb-1">3 <span class="text-base text-stone-500">tier-uri</span></div>
+        <div class="text-sm text-stone-600 mb-4">Sezonalitate: tranziție de primăvară</div>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between items-center">
+            <span class="text-stone-500">−15% Tier</span>
+            <span class="px-2 py-0.5 bg-amber-100 rounded text-amber-800 text-xs">Texturi noi (Track A)</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-stone-500">−20% Tier</span>
+            <span class="px-2 py-0.5 bg-stone-200 rounded text-stone-800 text-xs">Producția proprie (Track B)</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-stone-500">−30% Tier</span>
+            <span class="px-2 py-0.5 bg-pink-100 rounded text-pink-800 text-xs">Sezon tranziție (Track C)</span>
+          </div>
+        </div>
+        <div class="mt-4 p-3 bg-pink-50 rounded text-xs text-stone-700">
+          <strong>Frame strategic:</strong> «Primăvara — moment de tranziție» — rollout: −30 → −20 → −15.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== 4 VARIANTS ============== -->
+<section id="variants" class="py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-4xl mb-3">4 Variante A/B pe Master Cut</h2>
+      <p class="text-stone-600">Fiecare zi de shoot produce 4 video-uri diferite — A/B test viral algorithm</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- V1 -->
+      <div class="variant-v1 rounded-2xl p-6 border-l-4 card-shadow card-shadow-hover transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-3xl">🎬</span>
+          <span class="text-xs font-bold text-stone-700 uppercase">V1</span>
+        </div>
+        <h3 class="font-serif text-2xl mb-2">Milano Return</h3>
+        <p class="text-sm text-stone-700 mb-4 italic">Cinematic narrative · Track A</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between"><span class="text-stone-600">⏱ Length:</span><span class="font-bold">18 sec</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">🎤 Audio:</span><span class="font-bold">NEW VO + music</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">📝 Captions:</span><span class="font-bold">5</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">⚙ Editor time:</span><span class="font-bold">2.5h</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">📅 Publish:</span><span class="font-bold">Luni 18:00</span></div>
+        </div>
+        <div class="mt-4 p-3 bg-white/60 rounded text-xs">
+          <strong class="text-stone-900">Pentru cine:</strong> Premium Private 40-60<br>
+          <strong class="text-stone-900">Metric:</strong> Save-rate baseline
+        </div>
+      </div>
+
+      <!-- V2 -->
+      <div class="variant-v2 rounded-2xl p-6 border-l-4 card-shadow card-shadow-hover transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-3xl">✨</span>
+          <span class="text-xs font-bold text-stone-700 uppercase">V2 · FASTEST</span>
+        </div>
+        <h3 class="font-serif text-2xl mb-2">Quote-as-Hero</h3>
+        <p class="text-sm text-stone-700 mb-4 italic">Silent atmospheric · @artin.one style</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between"><span class="text-stone-600">⏱ Length:</span><span class="font-bold">15 sec</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">🎤 Audio:</span><span class="font-bold">🔇 SILENT + music</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">📝 Captions:</span><span class="font-bold">1 quote (2 lines)</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">⚙ Editor time:</span><span class="font-bold text-green-700">1.5h ⚡</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">📅 Publish:</span><span class="font-bold">Miercuri 19:00</span></div>
+        </div>
+        <div class="mt-4 p-3 bg-white/60 rounded text-xs">
+          <strong class="text-stone-900">Pentru cine:</strong> Brand-philosophy lovers<br>
+          <strong class="text-stone-900">Metric:</strong> Highest save-rate
+        </div>
+      </div>
+
+      <!-- V3 -->
+      <div class="variant-v3 rounded-2xl p-6 border-l-4 card-shadow card-shadow-hover transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-3xl">🎓</span>
+          <span class="text-xs font-bold text-stone-700 uppercase">V3 · DEEPEST</span>
+        </div>
+        <h3 class="font-serif text-2xl mb-2">Insider Tip</h3>
+        <p class="text-sm text-stone-700 mb-4 italic">Designer voice · @studio.mcgee style</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between"><span class="text-stone-600">⏱ Length:</span><span class="font-bold">22 sec</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">🎤 Audio:</span><span class="font-bold">NEW VO (designer)</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">📝 Captions:</span><span class="font-bold">4 + CTA</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">⚙ Editor time:</span><span class="font-bold">3h</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">📅 Publish:</span><span class="font-bold">Vineri 18:00</span></div>
+        </div>
+        <div class="mt-4 p-3 bg-white/60 rounded text-xs">
+          <strong class="text-stone-900">Pentru cine:</strong> Curious researchers<br>
+          <strong class="text-stone-900">Metric:</strong> Comment quality
+        </div>
+      </div>
+
+      <!-- V4 -->
+      <div class="variant-v4 rounded-2xl p-6 border-l-4 card-shadow card-shadow-hover transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-3xl">🛡</span>
+          <span class="text-xs font-bold text-stone-700 uppercase">V4 · CONVERSION</span>
+        </div>
+        <h3 class="font-serif text-2xl mb-2">Trust Block</h3>
+        <p class="text-sm text-stone-700 mb-4 italic">Animated reveal · @cheia.imobiliarelor RO</p>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between"><span class="text-stone-600">⏱ Length:</span><span class="font-bold">25 sec</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">🎤 Audio:</span><span class="font-bold">🔇 SILENT + build</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">📝 Captions:</span><span class="font-bold">13 bullets</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">⚙ Editor time:</span><span class="font-bold">2h</span></div>
+          <div class="flex justify-between"><span class="text-stone-600">📅 Publish:</span><span class="font-bold">Duminică 20:00</span></div>
+        </div>
+        <div class="mt-4 p-3 bg-white/60 rounded text-xs">
+          <strong class="text-stone-900">Pentru cine:</strong> High-trust premium<br>
+          <strong class="text-stone-900">Metric:</strong> Bio-link clicks
+        </div>
+      </div>
+    </div>
+
+    <!-- Total time -->
+    <div class="mt-8 max-w-4xl mx-auto bg-stone-900 text-stone-100 rounded-xl p-6 text-center">
+      <div class="text-sm uppercase tracking-wider text-amber-400 mb-2">Total Editor Effort per Master Cut</div>
+      <div class="stat-num text-5xl text-amber-300">9 ore</div>
+      <div class="text-sm text-stone-400 mt-2">≈ 1 zi de muncă editor pentru 4 publishes într-o săptămână</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CALENDAR ============== -->
+<section id="calendar" class="py-16 px-4 bg-stone-100">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-4xl mb-3">Calendar Săptămânal Interactiv</h2>
+      <p class="text-stone-600">Pipeline de la shoot day la 4 publicări — click pe orice zi pentru detalii</p>
+    </div>
+
+    <!-- Filter buttons -->
+    <div class="flex flex-wrap justify-center gap-2 mb-8 no-print">
+      <button class="filter-btn active px-4 py-2 rounded-full text-sm" data-filter="all">Toate fazele</button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm" data-filter="shoot">🎬 Shoot</button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm" data-filter="edit">✂ Editing</button>
+      <button class="filter-btn px-4 py-2 rounded-full text-sm" data-filter="publish">📤 Publish</button>
+    </div>
+
+    <!-- Weekly grid -->
+    <div class="grid grid-cols-7 gap-3 mb-6">
+      <!-- Headers -->
+      <div class="text-center text-xs uppercase text-stone-500 font-bold py-2">Luni</div>
+      <div class="text-center text-xs uppercase text-stone-500 font-bold py-2">Marți</div>
+      <div class="text-center text-xs uppercase text-stone-500 font-bold py-2">Miercuri</div>
+      <div class="text-center text-xs uppercase text-stone-500 font-bold py-2">Joi</div>
+      <div class="text-center text-xs uppercase text-stone-500 font-bold py-2">Vineri</div>
+      <div class="text-center text-xs uppercase text-stone-500 font-bold py-2">Sâmbătă</div>
+      <div class="text-center text-xs uppercase text-stone-500 font-bold py-2">Duminică</div>
+
+      <!-- Day cells -->
+      <div class="calendar-day variant-v1 rounded-lg p-3 border-l-4 cursor-pointer" data-phase="publish">
+        <div class="text-xs text-stone-600 mb-1">18:00 EET</div>
+        <div class="text-2xl mb-1">🎬</div>
+        <div class="font-bold text-sm">V1 PUBLISH</div>
+        <div class="text-xs text-stone-700 mt-1">Milano Return</div>
+        <div class="mt-2 text-xs bg-white/50 rounded px-2 py-1">📊 Save-rate baseline</div>
+      </div>
+
+      <div class="calendar-day bg-stone-900 text-stone-100 rounded-lg p-3 border-l-4 border-amber-500 cursor-pointer" data-phase="shoot">
+        <div class="text-xs text-amber-300 mb-1">08:00-18:00</div>
+        <div class="text-2xl mb-1">📷</div>
+        <div class="font-bold text-sm">SHOOT DAY</div>
+        <div class="text-xs text-stone-300 mt-1">1 master cut</div>
+        <div class="mt-2 text-xs bg-amber-500/20 text-amber-200 rounded px-2 py-1">Băneasa showroom</div>
+      </div>
+
+      <div class="calendar-day variant-v2 rounded-lg p-3 border-l-4 cursor-pointer" data-phase="publish">
+        <div class="text-xs text-stone-600 mb-1">19:00 EET</div>
+        <div class="text-2xl mb-1">✨</div>
+        <div class="font-bold text-sm">V2 PUBLISH</div>
+        <div class="text-xs text-stone-700 mt-1">Quote-as-Hero</div>
+        <div class="mt-2 text-xs bg-white/50 rounded px-2 py-1">📊 Save magnet</div>
+      </div>
+
+      <div class="calendar-day bg-stone-800 text-stone-200 rounded-lg p-3 border-l-4 border-amber-500 cursor-pointer" data-phase="edit">
+        <div class="text-xs text-amber-300 mb-1">09:00-18:00</div>
+        <div class="text-2xl mb-1">✂</div>
+        <div class="font-bold text-sm">POST-PRO</div>
+        <div class="text-xs text-stone-400 mt-1">Editor: 4 variants</div>
+        <div class="mt-2 text-xs bg-amber-500/20 text-amber-200 rounded px-2 py-1">9h total work</div>
+      </div>
+
+      <div class="calendar-day variant-v3 rounded-lg p-3 border-l-4 cursor-pointer" data-phase="publish">
+        <div class="text-xs text-stone-600 mb-1">18:00 EET</div>
+        <div class="text-2xl mb-1">🎓</div>
+        <div class="font-bold text-sm">V3 PUBLISH</div>
+        <div class="text-xs text-stone-700 mt-1">Insider Tip</div>
+        <div class="mt-2 text-xs bg-white/50 rounded px-2 py-1">📊 Comment quality</div>
+      </div>
+
+      <div class="calendar-day bg-stone-200 rounded-lg p-3 border-l-4 border-stone-400 text-stone-700">
+        <div class="text-xs mb-1">—</div>
+        <div class="text-2xl mb-1">🛌</div>
+        <div class="font-bold text-sm">REST</div>
+        <div class="text-xs mt-1">Engagement reply window</div>
+      </div>
+
+      <div class="calendar-day variant-v4 rounded-lg p-3 border-l-4 cursor-pointer" data-phase="publish">
+        <div class="text-xs text-stone-600 mb-1">20:00 EET</div>
+        <div class="text-2xl mb-1">🛡</div>
+        <div class="font-bold text-sm">V4 PUBLISH</div>
+        <div class="text-xs text-stone-700 mt-1">Trust Block</div>
+        <div class="mt-2 text-xs bg-white/50 rounded px-2 py-1">📊 Bio-link clicks</div>
+      </div>
+    </div>
+
+    <!-- Schedule notes -->
+    <div class="grid md:grid-cols-3 gap-4 mt-8">
+      <div class="bg-white rounded-lg p-4 card-shadow">
+        <div class="text-amber-600 font-bold text-sm mb-2">⏰ De ce zile separate?</div>
+        <div class="text-sm text-stone-700">Clean A/B test: TikTok algorithm vede fiecare variant independent. Suprapunerea = data poisoning.</div>
+      </div>
+      <div class="bg-white rounded-lg p-4 card-shadow">
+        <div class="text-amber-600 font-bold text-sm mb-2">📈 Cumulative cadence</div>
+        <div class="text-sm text-stone-700">4 publicări × 4 săptămâni = <strong>16 video-uri</strong> testate per lună. Week 4: identificare winner.</div>
+      </div>
+      <div class="bg-white rounded-lg p-4 card-shadow">
+        <div class="text-amber-600 font-bold text-sm mb-2">🎯 După Week 4</div>
+        <div class="text-sm text-stone-700">75% volume pe winning format. 25% experimente. Scale: 4 → 8 videos/săptămână (Phase 3).</div>
+      </div>
+    </div>
+
+    <!-- Volume calculations -->
+    <div class="mt-12 bg-gradient-to-br from-stone-900 to-stone-800 text-stone-100 rounded-2xl p-8">
+      <h3 class="font-serif text-2xl mb-6 text-center">Volume Production — primele 12 săptămâni</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="stat-num text-4xl text-amber-400">1</div>
+          <div class="text-sm text-stone-400 mt-1">Shoot day/săptămână</div>
+        </div>
+        <div>
+          <div class="stat-num text-4xl text-amber-400">4</div>
+          <div class="text-sm text-stone-400 mt-1">Variants/master cut</div>
+        </div>
+        <div>
+          <div class="stat-num text-4xl text-amber-400">16</div>
+          <div class="text-sm text-stone-400 mt-1">Videos/lună</div>
+        </div>
+        <div>
+          <div class="stat-num text-4xl text-amber-400">48</div>
+          <div class="text-sm text-stone-400 mt-1">Videos Phase 1 (12 weeks)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PIPELINE ============== -->
+<section id="pipeline" class="py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-4xl mb-3">Conveior de Producție</h2>
+      <p class="text-stone-600">3 faze · 1 master cut → 4 variante → 4 publicări</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Phase 1 SHOOT -->
+      <div class="bg-white rounded-2xl card-shadow overflow-hidden">
+        <div class="bg-stone-900 text-stone-100 p-4">
+          <div class="text-xs uppercase tracking-wider text-amber-400 mb-1">Faza 1 · Marți</div>
+          <h3 class="font-serif text-2xl">🎬 Shoot Day</h3>
+        </div>
+        <div class="p-6">
+          <ol class="space-y-3 text-sm">
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">1.</span>
+              <div>
+                <div class="font-bold">08:00</div>
+                <div class="text-stone-600">Crew arrival + setup</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">2.</span>
+              <div>
+                <div class="font-bold">09:00-11:00</div>
+                <div class="text-stone-600">Golden window — Track A cinematic</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">3.</span>
+              <div>
+                <div class="font-bold">11:00-12:00</div>
+                <div class="text-stone-600">Track B static + product detail</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">4.</span>
+              <div>
+                <div class="font-bold">13:00-15:00</div>
+                <div class="text-stone-600">Talent + voiceover takes</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">5.</span>
+              <div>
+                <div class="font-bold">15:00-17:30</div>
+                <div class="text-stone-600">Universal shots + Track C (opțional)</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">6.</span>
+              <div>
+                <div class="font-bold">17:30-18:00</div>
+                <div class="text-stone-600">Wrap + backup 2× drives</div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Phase 2 EDIT -->
+      <div class="bg-white rounded-2xl card-shadow overflow-hidden">
+        <div class="bg-stone-800 text-stone-100 p-4">
+          <div class="text-xs uppercase tracking-wider text-amber-400 mb-1">Faza 2 · Joi</div>
+          <h3 class="font-serif text-2xl">✂ Post-Production</h3>
+        </div>
+        <div class="p-6">
+          <ol class="space-y-3 text-sm">
+            <li class="flex gap-3">
+              <span class="font-bold text-stone-600 stat-num">1.</span>
+              <div>
+                <div class="font-bold">Editor opens Excel Tab 10</div>
+                <div class="text-stone-600">Re-Mix Variants — toate instrucțiunile</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-stone-600 stat-num">2.</span>
+              <div>
+                <div class="font-bold">Pulls .srt + .wav files</div>
+                <div class="text-stone-600">Copy-paste captions + voiceovers</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-stone-600 stat-num">3.</span>
+              <div>
+                <div class="font-bold">CapCut: 15/12/16/14 numbered steps</div>
+                <div class="text-stone-600">Zero interpretation needed</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-stone-600 stat-num">4.</span>
+              <div>
+                <div class="font-bold">TOV Quality Gate</div>
+                <div class="text-stone-600">5-point check per variant</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-stone-600 stat-num">5.</span>
+              <div>
+                <div class="font-bold">Export 1080×1920 H.264 6-8 Mbps</div>
+                <div class="text-stone-600">4 finished MP4 files</div>
+              </div>
+            </li>
+          </ol>
+          <div class="mt-4 p-3 bg-green-50 rounded text-xs text-green-800">
+            <strong>Total:</strong> 9h editor work pentru 4 variants
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3 PUBLISH -->
+      <div class="bg-white rounded-2xl card-shadow overflow-hidden">
+        <div class="bg-amber-700 text-amber-50 p-4">
+          <div class="text-xs uppercase tracking-wider text-amber-200 mb-1">Faza 3 · Vi-Du</div>
+          <h3 class="font-serif text-2xl">📤 Publish + Measure</h3>
+        </div>
+        <div class="p-6">
+          <ol class="space-y-3 text-sm">
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">1.</span>
+              <div>
+                <div class="font-bold">CapCut export per variant</div>
+                <div class="text-stone-600">Filename convention strictă</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">2.</span>
+              <div>
+                <div class="font-bold">Upload TikTok + IG Reels</div>
+                <div class="text-stone-600">+1h delay Instagram</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">3.</span>
+              <div>
+                <div class="font-bold">UTM tracking per variant</div>
+                <div class="text-stone-600">remix-v[1-4]_[slug]</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">4.</span>
+              <div>
+                <div class="font-bold">Bio-link rotation daily</div>
+                <div class="text-stone-600">Per showroom</div>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-amber-600 stat-num">5.</span>
+              <div>
+                <div class="font-bold">Engagement reply ≤4h</div>
+                <div class="text-stone-600">Primele 7 zile</div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== KPI ============== -->
+<section id="kpi" class="py-16 px-4 bg-stone-100">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-4xl mb-3">KPI Targets — primele 14 zile</h2>
+      <p class="text-stone-600">Cum măsurăm succesul și cum decidem winner-ul</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-2xl p-8 card-shadow">
+        <h3 class="font-serif text-xl mb-6">Targets Phase 1 (Week 1-4)</h3>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm text-stone-700">Total TikTok views</span>
+              <span class="font-bold text-amber-700">50,000+</span>
+            </div>
+            <div class="w-full bg-stone-200 rounded-full h-2"><div class="bg-amber-500 h-2 rounded-full" style="width:75%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm text-stone-700">Save-rate (primary metric)</span>
+              <span class="font-bold text-amber-700">&gt;2.0%</span>
+            </div>
+            <div class="w-full bg-stone-200 rounded-full h-2"><div class="bg-amber-500 h-2 rounded-full" style="width:65%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm text-stone-700">Bio-link clicks → showroom</span>
+              <span class="font-bold text-amber-700">300+</span>
+            </div>
+            <div class="w-full bg-stone-200 rounded-full h-2"><div class="bg-amber-500 h-2 rounded-full" style="width:55%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm text-stone-700">Showroom visits UTM-tracked</span>
+              <span class="font-bold text-amber-700">50+</span>
+            </div>
+            <div class="w-full bg-stone-200 rounded-full h-2"><div class="bg-amber-500 h-2 rounded-full" style="width:60%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-sm text-stone-700">Lead-to-visit ratio</span>
+              <span class="font-bold text-amber-700">&gt;15%</span>
+            </div>
+            <div class="w-full bg-stone-200 rounded-full h-2"><div class="bg-amber-500 h-2 rounded-full" style="width:50%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 card-shadow">
+        <h3 class="font-serif text-xl mb-6">Winner Formula (Week 4 gate)</h3>
+        <div class="bg-stone-900 text-stone-100 rounded-lg p-6 font-mono text-sm mb-6">
+          <div class="text-amber-400">Score per variant =</div>
+          <div class="pl-4 mt-2">
+            (save × <span class="text-amber-300">2</span>) +<br>
+            (bio-clicks × <span class="text-amber-300">1.5</span>) +<br>
+            (comment_quality × <span class="text-amber-300">1</span>)
+          </div>
+          <div class="text-amber-400 mt-2">─────────────</div>
+          <div class="text-center mt-2 text-amber-300">÷ total_views</div>
+        </div>
+        <div class="space-y-3 text-sm">
+          <div class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span class="text-stone-700"><strong>Winner threshold:</strong> ≥ 1.5× scor vs locul 2</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-green-600">✓</span>
+            <span class="text-stone-700"><strong>Decision:</strong> 75% volum pe winner, 25% experimente</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-amber-600">⚠</span>
+            <span class="text-stone-700"><strong>Kill criteria:</strong> save-rate &lt;1% → kill variant type</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart placeholder -->
+    <div class="mt-8 bg-white rounded-2xl p-8 card-shadow">
+      <h3 class="font-serif text-xl mb-4 text-center">Year 1 Growth Trajectory</h3>
+      <canvas id="growthChart" height="80"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROADMAP ============== -->
+<section id="roadmap" class="py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-4xl mb-3">Roadmap 12 luni</h2>
+      <p class="text-stone-600">4 faze — de la pilot batch la brand-level virality</p>
+    </div>
+
+    <div class="relative">
+      <!-- Timeline line -->
+      <div class="absolute top-12 left-0 right-0 h-1 bg-stone-300 hidden md:block"></div>
+
+      <div class="grid md:grid-cols-4 gap-6 relative">
+        <!-- Phase 1 -->
+        <div class="text-center">
+          <div class="w-24 h-24 mx-auto rounded-full bg-amber-500 flex items-center justify-center stat-num text-3xl text-white relative z-10 shadow-lg">1</div>
+          <div class="mt-4 bg-white rounded-xl p-4 card-shadow border-t-4 border-amber-500">
+            <div class="text-xs uppercase text-amber-700 font-bold mb-1">Pilot Batch · ACUM</div>
+            <div class="font-bold text-lg mb-2">Week 1-4</div>
+            <div class="text-sm text-stone-700 space-y-1">
+              <div>📹 16 videos (4 variants × 4 sapt)</div>
+              <div>🎯 Identify 1-2 winners</div>
+              <div>👥 Existing crew + 1 designer</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="text-center">
+          <div class="w-24 h-24 mx-auto rounded-full bg-stone-700 flex items-center justify-center stat-num text-3xl text-white relative z-10 shadow-lg">2</div>
+          <div class="mt-4 bg-white rounded-xl p-4 card-shadow border-t-4 border-stone-700">
+            <div class="text-xs uppercase text-stone-700 font-bold mb-1">Scale Winners</div>
+            <div class="font-bold text-lg mb-2">Week 5-12</div>
+            <div class="text-sm text-stone-700 space-y-1">
+              <div>📹 4-5 videos/saptamana</div>
+              <div>🎯 50K followers · 200K views</div>
+              <div>👥 +1 editor full-time</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="text-center">
+          <div class="w-24 h-24 mx-auto rounded-full bg-stone-600 flex items-center justify-center stat-num text-3xl text-white relative z-10 shadow-lg">3</div>
+          <div class="mt-4 bg-white rounded-xl p-4 card-shadow border-t-4 border-stone-600">
+            <div class="text-xs uppercase text-stone-700 font-bold mb-1">Multi-Master</div>
+            <div class="font-bold text-lg mb-2">Month 4-6</div>
+            <div class="text-sm text-stone-700 space-y-1">
+              <div>📹 8 videos/saptamana</div>
+              <div>🎯 150K followers · 500K views</div>
+              <div>👥 +2nd designer + scheduler</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="text-center">
+          <div class="w-24 h-24 mx-auto rounded-full bg-stone-900 flex items-center justify-center stat-num text-3xl text-white relative z-10 shadow-lg">4</div>
+          <div class="mt-4 bg-white rounded-xl p-4 card-shadow border-t-4 border-stone-900">
+            <div class="text-xs uppercase text-stone-700 font-bold mb-1">Viral Scale</div>
+            <div class="font-bold text-lg mb-2">Month 7-12</div>
+            <div class="text-sm text-stone-700 space-y-1">
+              <div>📹 Daily content</div>
+              <div>🎯 300K+ · 700K+ views</div>
+              <div>💼 50 leads/saptamana</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Investment breakdown -->
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <div class="bg-gradient-to-br from-amber-50 to-stone-100 rounded-xl p-6">
+        <div class="text-amber-700 font-bold uppercase text-xs mb-2">Investment phase 1</div>
+        <div class="stat-num text-4xl text-stone-900">&lt;€2K</div>
+        <div class="text-sm text-stone-700 mt-2">CapEx total — phone-quality model per @artem_chiba precedent (1.8M followers cu phone)</div>
+      </div>
+      <div class="bg-gradient-to-br from-amber-50 to-stone-100 rounded-xl p-6">
+        <div class="text-amber-700 font-bold uppercase text-xs mb-2">Music license</div>
+        <div class="stat-num text-4xl text-stone-900">€30-40</div>
+        <div class="text-sm text-stone-700 mt-2">Artgrid sau Musicbed monthly subscription pentru ambient tracks</div>
+      </div>
+      <div class="bg-gradient-to-br from-amber-50 to-stone-100 rounded-xl p-6">
+        <div class="text-amber-700 font-bold uppercase text-xs mb-2">Year 1 revenue target</div>
+        <div class="stat-num text-4xl text-stone-900">€750K</div>
+        <div class="text-sm text-stone-700 mt-2">Conservative scenario: 50 signed projects × €25K avg check (Casa 360°)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TEAM ============== -->
+<section id="team" class="py-16 px-4 bg-stone-100">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-4xl mb-3">Roluri în Content Factory</h2>
+      <p class="text-stone-600">Cine ce face — zero ambiguitate, fiecare cu SOP-ul lui</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-white rounded-xl p-5 card-shadow">
+        <div class="text-3xl mb-2">👔</div>
+        <div class="font-bold mb-1">CEO / Strategic</div>
+        <div class="text-sm text-stone-600 mb-2">Alexandr Scerbina</div>
+        <div class="text-xs text-stone-500">Final approval · TOV ratification · Trust block validation</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 card-shadow">
+        <div class="text-3xl mb-2">🎬</div>
+        <div class="font-bold mb-1">Videograf</div>
+        <div class="text-sm text-stone-600 mb-2">Full-time TBD</div>
+        <div class="text-xs text-stone-500">1 shoot day/sapt · 4K vertical · phone-quality OK</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 card-shadow">
+        <div class="text-3xl mb-2">🎨</div>
+        <div class="font-bold mb-1">Designer Insider</div>
+        <div class="text-sm text-stone-600 mb-2">Internal TBD (shortlist)</div>
+        <div class="text-xs text-stone-500">On-camera V1+V3 · designer voice educational</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 card-shadow">
+        <div class="text-3xl mb-2">✂</div>
+        <div class="font-bold mb-1">Editor</div>
+        <div class="text-sm text-stone-600 mb-2">TBD · CapCut</div>
+        <div class="text-xs text-stone-500">Follows Excel Tab 10 · 9h/sapt · copy-paste</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 card-shadow">
+        <div class="text-3xl mb-2">📱</div>
+        <div class="font-bold mb-1">Social Media</div>
+        <div class="text-sm text-stone-600 mb-2">TBD</div>
+        <div class="text-xs text-stone-500">Publishing · engagement ≤4h · UTM hygiene</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 card-shadow">
+        <div class="text-3xl mb-2">📊</div>
+        <div class="font-bold mb-1">Analytics</div>
+        <div class="text-sm text-stone-600 mb-2">TBD</div>
+        <div class="text-xs text-stone-500">Weekly snapshot · winner identification</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 card-shadow">
+        <div class="text-3xl mb-2">🤖</div>
+        <div class="font-bold mb-1">Claude (AI)</div>
+        <div class="text-sm text-stone-600 mb-2">Содержательная роль</div>
+        <div class="text-xs text-stone-500">Креатор концептов · Оценщик TOV · Стратег</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 card-shadow border-2 border-red-200">
+        <div class="text-3xl mb-2">⚠</div>
+        <div class="font-bold mb-1">Operations Director</div>
+        <div class="text-sm text-red-600 mb-2">VACANT</div>
+        <div class="text-xs text-stone-500">Music license · budget · talent casting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== REFERENCES ============== -->
+<section id="refs" class="py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-4xl mb-3">Referențe Virale (homework pentru echipă)</h2>
+      <p class="text-stone-600">3 worldclass creators — fiecare membru al echipei își face homework 30 min</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="https://www.tiktok.com/@artin.one" target="_blank" rel="noopener" class="bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition block">
+        <div class="text-4xl mb-3">🌃</div>
+        <h3 class="font-serif text-2xl mb-1">@artin.one</h3>
+        <div class="text-sm text-stone-500 mb-3">Dubai / NY · Quiet luxury cinematic</div>
+        <div class="text-xs space-y-2">
+          <div class="px-3 py-2 bg-stone-100 rounded">
+            <strong>Pattern A1:</strong> Slow cinematic walkthrough
+          </div>
+          <div class="px-3 py-2 bg-stone-100 rounded">
+            <strong>Pattern A2:</strong> Single-room hero shot
+          </div>
+          <div class="px-3 py-2 bg-amber-100 rounded text-amber-900">
+            <strong>Adaptability:</strong> 10/10 — closest match
+          </div>
+        </div>
+        <div class="mt-4 text-amber-600 text-sm font-bold">Deschide TikTok →</div>
+      </a>
+
+      <a href="https://www.tiktok.com/@lifeinthewolds" target="_blank" rel="noopener" class="bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition block">
+        <div class="text-4xl mb-3">🌿</div>
+        <h3 class="font-serif text-2xl mb-1">@lifeinthewolds</h3>
+        <div class="text-sm text-stone-500 mb-3">UK · Slow living warm interior</div>
+        <div class="text-xs space-y-2">
+          <div class="px-3 py-2 bg-stone-100 rounded">
+            <strong>Pattern L1:</strong> Documentary domestic moment
+          </div>
+          <div class="px-3 py-2 bg-stone-100 rounded">
+            <strong>Pattern L2:</strong> Voice + walking tour
+          </div>
+          <div class="px-3 py-2 bg-green-100 rounded text-green-900">
+            <strong>Difficulty:</strong> EASY — already used by team
+          </div>
+        </div>
+        <div class="mt-4 text-amber-600 text-sm font-bold">Deschide TikTok →</div>
+      </a>
+
+      <a href="https://www.instagram.com/minotti_spa/" target="_blank" rel="noopener" class="bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition block">
+        <div class="text-4xl mb-3">🇮🇹</div>
+        <h3 class="font-serif text-2xl mb-1">Minotti</h3>
+        <div class="text-sm text-stone-500 mb-3">Italia · Brand-tier benchmark (485K)</div>
+        <div class="text-xs space-y-2">
+          <div class="px-3 py-2 bg-stone-100 rounded">
+            <strong>Pattern M1:</strong> Static photography moving
+          </div>
+          <div class="px-3 py-2 bg-stone-100 rounded">
+            <strong>Pattern M2:</strong> Craftsmanship close-up
+          </div>
+          <div class="px-3 py-2 bg-blue-100 rounded text-blue-900">
+            <strong>Use as:</strong> Aspirational filter, not 1-to-1 clone
+          </div>
+        </div>
+        <div class="mt-4 text-amber-600 text-sm font-bold">Deschide Instagram →</div>
+      </a>
+    </div>
+
+    <!-- Additional references for designer-pivot research -->
+    <div class="mt-12">
+      <h3 class="font-serif text-2xl mb-4 text-center">Designer-Led Pivot References</h3>
+      <div class="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+        <a href="https://www.tiktok.com/@studio.mcgee/video/7398192962200505630" target="_blank" rel="noopener" class="bg-white rounded-xl p-4 card-shadow card-shadow-hover flex items-center gap-3 transition">
+          <span class="text-2xl">🎓</span>
+          <div class="flex-1">
+            <div class="font-bold text-sm">@studio.mcgee · «Two design details»</div>
+            <div class="text-xs text-stone-500">US 358K · Insider tip vignette format</div>
+          </div>
+          <span class="text-amber-600">→</span>
+        </a>
+        <a href="https://www.tiktok.com/@artem_chiba" target="_blank" rel="noopener" class="bg-white rounded-xl p-4 card-shadow card-shadow-hover flex items-center gap-3 transition">
+          <span class="text-2xl">🔨</span>
+          <div class="flex-1">
+            <div class="font-bold text-sm">@artem_chiba · Founder-led process</div>
+            <div class="text-xs text-stone-500">RU 1.8M · Builder archetype precedent</div>
+          </div>
+          <span class="text-amber-600">→</span>
+        </a>
+        <a href="https://www.tiktok.com/@cheia.imobiliarelor/video/7439734742515256608" target="_blank" rel="noopener" class="bg-white rounded-xl p-4 card-shadow card-shadow-hover flex items-center gap-3 transition">
+          <span class="text-2xl">🛡</span>
+          <div class="flex-1">
+            <div class="font-bold text-sm">@cheia.imobiliarelor · 11-bullet trust block</div>
+            <div class="text-xs text-stone-500">RO · Trust block reveal RO local benchmark</div>
+          </div>
+          <span class="text-amber-600">→</span>
+        </a>
+        <a href="https://www.tiktok.com/@kunkel.meble/video/7552489203334925590" target="_blank" rel="noopener" class="bg-white rounded-xl p-4 card-shadow card-shadow-hover flex items-center gap-3 transition">
+          <span class="text-2xl">🔧</span>
+          <div class="flex-1">
+            <div class="font-bold text-sm">@kunkel.meble · «Hidden handles Schüco»</div>
+            <div class="text-xs text-stone-500">PL · Premium spec micro-tour</div>
+          </div>
+          <span class="text-amber-600">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TOV RULES ============== -->
+<section class="py-16 px-4 bg-stone-900 text-stone-100">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-4xl mb-3">Reguli TOV — Strict bans și permised</h2>
+      <p class="text-stone-400">D010 recalibration — quiet luxury × TikTok virality balance</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-red-950/40 border border-red-900/50 rounded-2xl p-6">
+        <h3 class="font-serif text-2xl mb-4 text-red-300">❌ STRICT INTERZIS</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex gap-2"><span class="text-red-400">✗</span> «lichidare» · «reducere» · «ofertă» · «sale» · «discount» · «promoție»</li>
+          <li class="flex gap-2"><span class="text-red-400">✗</span> «nu rata» · «doar azi» · «ultima șansă» · «acum sau niciodată» · «grăbește-te»</li>
+          <li class="flex gap-2"><span class="text-red-400">✗</span> CAPS pe fraze &gt;2 cuvinte</li>
+          <li class="flex gap-2"><span class="text-red-400">✗</span> Englezisme în RO captions (logo OK)</li>
+          <li class="flex gap-2"><span class="text-red-400">✗</span> Emoji în text principal</li>
+          <li class="flex gap-2"><span class="text-red-400">✗</span> Showroom de-identificat (generic interior)</li>
+          <li class="flex gap-2"><span class="text-red-400">✗</span> Stock-fotografii de mobilier</li>
+        </ul>
+      </div>
+
+      <div class="bg-green-950/40 border border-green-900/50 rounded-2xl p-6">
+        <h3 class="font-serif text-2xl mb-4 text-green-300">✅ PERMIS (cu condiții — D010)</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="flex gap-2"><span class="text-green-400">✓</span> CAPS pe <strong>1 cuvânt-emfază</strong> per video</li>
+          <li class="flex gap-2"><span class="text-green-400">✓</span> «−50%» în <strong>brand-assets statice</strong> (poster, carousel), NU în TikTok hooks</li>
+          <li class="flex gap-2"><span class="text-green-400">✓</span> Cifre cu săgeată (16700 → 8350 lei) — fără simbol %</li>
+          <li class="flex gap-2"><span class="text-green-400">✓</span> Acent terracotta <code class="bg-stone-800 px-2 rounded">#C97B5C</code> ca culoare secundară</li>
+          <li class="flex gap-2"><span class="text-green-400">✓</span> «Chiar acum» — o singură apariție per video</li>
+          <li class="flex gap-2"><span class="text-green-400">✓</span> Forma «tu» (RO) / «ты» (RU)</li>
+          <li class="flex gap-2"><span class="text-green-400">✓</span> Designer signature în caption (`design by [DESIGNER]`)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Alternatives table -->
+    <div class="mt-8 bg-stone-800/50 rounded-2xl p-6">
+      <h3 class="font-serif text-xl mb-4 text-amber-300">Alternative aprobate (copy-paste ready)</h3>
+      <div class="grid md:grid-cols-2 gap-4 text-sm">
+        <div class="space-y-2">
+          <div class="flex gap-3"><span class="text-red-400 line-through">«Lichidare»</span><span class="text-stone-400">→</span><span class="text-green-300">«Linia 2025 părăsește showroom-ul»</span></div>
+          <div class="flex gap-3"><span class="text-red-400 line-through">«Reducere −50%»</span><span class="text-stone-400">→</span><span class="text-green-300">«16700 → 8350 lei. Aceeași calitate.»</span></div>
+          <div class="flex gap-3"><span class="text-red-400 line-through">«Nu rata»</span><span class="text-stone-400">→</span><span class="text-green-300">«Vino să vezi ce mai e disponibil»</span></div>
+          <div class="flex gap-3"><span class="text-red-400 line-through">«Doar azi»</span><span class="text-stone-400">→</span><span class="text-green-300">«Mai e una. La showroom-ul nostru.»</span></div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex gap-3"><span class="text-red-400 line-through">«Vizitați-ne»</span><span class="text-stone-400">→</span><span class="text-green-300">«Vino în showroom-ul Băneasa»</span></div>
+          <div class="flex gap-3"><span class="text-red-400 line-through">«Dumneavoastră»</span><span class="text-stone-400">→</span><span class="text-green-300">«Tu»</span></div>
+          <div class="flex gap-3"><span class="text-red-400 line-through">«Cel mai bun preț»</span><span class="text-stone-400">→</span><span class="text-green-300">«Producția noastră, bugetul tău»</span></div>
+          <div class="flex gap-3"><span class="text-red-400 line-through">«Premium» (în corp)</span><span class="text-stone-400">→</span><span class="text-green-300">«De calitate / Producția noastră»</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="bg-stone-950 text-stone-400 py-12 px-4">
+  <div class="max-w-7xl mx-auto text-center">
+    <div class="font-serif italic text-2xl text-amber-300 mb-4">
+      «Producția noastră. Decizia ta.»
+    </div>
+    <div class="text-sm">
+      Casa 360° TikTok Content Factory · v1.0 · Generated 2026-05-16
+    </div>
+    <div class="text-xs mt-2 text-stone-600">
+      Pentru întrebări tehnice → Excel CASA360_TEAM_PLAYBOOK.xlsx (12 tabs)<br>
+      Decision log → .wiki/decisions.md (D001-D012)
+    </div>
+  </div>
+</footer>
+
+<script>
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.calendar-day[data-phase]').forEach(day => {
+      if (filter === 'all' || day.dataset.phase === filter) {
+        day.style.opacity = '1';
+        day.style.transform = '';
+      } else {
+        day.style.opacity = '0.3';
+        day.style.transform = 'scale(0.95)';
+      }
+    });
+  });
+});
+
+// Active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.id;
+  });
+  navLinks.forEach(l => {
+    l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+  });
+});
+
+// Growth chart
+const ctx = document.getElementById('growthChart').getContext('2d');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['M0', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8', 'M9', 'M10', 'M11', 'M12'],
+    datasets: [
+      {
+        label: 'Followers',
+        data: [0, 2000, 8000, 15000, 30000, 50000, 80000, 120000, 165000, 210000, 250000, 280000, 310000],
+        borderColor: '#C9A66B',
+        backgroundColor: 'rgba(201, 166, 107, 0.1)',
+        tension: 0.4, fill: true, borderWidth: 3
+      },
+      {
+        label: 'Avg views/video (×100)',
+        data: [0, 300, 900, 2000, 3500, 5000, 7000, 9000, 11000, 13000, 14500, 15500, 16500],
+        borderColor: '#C97B5C',
+        backgroundColor: 'rgba(201, 123, 92, 0.1)',
+        tension: 0.4, fill: true, borderWidth: 3
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'top', labels: { font: { family: 'Inter', size: 12 } } },
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          callback: (v) => v >= 1000 ? (v/1000) + 'K' : v
+        }
+      }
+    }
+  }
+});
+</script>
+
+</body>
+</html>

@@ -163,6 +163,147 @@
     .lang-btn { font-size: 0.7rem !important; padding: 3px 8px !important; }
   }
 
+  /* ============== PREMIUM POLISH v2 ============== */
+  /* Section purpose badge — clear what each block is */
+  .section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 1.1rem;
+    background: linear-gradient(135deg, rgba(184,153,104,0.12) 0%, rgba(184,153,104,0.04) 100%);
+    border: 1px solid rgba(184,153,104,0.3);
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+    backdrop-filter: blur(8px);
+  }
+  .section-eyebrow .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--brand);
+    padding-right: 0.6rem;
+    border-right: 1px solid rgba(184,153,104,0.4);
+  }
+  .section-goal-line {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--brand-light);
+    max-width: 720px;
+    margin: 1rem auto 0;
+    line-height: 1.55;
+    position: relative;
+  }
+  .section-goal-line::before, .section-goal-line::after {
+    content: '◆';
+    color: var(--gold);
+    font-size: 0.55rem;
+    margin: 0 0.6rem;
+    vertical-align: middle;
+    opacity: 0.6;
+  }
+
+  /* Premium divider between sections */
+  .divider-premium {
+    position: relative;
+    height: 1px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, transparent 0%, rgba(184,153,104,0.25) 20%, rgba(184,153,104,0.4) 50%, rgba(184,153,104,0.25) 80%, transparent 100%);
+  }
+  .divider-premium::after {
+    content: '◆';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--gold);
+    background: var(--bg);
+    padding: 0 14px;
+    font-size: 0.5rem;
+    opacity: 0.7;
+  }
+
+  /* Refined premium cards */
+  .card-shadow {
+    box-shadow:
+      0 1px 1px rgba(79,79,79,0.03),
+      0 4px 12px rgba(79,79,79,0.04),
+      0 24px 48px rgba(79,79,79,0.05);
+    border: 1px solid rgba(228, 221, 211, 0.55);
+  }
+  .card-shadow-hover {
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-shadow-hover:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 4px 8px rgba(79,79,79,0.05),
+      0 16px 32px rgba(79,79,79,0.08),
+      0 40px 80px rgba(79,79,79,0.1);
+  }
+
+  /* Premium typography refinement */
+  h2.font-serif {
+    letter-spacing: -0.015em;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  h3.font-serif {
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  .stat-num {
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  /* Refined gradient hero */
+  .gradient-hero {
+    background:
+      radial-gradient(circle at 20% 20%, rgba(184,153,104,0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(201,123,92,0.05) 0%, transparent 50%),
+      linear-gradient(135deg, #faf6ef 0%, #f0e7d4 50%, #f5f0eb 100%);
+  }
+
+  /* Subtle shimmer on hero badge */
+  @keyframes premium-shimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .badge-shimmer {
+    background: linear-gradient(135deg, #b89968 0%, #d4b87a 50%, #b89968 100%);
+    background-size: 200% 200%;
+    animation: premium-shimmer 6s ease-in-out infinite;
+  }
+
+  /* Section background variants — alternating for depth */
+  .bg-section-light {
+    background: linear-gradient(180deg, #faf6ef 0%, #f5f0eb 100%);
+  }
+  .bg-section-deep {
+    background: linear-gradient(180deg, #f0e7d4 0%, #ebe2d4 100%);
+  }
+
+  /* Mobile premium tuning */
+  @media (max-width: 767px) {
+    .section-eyebrow { font-size: 0.6rem; padding: 0.4rem 0.85rem; gap: 0.4rem; }
+    .section-eyebrow .num { font-size: 0.7rem; padding-right: 0.4rem; }
+    .section-goal-line { font-size: 0.85rem !important; margin-top: 0.75rem !important; line-height: 1.5 !important; }
+    .section-goal-line::before, .section-goal-line::after { display: none; }
+
+    /* Tighter section spacing on mobile */
+    section { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+
+    /* Ensure no horizontal overflow */
+    section > .max-w-7xl { padding-left: 0.5rem; padding-right: 0.5rem; }
+  }
+
   /* Tiny phones (≤380px) */
   @media (max-width: 380px) {
     #hero h1 { font-size: 1.65rem !important; }
@@ -210,8 +351,8 @@
 <section id="hero" class="gradient-hero py-16 px-4">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12">
-      <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-white border border-gold/30 text-gold text-xs font-semibold uppercase tracking-wider mb-4">
-        <span class="pulse-dot"></span>
+      <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-white text-xs font-bold uppercase tracking-widest mb-5 shadow-lg badge-shimmer">
+        <span class="pulse-dot" style="background:white"></span>
         <span data-ro="Faza 1 — Pilot Batch Activ" data-ru="Фаза 1 — Пилотная партия активна">Faza 1 — Pilot Batch Activ</span>
       </div>
       <h1 class="font-serif text-5xl md:text-6xl mb-4 text-brand" data-ro="Content Factory pentru TikTok" data-ru="Контент-завод для TikTok">Content Factory pentru TikTok</h1>
@@ -270,12 +411,12 @@
 </section>
 
 <!-- ============== STRATEGY MAP — Products × Geography × Accounts ============== -->
-<section id="strategy" class="py-16 px-4 bg-cream-deep/50">
+<section id="strategy" class="py-20 px-4 bg-section-deep">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <div class="inline-block px-3 py-1 bg-gold/15 text-gold text-xs font-bold uppercase tracking-wider rounded-full mb-3">01 · STRATEGY MAP</div>
+    <div class="text-center mb-14">
+      <div class="section-eyebrow"><span class="num">01</span> <span data-ro="STRATEGY MAP" data-ru="STRATEGY MAP">STRATEGY MAP</span></div>
       <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Produse × Showroom-uri × Conturi" data-ru="Продукты × Шоурумы × Аккаунты">Produse × Showroom-uri × Conturi</h2>
-      <p class="text-muted max-w-3xl mx-auto" data-ro="Ce promovăm, unde ducem traficul, de pe ce conturi. Foundation pentru meeting-ul de strategie." data-ru="Что продвигаем, куда гоним трафик, с каких аккаунтов. Foundation для стратегического meeting.">Ce promovăm, unde ducem traficul, de pe ce conturi. Foundation pentru meeting-ul de strategie.</p>
+      <div class="section-goal-line" data-ro="Scop: să vezi pe o pagină — ce vindem, unde ducem traficul, de pe ce conturi publicăm" data-ru="Цель: увидеть на одной странице — что продаём, куда гоним трафик, с каких аккаунтов публикуем">Scop: să vezi pe o pagină — ce vindem, unde ducem traficul, de pe ce conturi publicăm</div>
     </div>
 
     <!-- ROMÂNIA strip -->
@@ -463,12 +604,12 @@
 </section>
 
 <!-- ============== CONTENT SYSTEM — Types × Daily Volume × Livestreams ============== -->
-<section id="content-system" class="py-16 px-4">
+<section id="content-system" class="py-20 px-4 bg-section-light">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <div class="inline-block px-3 py-1 bg-gold/15 text-gold text-xs font-bold uppercase tracking-wider rounded-full mb-3">02 · CONTENT SYSTEM</div>
-      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Tipuri Content × Volum Zilnic × Livestreams" data-ru="Типы контента × Дневной объём × Стримы">Tipuri Content × Volum Zilnic × Livestreams</h2>
-      <p class="text-muted max-w-3xl mx-auto" data-ro="Cum compunem fluxul zilnic — proporții pentru fast start + viral algorithm + showroom traffic" data-ru="Как составляем дневной поток — пропорции для fast start + viral + showroom traffic">Cum compunem fluxul zilnic — proporții pentru fast start + viral algorithm + showroom traffic</p>
+    <div class="text-center mb-14">
+      <div class="section-eyebrow"><span class="num">02</span> <span data-ro="CONTENT SYSTEM" data-ru="CONTENT SYSTEM">CONTENT SYSTEM</span></div>
+      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Ce filmăm și cât postăm" data-ru="Что снимаем и сколько постим">Ce filmăm și cât postăm</h2>
+      <div class="section-goal-line" data-ro="Scop: să avem un rețete clară — 8 tipuri de content, proporții, ritm streamuri pe showroom" data-ru="Цель: иметь чёткий рецепт — 8 типов контента, пропорции, ритм стримов по шоурумам">Scop: să avem un rețete clară — 8 tipuri de content, proporții, ritm streamuri pe showroom</div>
     </div>
 
     <!-- Content Mix Matrix (8 types) -->
@@ -722,12 +863,12 @@
 </section>
 
 <!-- ============== 6-MONTH PLAN + BUDGET ============== -->
-<section id="plan-budget" class="py-16 px-4 bg-cream-deep/50">
+<section id="plan-budget" class="py-20 px-4 bg-section-deep">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <div class="inline-block px-3 py-1 bg-gold/15 text-gold text-xs font-bold uppercase tracking-wider rounded-full mb-3">03 · 6-MONTH PLAN + BUDGET</div>
-      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Planul pe 6 luni cu acțiuni concrete + bugete" data-ru="6-месячный план с конкретными действиями + бюджеты">Planul pe 6 luni cu acțiuni concrete + bugete</h2>
-      <p class="text-muted max-w-3xl mx-auto" data-ro="Foundation pentru meeting-ul de strategie — fiecare lună are deliverable concret, target măsurabil, owner asignat" data-ru="Foundation для стратегического meeting — каждый месяц имеет конкретный deliverable, измеримый target, назначенного owner">Foundation pentru meeting-ul de strategie — fiecare lună are deliverable concret, target măsurabil, owner asignat</p>
+    <div class="text-center mb-14">
+      <div class="section-eyebrow"><span class="num">03</span> <span data-ro="PLAN + BUDGET" data-ru="PLAN + BUDGET">PLAN + BUDGET</span></div>
+      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="6 luni · €5K/lună · ce facem când" data-ru="6 месяцев · €5K/мес · что когда делаем">6 luni · €5K/lună · ce facem când</h2>
+      <div class="section-goal-line" data-ro="Scop: fiecare lună are deliverable + owner + target. Așa nu rămâne nimic în aer." data-ru="Цель: каждый месяц имеет deliverable + owner + target. Так ничего не остаётся в воздухе.">Scop: fiecare lună are deliverable + owner + target. Așa nu rămâne nimic în aer.</div>
     </div>
 
     <!-- 6-month timeline -->
@@ -975,12 +1116,12 @@
 </section>
 
 <!-- ============== PRODUCT FOCUS — 2 lines + 1 hook ============== -->
-<section id="groups" class="py-16 px-4 bg-cream-deep/50">
+<section id="groups" class="py-20 px-4 bg-section-light">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <div class="inline-block px-3 py-1 bg-gold/15 text-gold text-xs font-bold uppercase tracking-wider rounded-full mb-3" data-ro="Ce promovăm" data-ru="Что продвигаем">Ce promovăm</div>
+    <div class="text-center mb-14">
+      <div class="section-eyebrow"><span class="num">04</span> <span data-ro="PRODUCT FOCUS" data-ru="PRODUCT FOCUS">PRODUCT FOCUS</span></div>
       <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="2 Produse + 1 Hook" data-ru="2 продукта + 1 hook">2 Produse + 1 Hook</h2>
-      <p class="text-muted max-w-3xl mx-auto" data-ro="Conform tandemcasa.ro — doar 2 linii reale de produs. Restul (canapele, paturi etc.) este parte din Casa 360° și se arată în stream sau video de fabrică." data-ru="По tandemcasa.ro — только 2 реальные линии продуктов. Остальное (диваны, кровати и т.д.) — часть Casa 360°, показываем в стримах или видео с фабрики.">Conform tandemcasa.ro — doar 2 linii reale de produs. Restul (canapele, paturi etc.) este parte din Casa 360° și se arată în stream sau video de fabrică.</p>
+      <div class="section-goal-line" data-ro="Scop: focus pe doar 2 linii oficiale (tandemcasa.ro). Restul arătăm în stream sau factory video." data-ru="Цель: фокус только на 2 официальные линии (tandemcasa.ro). Остальное показываем в стримах или factory video.">Scop: focus pe doar 2 linii oficiale (tandemcasa.ro). Restul arătăm în stream sau factory video.</div>
     </div>
 
     <!-- 2 Products grid -->
@@ -1100,10 +1241,10 @@
 <!-- ============== 4 VARIANTS ============== -->
 <section id="variants" class="py-16 px-4">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-8">
-      <div class="inline-block px-3 py-1 bg-gold/15 text-gold text-xs font-bold uppercase tracking-wider rounded-full mb-3" data-ro="A/B testing system" data-ru="Система A/B тестирования">A/B testing system</div>
+    <div class="text-center mb-10">
+      <div class="section-eyebrow"><span class="num">05</span> <span data-ro="A/B TEST SYSTEM" data-ru="A/B TEST SYSTEM">A/B TEST SYSTEM</span></div>
       <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="4 Variante pe 1 Shoot Day" data-ru="4 варианта с 1 съёмочного дня">4 Variante pe 1 Shoot Day</h2>
-      <p class="text-muted max-w-3xl mx-auto" data-ro="O singură zi de filmare → 4 video-uri diferite. Publicăm separat în zile diferite — vedem care funcționează mai bine pe TikTok." data-ru="Один день съёмки → 4 разных видео. Публикуем отдельно в разные дни — видим какой работает лучше в TikTok.">O singură zi de filmare → 4 video-uri diferite. Publicăm separat în zile diferite — vedem care funcționează mai bine pe TikTok.</p>
+      <div class="section-goal-line" data-ro="Scop: o singură filmare → 4 versiuni → vedem care obține mai multe SAVES → scalăm winnerul" data-ru="Цель: одна съёмка → 4 версии → видим какая даёт больше SAVES → масштабируем winner">Scop: o singură filmare → 4 versiuni → vedem care obține mai multe SAVES → scalăm winnerul</div>
     </div>
 
     <!-- Glossary box (explanations) -->
@@ -1217,11 +1358,12 @@
 </section>
 
 <!-- ============== CALENDAR ============== -->
-<section id="calendar" class="py-16 px-4 bg-cream-deep/40">
+<section id="calendar" class="py-20 px-4 bg-section-deep">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
+    <div class="text-center mb-14">
+      <div class="section-eyebrow"><span class="num">06</span> <span data-ro="WEEKLY RHYTHM" data-ru="WEEKLY RHYTHM">WEEKLY RHYTHM</span></div>
       <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Calendar Săptămânal Interactiv" data-ru="Интерактивный недельный календарь">Calendar Săptămânal Interactiv</h2>
-      <p class="text-muted" data-ro="Pipeline de la shoot day la 4 publicări — click pe filter pentru a vedea faze separat" data-ru="Конвейер от съёмочного дня к 4 публикациям — кликни фильтр чтобы увидеть фазы отдельно">Pipeline de la shoot day la 4 publicări — click pe filter pentru a vedea faze separat</p>
+      <div class="section-goal-line" data-ro="Scop: să vezi cine ce face în fiecare zi — shoot day, editing, publish, livestream" data-ru="Цель: видеть кто что делает в каждый день — съёмка, монтаж, публикация, стрим">Scop: să vezi cine ce face în fiecare zi — shoot day, editing, publish, livestream</div>
     </div>
 
     <!-- Filter buttons -->
@@ -1353,11 +1495,12 @@
 </section>
 
 <!-- ============== PIPELINE ============== -->
-<section id="pipeline" class="py-16 px-4">
+<section id="pipeline" class="py-20 px-4 bg-section-light">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
+    <div class="text-center mb-14">
+      <div class="section-eyebrow"><span class="num">07</span> <span data-ro="FACTORY MODEL" data-ru="FACTORY MODEL">FACTORY MODEL</span></div>
       <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Conveior de Producție" data-ru="Конвейер производства">Conveior de Producție</h2>
-      <p class="text-muted" data-ro="3 faze · 1 master cut → 4 variante → 4 publicări" data-ru="3 фазы · 1 мастер-кадр → 4 варианта → 4 публикации">3 faze · 1 master cut → 4 variante → 4 publicări</p>
+      <div class="section-goal-line" data-ro="Scop: să transformăm 1 zi de filmare în 4 publicări — cum scalăm fără burnout" data-ru="Цель: превратить 1 день съёмки в 4 публикации — как масштабируем без burnout">Scop: să transformăm 1 zi de filmare în 4 publicări — cum scalăm fără burnout</div>
     </div>
 
     <div class="grid md:grid-cols-3 gap-6">
@@ -1417,12 +1560,12 @@
 </section>
 
 <!-- ============== KPI ============== -->
-<section id="kpi" class="py-16 px-4 bg-cream-deep/40">
+<section id="kpi" class="py-20 px-4 bg-section-deep">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <div class="inline-block px-3 py-1 bg-gold/15 text-gold text-xs font-bold uppercase tracking-wider rounded-full mb-3" data-ro="CEO DASHBOARD" data-ru="CEO ДАШБОРД">CEO DASHBOARD</div>
-      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="4 metrici care contează — restul e lirică" data-ru="4 метрики которые важны — остальное лирика">4 metrici care contează — restul e lirică</h2>
-      <p class="text-muted max-w-3xl mx-auto" data-ro="Doar acestea 4 cifre se raportează săptămânal. Tot ce nu măsurăm aici — nu există în decizii." data-ru="Только эти 4 цифры репортятся еженедельно. Всё что не меряем здесь — не существует в решениях.">Doar acestea 4 cifre se raportează săptămânal. Tot ce nu măsurăm aici — nu există în decizii.</p>
+    <div class="text-center mb-14">
+      <div class="section-eyebrow"><span class="num">08</span> <span data-ro="CEO DASHBOARD" data-ru="CEO ДАШБОРД">CEO DASHBOARD</span></div>
+      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="4 metrici care contează" data-ru="4 метрики которые важны">4 metrici care contează</h2>
+      <div class="section-goal-line" data-ro="Scop: doar 4 cifre se raportează săptămânal. Tot restul = lirică. Decizia se ia pe ele." data-ru="Цель: только 4 цифры репортятся еженедельно. Остальное = лирика. Решения на их основе.">Scop: doar 4 cifre se raportează săptămânal. Tot restul = lirică. Decizia se ia pe ele.</div>
     </div>
 
     <!-- 4 PRIMARY METRICS -->
@@ -1591,11 +1734,12 @@
 </section>
 
 <!-- ============== ROADMAP ============== -->
-<section id="roadmap" class="py-16 px-4">
+<section id="roadmap" class="py-20 px-4 bg-section-light">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
+    <div class="text-center mb-14">
+      <div class="section-eyebrow"><span class="num">09</span> <span data-ro="LONG VISION" data-ru="LONG VISION">LONG VISION</span></div>
       <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Roadmap 12 luni" data-ru="Roadmap 12 месяцев">Roadmap 12 luni</h2>
-      <p class="text-muted" data-ro="4 faze — de la pilot batch la brand-level virality" data-ru="4 фазы — от пилотной партии до бренд-уровня виральности">4 faze — de la pilot batch la brand-level virality</p>
+      <div class="section-goal-line" data-ro="Scop: să vezi direcția pe termen lung — de unde plecăm și unde ajungem la sfârșitul anului" data-ru="Цель: видеть долгосрочное направление — откуда стартуем и куда приходим к концу года">Scop: să vezi direcția pe termen lung — de unde plecăm și unde ajungem la sfârșitul anului</div>
     </div>
 
     <div class="relative">
@@ -1677,11 +1821,12 @@
 </section>
 
 <!-- ============== TEAM ============== -->
-<section id="team" class="py-16 px-4 bg-cream-deep/40">
+<section id="team" class="py-20 px-4 bg-section-deep">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
+    <div class="text-center mb-14">
+      <div class="section-eyebrow"><span class="num">10</span> <span data-ro="WHO OWNS WHAT" data-ru="WHO OWNS WHAT">WHO OWNS WHAT</span></div>
       <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Roluri în Content Factory" data-ru="Роли в Content Factory">Roluri în Content Factory</h2>
-      <p class="text-muted" data-ro="Cine ce face — zero ambiguitate, fiecare cu SOP-ul lui" data-ru="Кто что делает — никакой неоднозначности, каждый со своим SOP">Cine ce face — zero ambiguitate, fiecare cu SOP-ul lui</p>
+      <div class="section-goal-line" data-ro="Scop: zero ambiguitate — fiecare rol știe ce livrează, când, cum se măsoară" data-ru="Цель: ноль двусмысленности — каждая роль знает что доставляет, когда, как меряется">Scop: zero ambiguitate — fiecare rol știe ce livrează, când, cum se măsoară</div>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -1738,9 +1883,15 @@
 </section>
 
 <!-- ============== REFERENCES CTA ============== -->
-<section id="refs" class="py-16 px-4">
+<section id="refs" class="py-20 px-4 bg-section-light">
   <div class="max-w-4xl mx-auto text-center">
+    <div class="section-eyebrow"><span class="num">11</span> <span data-ro="INSPIRATION LIBRARY" data-ru="INSPIRATION LIBRARY">INSPIRATION LIBRARY</span></div>
     <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Bibliotecă de Referințe" data-ru="Библиотека референсов">Bibliotecă de Referințe</h2>
+    <div class="section-goal-line" data-ro="Scop: bibliotecă vie de conturi virale — CEO cere schimbare, se face în 30 sec" data-ru="Цель: живая библиотека виральных аккаунтов — CEO просит изменить, делается за 30 сек">Scop: bibliotecă vie de conturi virale — CEO cere schimbare, se face în 30 sec</div>
+    <p class="text-muted mb-8 mt-4"
+       data-ro="Conturi virale studiate · pattern adaptation library · CEO poate modifica oricând"
+       data-ru="Виральные аккаунты · библиотека адаптации паттернов · CEO может изменить когда угодно">
+      Conturi virale studiate · pattern adaptation library · CEO poate modifica oricând
     <p class="text-muted mb-8"
        data-ro="Conturi virale studiate · pattern adaptation library · CEO poate modifica oricând (cere și se schimbă în 30 sec)"
        data-ru="Виральные аккаунты · библиотека адаптации паттернов · CEO может изменить когда угодно (запрос и меняется за 30 сек)">

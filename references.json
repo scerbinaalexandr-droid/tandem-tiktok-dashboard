@@ -1,111 +1,92 @@
 {
   "updated": "2026-05-16",
-  "version": "3",
+  "version": "4",
   "categories": [
     {
-      "id": "ro-md-local",
-      "name_ro": "RO + MD Local Benchmarks",
-      "name_ru": "RO + MD локальные benchmarks",
-      "description_ro": "Conturile pe care echipa noastră trebuie să le studieze primul — același piață, aceeași limbă, aceeași competiție directă.",
-      "description_ru": "Аккаунты, которые команда должна изучить первыми — тот же рынок, тот же язык, прямая конкуренция."
+      "id": "ro-md-active",
+      "name_ro": "RO + MD Benchmarks Active",
+      "name_ru": "RO + MD активные benchmarks",
+      "description_ro": "Conturi verificate — handles confirmate, urmărire activă pentru pattern adaptation.",
+      "description_ru": "Верифицированные аккаунты — handles подтверждены, активно изучаем для адаптации паттернов."
     },
     {
-      "id": "ru-design",
-      "name_ro": "RU Designers & Kitchens (Moscova / Sankt-Petersburg)",
-      "name_ru": "RU дизайнеры и кухни (Москва / Санкт-Петербург)",
-      "description_ro": "Conturi din Rusia — pattern-uri viral testate pe piață cu 145M+ utilizatori. Adaptăm formate, nu copiem cuvinte.",
-      "description_ru": "Аккаунты из России — паттерны провирус-тестированы на рынке 145M+. Адаптируем форматы, не копируем слова."
+      "id": "ru-active",
+      "name_ro": "RU Benchmarks Active (Moscova / SPB / Brands naționale)",
+      "name_ru": "RU активные benchmarks (Москва / СПб / Национальные бренды)",
+      "description_ro": "Conturi RU mari — adaptăm formate, NU copiem cuvinte (limbă/cultură diferită).",
+      "description_ru": "Крупные RU аккаунты — адаптируем форматы, НЕ копируем слова (разный язык/культура)."
     },
     {
       "id": "candidates",
-      "name_ro": "Candidați pentru evaluare CEO",
-      "name_ru": "Кандидаты на оценку CEO",
-      "description_ro": "Conturi de evaluat — CEO decide promovarea sau ștergerea.",
-      "description_ru": "Аккаунты на оценку — CEO решает повышение или удаление."
+      "name_ro": "Candidați — verificare CEO/echipă",
+      "name_ru": "Кандидаты — проверка CEO/команды",
+      "description_ro": "Brands cunoscute pe alte platforme (YouTube/IG) — handle TikTok necesită verificare manuală.",
+      "description_ru": "Известные на других платформах (YouTube/IG) — TikTok handle нужна ручная проверка."
     }
   ],
   "references": [
     {
       "id": "imperlux",
-      "category": "ro-md-local",
+      "category": "ro-md-active",
       "name": "@imperlux",
       "emoji": "🏆",
       "url": "https://www.tiktok.com/@imperlux",
       "country": "Moldova",
-      "niche_ro": "Founder-led acoperișuri + garduri — MD/RO benchmark #1",
-      "niche_ru": "Founder-led крыши + заборы — MD/RO benchmark #1",
+      "niche_ro": "Founder-led acoperișuri + garduri MD — STAR benchmark #1",
+      "niche_ru": "Founder-led крыши + заборы MD — STAR benchmark #1",
       "patterns": [
         { "code": "IM1", "name_ro": "Founder pe cameră — standing-shot lângă producție", "name_ru": "Founder на камере — standing-shot у производства" },
-        { "code": "IM2", "name_ro": "«Răspundem la comentariile voastre» — community engagement format", "name_ru": "«Răspundem la comentariile voastre» — community engagement формат" },
-        { "code": "IM3", "name_ro": "Factory tour reveal — capacitate de producție", "name_ru": "Factory tour reveal — production capacity" },
-        { "code": "IM4", "name_ro": "Product reveal pe obiect real (gard finit / acoperiș instalat)", "name_ru": "Product reveal на реальном объекте (gard finit / крыша установлена)" }
+        { "code": "IM2", "name_ro": "«Răspundem la comentariile voastre» community format", "name_ru": "«Răspundem la comentariile voastre» community формат" },
+        { "code": "IM3", "name_ro": "Factory tour — production capacity reveal", "name_ru": "Factory tour — production capacity reveal" },
+        { "code": "IM4", "name_ro": "Product reveal pe obiect real (gard finit / acoperiș)", "name_ru": "Product reveal на реальном объекте (gard finit / крыша)" }
       ],
-      "badge_ro": "MD · 24K subs · 182K likes · viral 971K/687K/563K views per video",
-      "badge_ru": "MD · 24K подписчиков · 182K лайков · вирусные 971K/687K/563K просмотров",
+      "badge_ro": "MD · 24K subs · 182K likes · viral 971K / 687K / 563K views per video ✓",
+      "badge_ru": "MD · 24K подписчиков · 182K лайков · вирусные 971K / 687K / 563K просмотров ✓",
       "badge_color": "green",
       "adaptability": 10,
       "status": "active"
     },
     {
-      "id": "mobexpertromania",
-      "category": "ro-md-local",
-      "name": "@mobexpertromania",
-      "emoji": "🛋",
-      "url": "https://www.tiktok.com/@mobexpertromania",
-      "country": "România",
-      "niche_ro": "Mass-market RO furniture chain (Mobexpert) — official brand TikTok",
-      "niche_ru": "Mass-market RO furniture сеть (Mobexpert) — официальный бренд TikTok",
-      "patterns": [
-        { "code": "MX1", "name_ro": "Product styling cu CTA «vezi la magazin»", "name_ru": "Product styling с CTA «vezi la magazin»" },
-        { "code": "MX2", "name_ro": "Showroom walk-through cu prețuri afișate", "name_ru": "Showroom walk-through с показанными ценами" }
-      ],
-      "badge_ro": "RO · 13.9K subs · Use as: anti-template (NU faci așa pentru quiet luxury — vezi cum face mass-market să faci INVERS)",
-      "badge_ru": "RO · 13.9K подписчиков · Использовать как: anti-template (НЕ делай так для quiet luxury — смотри как делает mass-market чтоб делать НАОБОРОТ)",
-      "badge_color": "blue",
-      "adaptability": 4,
-      "status": "active"
-    },
-    {
       "id": "designradar",
-      "category": "ro-md-local",
+      "category": "ro-md-active",
       "name": "@designradar",
       "emoji": "💡",
       "url": "https://www.tiktok.com/@designradar",
       "country": "România",
-      "niche_ro": "Premium lighting + doors + furniture + wall profiles — premium tier benchmark RO",
-      "niche_ru": "Premium свет + двери + мебель + wall profiles — premium tier benchmark RO",
+      "niche_ro": "Premium lighting + doors + furniture + wall profiles — premium tier RO",
+      "niche_ru": "Premium свет + двери + мебель + wall profiles — premium tier RO",
       "patterns": [
         { "code": "DR1", "name_ro": "Premium product close-up cu material spec narration", "name_ru": "Premium product close-up с material spec narration" },
-        { "code": "DR2", "name_ro": "Showroom premium aesthetic (similar tonalitate cu Casa 360°)", "name_ru": "Showroom premium aesthetic (похожая тональность с Casa 360°)" }
+        { "code": "DR2", "name_ro": "Showroom premium aesthetic (similar Casa 360°)", "name_ru": "Showroom premium aesthetic (похоже на Casa 360°)" }
       ],
-      "badge_ro": "RO · 22.4K subs · Premium tier — closest to Tandem brand voice",
+      "badge_ro": "RO · 22.4K subs · Premium tier — closest match la Tandem brand voice",
       "badge_ru": "RO · 22.4K подписчиков · Premium tier — ближе всех к Tandem brand voice",
       "badge_color": "gold",
       "adaptability": 9,
       "status": "active"
     },
     {
-      "id": "kevamobdesign",
-      "category": "ro-md-local",
-      "name": "@kevamobdesign",
-      "emoji": "🪑",
-      "url": "https://www.tiktok.com/@kevamobdesign",
+      "id": "cheia-imobiliarelor",
+      "category": "ro-md-active",
+      "name": "@cheia.imobiliarelor",
+      "emoji": "🛡",
+      "url": "https://www.tiktok.com/@cheia.imobiliarelor",
       "country": "România",
-      "niche_ro": "Modern living + custom furniture (marble + wood)",
-      "niche_ru": "Modern living + custom мебель (мрамор + дерево)",
+      "niche_ro": "RO real estate education + 11-bullet trust block pattern + multi-platform brand",
+      "niche_ru": "RO образование недвижимости + 11-bullet trust block + multi-platform бренд",
       "patterns": [
-        { "code": "KM1", "name_ro": "Living room «before-after» cu mobilier custom", "name_ru": "Living room «before-after» с custom мебелью" },
-        { "code": "KM2", "name_ro": "Material detail close-up (marble veining)", "name_ru": "Material detail close-up (mramor veining)" }
+        { "code": "CI1", "name_ro": "«Ce include renovarea completă?» 11-bullet caption", "name_ru": "«Ce include renovarea completă?» 11-bullet caption" },
+        { "code": "CI2", "name_ro": "Educational explainer — financial/legal angles", "name_ru": "Educational explainer — financial/legal angles" }
       ],
-      "badge_ro": "RO · Custom premium furniture — direct competitor signal",
-      "badge_ru": "RO · Custom premium мебель — direct competitor сигнал",
-      "badge_color": "terra",
-      "adaptability": 8,
+      "badge_ro": "RO · Multi-platform brand (TT + IG + YT + FB + Threads) — Trust deficit closer ✓",
+      "badge_ru": "RO · Multi-platform бренд (TT + IG + YT + FB + Threads) — Trust deficit closer ✓",
+      "badge_color": "green",
+      "adaptability": 10,
       "status": "active"
     },
     {
       "id": "afysconstruct",
-      "category": "ro-md-local",
+      "category": "ro-md-active",
       "name": "@afysconstruct",
       "emoji": "🔨",
       "url": "https://www.tiktok.com/@afysconstruct",
@@ -116,15 +97,34 @@
         { "code": "AF1", "name_ro": "Site walkthrough — «iată ce facem azi» format", "name_ru": "Site walkthrough — «вот что делаем сегодня» формат" },
         { "code": "AF2", "name_ro": "Before/during/after timeline reveal", "name_ru": "Before/during/after timeline reveal" }
       ],
-      "badge_ro": "RO · Turnkey trust block parallel — ideal pentru Casa 360° turnkey messaging",
-      "badge_ru": "RO · Turnkey trust block параллель — идеально для Casa 360° turnkey messaging",
+      "badge_ro": "RO · Turnkey trust block parallel — ideal pentru Casa 360°",
+      "badge_ru": "RO · Turnkey trust block параллель — идеально для Casa 360°",
       "badge_color": "green",
       "adaptability": 10,
       "status": "active"
     },
     {
+      "id": "mobexpertromania",
+      "category": "ro-md-active",
+      "name": "@mobexpertromania",
+      "emoji": "🛋",
+      "url": "https://www.tiktok.com/@mobexpertromania",
+      "country": "România",
+      "niche_ro": "Mass-market RO furniture chain (oficial brand) — folosit ca ANTI-TEMPLATE",
+      "niche_ru": "Mass-market RO furniture сеть (официальный бренд) — используем как ANTI-TEMPLATE",
+      "patterns": [
+        { "code": "MX1", "name_ro": "Product styling cu CTA «vezi la magazin»", "name_ru": "Product styling с CTA «vezi la magazin»" },
+        { "code": "MX2", "name_ro": "Showroom walk-through cu prețuri afișate", "name_ru": "Showroom walk-through с показанными ценами" }
+      ],
+      "badge_ro": "RO · 13.9K subs · ANTI-template — vedem cum face mass-market să facem INVERS",
+      "badge_ru": "RO · 13.9K подписчиков · ANTI-template — смотрим как делает mass-market чтоб делать НАОБОРОТ",
+      "badge_color": "blue",
+      "adaptability": 4,
+      "status": "active"
+    },
+    {
       "id": "paula-mera",
-      "category": "ro-md-local",
+      "category": "ro-md-active",
       "name": "@paula_mera",
       "emoji": "🎨",
       "url": "https://www.tiktok.com/@paula_mera",
@@ -142,95 +142,154 @@
       "status": "active"
     },
     {
-      "id": "mcdfittings",
-      "category": "ro-md-local",
-      "name": "@mcdfittings",
-      "emoji": "🔧",
-      "url": "https://www.tiktok.com/@mcdfittings",
+      "id": "kevamobdesign",
+      "category": "ro-md-active",
+      "name": "@kevamobdesign",
+      "emoji": "🪑",
+      "url": "https://www.tiktok.com/@kevamobdesign",
       "country": "România",
-      "niche_ro": "Furniture fittings + design renovation tags (B2B + B2C overlap)",
-      "niche_ru": "Furniture fittings + design renovation tags (B2B + B2C overlap)",
+      "niche_ro": "Modern living + custom furniture (marble + wood + felder/egger/blum spec)",
+      "niche_ru": "Modern living + custom мебель (мрамор + дерево + felder/egger/blum spec)",
       "patterns": [
-        { "code": "MC1", "name_ro": "Multi-tagger collab content (community network)", "name_ru": "Multi-tagger collab content (community network)" }
+        { "code": "KM1", "name_ro": "Living room «before-after» cu mobilier custom", "name_ru": "Living room «before-after» с custom мебелью" },
+        { "code": "KM2", "name_ro": "Material detail close-up (marble veining + supplier tags)", "name_ru": "Material detail close-up (мрамор veining + supplier tags)" }
       ],
-      "badge_ro": "RO · Network signal — vezi cine este tagged împreună (ecosystem map)",
-      "badge_ru": "RO · Network сигнал — смотри кто tagged вместе (ecosystem карта)",
-      "badge_color": "yellow",
-      "adaptability": 5,
+      "badge_ro": "RO · Custom premium furniture — direct competitor signal (Felder/Egger/Blum)",
+      "badge_ru": "RO · Custom premium мебель — direct competitor сигнал (Felder/Egger/Blum)",
+      "badge_color": "terra",
+      "adaptability": 8,
       "status": "active"
     },
     {
-      "id": "cheia-imobiliarelor",
-      "category": "ro-md-local",
-      "name": "@cheia.imobiliarelor",
-      "emoji": "🛡",
-      "url": "https://www.tiktok.com/@cheia.imobiliarelor",
+      "id": "vilahomedesign",
+      "category": "ro-md-active",
+      "name": "@vilahomedesign",
+      "emoji": "🏛",
+      "url": "https://www.tiktok.com/@vilahomedesign",
       "country": "România",
-      "niche_ro": "RO real estate + amenajări + trust block 11-bullet pattern",
-      "niche_ru": "RO недвижимость + amenajări + trust block 11-bullet паттерн",
+      "niche_ro": "Mobilier la comanda — băi + bucătării + culori personalizate",
+      "niche_ru": "Мебель на заказ — ванные + кухни + персонализированные цвета",
       "patterns": [
-        { "code": "CI1", "name_ro": "«Ce include renovarea completă?» 11-bullet caption", "name_ru": "«Ce include renovarea completă?» 11-bullet caption" },
-        { "code": "CI2", "name_ro": "Educational explainer — financial/legal angles", "name_ru": "Educational explainer — financial/legal angles" }
+        { "code": "VH1", "name_ro": "Custom color match showcase", "name_ru": "Custom color match showcase" },
+        { "code": "VH2", "name_ro": "Vila home reveal — luxury interior tour", "name_ru": "Vila home reveal — luxury interior tour" }
       ],
-      "badge_ro": "RO · Trust deficit closer — direct pattern pentru V4 Trust Block variant",
-      "badge_ru": "RO · Trust deficit closer — прямой паттерн для V4 Trust Block варианта",
-      "badge_color": "green",
-      "adaptability": 10,
+      "badge_ro": "RO · Vila/casă custom — premium client segment direct",
+      "badge_ru": "RO · Vila/casă custom — premium client сегмент напрямую",
+      "badge_color": "gold",
+      "adaptability": 9,
       "status": "active"
     },
     {
       "id": "artem-chiba",
-      "category": "ru-design",
+      "category": "ru-active",
       "name": "@artem_chiba",
       "emoji": "🔨",
       "url": "https://www.tiktok.com/@artem_chiba",
       "country": "Rusia",
-      "niche_ro": "Founder-led atelier woodworking — phone-quality, 1.8M followers, 1.6M avg views",
-      "niche_ru": "Founder-led atelier деревообработка — phone-quality, 1.8M подписчиков, 1.6M avg views",
+      "niche_ro": "Founder-led atelier woodworking — phone-quality, viral consistent",
+      "niche_ru": "Founder-led atelier деревообработка — phone-quality, виральный постоянно",
       "patterns": [
         { "code": "AC1", "name_ro": "Atelier process timelapse (hands-on, no studio polish)", "name_ru": "Atelier process timelapse (hands-on, no studio polish)" },
         { "code": "AC2", "name_ro": "Founder voice narrative pe demo", "name_ru": "Founder voice narrative на demo" }
       ],
-      "badge_ro": "RU · 1.8M subs · Builder precedent #1 — adaptable pentru V3 Insider VO",
-      "badge_ru": "RU · 1.8M подписчиков · Builder прецедент #1 — adaptable для V3 Insider VO",
+      "badge_ro": "RU · 1.8M subs · 1.6M avg views per video ✓ · Builder precedent #1",
+      "badge_ru": "RU · 1.8M подписчиков · 1.6M avg просмотров ✓ · Builder прецедент #1",
       "badge_color": "terra",
       "adaptability": 10,
       "status": "active"
     },
     {
-      "id": "kitchen-msk-candidate",
+      "id": "geometrium",
       "category": "candidates",
-      "name": "MSK kitchens TBD",
-      "emoji": "🍳",
-      "url": "https://www.tiktok.com/search?q=%23%D0%BA%D1%83%D1%85%D0%BD%D0%B8%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0",
-      "country": "Rusia",
-      "niche_ro": "Top 3 Moscow kitchen makers — TBD (CEO sau team identifies)",
-      "niche_ru": "Top 3 Moscow производители кухонь — TBD (CEO или команда определяет)",
+      "name": "Geometrium (studio)",
+      "emoji": "📐",
+      "url": "https://www.tiktok.com/search?q=geometrium",
+      "country": "Rusia (Moscova)",
+      "niche_ro": "Architectural design studio · Andrey Ivanov + Pavel Gerasimov · room tours premium",
+      "niche_ru": "Архитектурное дизайн-студио · Андрей Иванов + Павел Герасимов · room tours premium",
       "patterns": [
-        { "code": "MSK?", "name_ro": "TBD după identificare", "name_ru": "TBD после идентификации" }
+        { "code": "GE1", "name_ro": "Project room tour (budget + premium apartments)", "name_ru": "Project room tour (budget + premium квартиры)" },
+        { "code": "GE2", "name_ro": "Architectural narrative «de ce am ales asta»", "name_ru": "Архитектурный narrative «почему мы выбрали это»" }
       ],
-      "badge_ro": "PENDING · Web search nu a returnat handles verificate — CEO/team să indice 2-3 conturi MSK pe care le respectă",
-      "badge_ru": "PENDING · Web search не вернул верифицированные handles — CEO/команда укажет 2-3 MSK аккаунта которые уважают",
+      "badge_ro": "PENDING · YouTube/IG verified mare audientă · TikTok handle de confirmat (search-link inclus)",
+      "badge_ru": "PENDING · YouTube/IG верифицировано большая аудитория · TikTok handle нужно подтвердить (search-ссылка)",
       "badge_color": "yellow",
-      "adaptability": null,
+      "adaptability": 9,
       "status": "candidate"
     },
     {
-      "id": "spb-renovation-candidate",
+      "id": "inmyroom",
       "category": "candidates",
-      "name": "SPB turnkey renovation TBD",
-      "emoji": "🏗",
-      "url": "https://www.tiktok.com/search?q=%23%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%9F%D0%B8%D1%82%D0%B5%D1%80",
+      "name": "INMYROOM",
+      "emoji": "🏠",
+      "url": "https://www.tiktok.com/search?q=inmyroom",
       "country": "Rusia",
-      "niche_ro": "Top 2 SPB turnkey apartment renovation — TBD",
-      "niche_ru": "Top 2 SPB ремонт квартир под ключ — TBD",
+      "niche_ro": "Interior media · 359K subs cross-platform · viral 1.5M views YT",
+      "niche_ru": "Interior media · 359K подписчиков кросс-платформа · вирусные 1.5M YT",
       "patterns": [
-        { "code": "SPB?", "name_ro": "TBD după identificare", "name_ru": "TBD после идентификации" }
+        { "code": "IN1", "name_ro": "Interior selection compilations", "name_ru": "Interior selection compilations" },
+        { "code": "IN2", "name_ro": "Design hack educational shorts", "name_ru": "Design hack educational shorts" }
       ],
-      "badge_ro": "PENDING · CEO sau team să indice handles concrete",
-      "badge_ru": "PENDING · CEO или команда укажет конкретные handles",
+      "badge_ro": "PENDING · 359K cross-platform · viral 1.5M YT views ✓ · TikTok handle de verificat",
+      "badge_ru": "PENDING · 359K кросс-платформа · вирусные 1.5M YT ✓ · TikTok handle нужно проверить",
       "badge_color": "yellow",
-      "adaptability": null,
+      "adaptability": 8,
+      "status": "candidate"
+    },
+    {
+      "id": "mrdoors-russia",
+      "category": "candidates",
+      "name": "Mr.DOORS Russia",
+      "emoji": "🚪",
+      "url": "https://www.instagram.com/mrdoorsrussia/",
+      "country": "Rusia",
+      "niche_ro": "Major RU kitchen + furniture brand (30 ani experiență) — IG @mrdoorsrussia verificat",
+      "niche_ru": "Главный RU бренд кухонь + мебели (30 лет опыта) — IG @mrdoorsrussia верифицирован",
+      "patterns": [
+        { "code": "MD1", "name_ro": "Free design project showcase (lead-magnet content)", "name_ru": "Free design project showcase (lead-magnet content)" },
+        { "code": "MD2", "name_ro": "Custom kitchen reveal cu spec deep-dive", "name_ru": "Custom kitchen reveal с spec deep-dive" }
+      ],
+      "badge_ro": "PENDING · IG @mrdoorsrussia verificat ✓ · TikTok handle de verificat",
+      "badge_ru": "PENDING · IG @mrdoorsrussia верифицирован ✓ · TikTok handle нужно проверить",
+      "badge_color": "yellow",
+      "adaptability": 8,
+      "status": "candidate"
+    },
+    {
+      "id": "domeo",
+      "category": "candidates",
+      "name": "Domeo",
+      "emoji": "🔑",
+      "url": "https://www.tiktok.com/search?q=domeo",
+      "country": "Rusia (Moscova)",
+      "niche_ro": "Turnkey apartment renovation service — designer reviews + room tours",
+      "niche_ru": "Ремонт квартир под ключ — designer reviews + room tours",
+      "patterns": [
+        { "code": "DM1", "name_ro": "Designer apartment review post-renovation", "name_ru": "Designer apartment review post-renovation" },
+        { "code": "DM2", "name_ro": "Client testimonial timeline (before/after)", "name_ru": "Client testimonial timeline (before/after)" }
+      ],
+      "badge_ro": "PENDING · Direct turnkey competitor parallel ✓ · TikTok handle de verificat",
+      "badge_ru": "PENDING · Прямой turnkey конкурент-параллель ✓ · TikTok handle нужно проверить",
+      "badge_color": "yellow",
+      "adaptability": 10,
+      "status": "candidate"
+    },
+    {
+      "id": "natalia-shelkovskaya",
+      "category": "candidates",
+      "name": "Natalia Shelkovskaya",
+      "emoji": "✨",
+      "url": "https://www.tiktok.com/search?q=Natalia+Shelkovskaya",
+      "country": "Rusia",
+      "niche_ro": "Designer interior — «dream home» philosophy + design psychology",
+      "niche_ru": "Дизайнер интерьеров — «дом мечты» философия + дизайн-психология",
+      "patterns": [
+        { "code": "NS1", "name_ro": "Philosophical narrative around design choices", "name_ru": "Философский narrative вокруг design choices" }
+      ],
+      "badge_ro": "PENDING · Known designer (other platforms) · TikTok handle de verificat",
+      "badge_ru": "PENDING · Известный дизайнер (другие платформы) · TikTok handle нужно проверить",
+      "badge_color": "yellow",
+      "adaptability": 7,
       "status": "candidate"
     }
   ]

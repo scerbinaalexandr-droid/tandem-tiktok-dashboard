@@ -72,6 +72,104 @@
     .no-print { display: none; }
     body { background: white; }
   }
+
+  /* ============== MOBILE ADAPTATION (≤767px) ============== */
+  @media (max-width: 767px) {
+    /* Global word-wrap protection */
+    body { overflow-x: hidden; word-wrap: break-word; overflow-wrap: break-word; }
+    h1, h2, h3, h4, p, span, div { word-wrap: break-word; overflow-wrap: anywhere; hyphens: auto; }
+
+    /* Section padding compaction */
+    section { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; padding-left: 1rem !important; padding-right: 1rem !important; }
+
+    /* Hero — much smaller headlines */
+    #hero h1 { font-size: 2rem !important; line-height: 1.15 !important; margin-bottom: 0.75rem !important; }
+    #hero p { font-size: 0.95rem !important; line-height: 1.5 !important; }
+    .gradient-hero { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+
+    /* All section headers */
+    h2.font-serif { font-size: 1.65rem !important; line-height: 1.2 !important; }
+    h3.font-serif { font-size: 1.25rem !important; line-height: 1.25 !important; }
+
+    /* Stat numbers — reduce */
+    .stat-num { font-size: 2.25rem !important; line-height: 1.1 !important; }
+
+    /* NAV — compact, allow horizontal scroll for links */
+    nav .max-w-7xl { padding-left: 0.75rem !important; padding-right: 0.75rem !important; gap: 0.5rem !important; }
+    nav .nav-link { font-size: 0.78rem !important; padding: 2px 6px !important; }
+    nav .gap-4 { gap: 0.5rem !important; }
+    nav .text-sm { font-size: 0.78rem !important; }
+    nav .w-10 { width: 2rem !important; height: 2rem !important; font-size: 0.75rem !important; }
+    nav .font-serif.text-lg { font-size: 0.95rem !important; }
+
+    /* HERO stats — keep 2 cols but reduce padding */
+    #hero .grid.grid-cols-2 .bg-card { padding: 1rem !important; }
+    #hero .stat-num.text-5xl { font-size: 2rem !important; }
+
+    /* CALENDAR — critical fix: force horizontal scroll for 7-day week view */
+    #calendar .grid.grid-cols-7 {
+      display: flex !important;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 0.5rem !important;
+      padding-bottom: 1rem;
+      -webkit-overflow-scrolling: touch;
+    }
+    #calendar .grid.grid-cols-7 > * {
+      flex: 0 0 42vw !important;
+      min-width: 42vw !important;
+      scroll-snap-align: start;
+    }
+    #calendar .calendar-day { padding: 0.75rem !important; }
+    #calendar .calendar-day .text-2xl { font-size: 1.25rem !important; }
+    #calendar .calendar-day .font-bold { font-size: 0.8rem !important; }
+    #calendar .calendar-day .text-xs { font-size: 0.65rem !important; }
+    /* Hint scroll */
+    #calendar .grid.grid-cols-7::-webkit-scrollbar { height: 4px; }
+    #calendar .grid.grid-cols-7::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+    /* VARIANTS cards — full width on mobile */
+    #variants .grid { gap: 1rem !important; }
+    #variants .rounded-2xl { padding: 1.25rem !important; }
+    #variants h3.font-serif { font-size: 1.35rem !important; }
+
+    /* PIPELINE timeline — remove absolute line that breaks at mobile */
+    #pipeline .absolute.top-12 { display: none !important; }
+    #pipeline .grid { gap: 1rem !important; }
+
+    /* GROUPS section */
+    #groups .grid { gap: 1rem !important; }
+
+    /* KPI section — charts should already shrink, just reduce container padding */
+    #kpi .grid { gap: 1rem !important; }
+    #kpi canvas { max-height: 280px !important; }
+
+    /* ROADMAP, TEAM */
+    #roadmap .grid, #team .grid { gap: 1rem !important; }
+
+    /* Card padding reduction globally */
+    .rounded-2xl, .rounded-xl { padding: 1rem !important; }
+    .p-8 { padding: 1.25rem !important; }
+    .p-6 { padding: 1rem !important; }
+
+    /* Inner flex rows in variant cards (label + value) — prevent overflow */
+    .flex.justify-between { flex-wrap: wrap; gap: 0.25rem; }
+    .flex.justify-between > span { font-size: 0.85rem !important; }
+
+    /* Filter buttons */
+    .filter-btn { font-size: 0.75rem !important; padding: 0.4rem 0.75rem !important; }
+
+    /* Language switcher always visible top-right */
+    .lang-btn { font-size: 0.7rem !important; padding: 3px 8px !important; }
+  }
+
+  /* Tiny phones (≤380px) */
+  @media (max-width: 380px) {
+    #hero h1 { font-size: 1.65rem !important; }
+    h2.font-serif { font-size: 1.4rem !important; }
+    #calendar .grid.grid-cols-7 > * { flex: 0 0 56vw !important; min-width: 56vw !important; }
+    nav .nav-link { font-size: 0.7rem !important; }
+  }
 </style>
 </head>
 <body class="scroll-smooth">

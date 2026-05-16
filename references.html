@@ -45,6 +45,56 @@
   .status-candidate { background: #fef3c7; color: #78461d; }
   .status-deprecated { background: #fee2e2; color: #991b1b; text-decoration: line-through; }
   .adaptability-bar { background: linear-gradient(to right, var(--green) var(--p,0%), #ede4d6 var(--p,0%)); }
+
+  /* ============== MOBILE ADAPTATION (≤767px) ============== */
+  @media (max-width: 767px) {
+    body { overflow-x: hidden; word-wrap: break-word; overflow-wrap: break-word; }
+    h1, h2, h3, p, span, div, code { word-wrap: break-word; overflow-wrap: anywhere; }
+
+    /* Section padding */
+    section { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; padding-left: 1rem !important; padding-right: 1rem !important; }
+
+    /* Header */
+    h1.font-serif { font-size: 1.85rem !important; line-height: 1.2 !important; margin-bottom: 0.75rem !important; }
+    h2.font-serif { font-size: 1.5rem !important; line-height: 1.25 !important; }
+    section p.text-xl { font-size: 0.95rem !important; line-height: 1.5 !important; }
+
+    /* Nav compact */
+    nav .max-w-7xl { padding-left: 0.75rem !important; padding-right: 0.75rem !important; gap: 0.5rem !important; }
+    nav .w-10 { width: 2rem !important; height: 2rem !important; font-size: 0.75rem !important; }
+    nav .font-serif.text-lg { font-size: 0.95rem !important; }
+    nav a.text-sm { font-size: 0.75rem !important; }
+
+    /* Filter buttons */
+    .filter-btn { font-size: 0.75rem !important; padding: 0.4rem 0.75rem !important; }
+    .lang-btn { font-size: 0.7rem !important; padding: 3px 8px !important; }
+
+    /* Cards padding */
+    .rounded-2xl, .rounded-xl { padding: 1rem !important; }
+    .p-8 { padding: 1.25rem !important; }
+    .p-6 { padding: 1rem !important; }
+
+    /* Reference cards grid — already grid md:grid-cols-2 etc → stays 1 col on mobile */
+    /* But override card padding inside JS-rendered grid */
+    #categories-container .grid { gap: 1rem !important; }
+    #categories-container .rounded-2xl { padding: 1.25rem !important; }
+
+    /* Code blocks won't break layout */
+    code { word-break: break-all; font-size: 0.8rem !important; }
+
+    /* Management examples - mono text shrink */
+    .font-mono.text-sm { font-size: 0.78rem !important; word-break: break-word !important; }
+
+    /* Reduce excessive vertical gaps */
+    .mb-12 { margin-bottom: 1.5rem !important; }
+    .mb-8 { margin-bottom: 1rem !important; }
+    .mt-12 { margin-top: 1.5rem !important; }
+  }
+
+  @media (max-width: 380px) {
+    h1.font-serif { font-size: 1.55rem !important; }
+    h2.font-serif { font-size: 1.3rem !important; }
+  }
 </style>
 </head>
 <body>

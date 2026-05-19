@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ro">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="TikTok by Cornello — 7 секретов органики применённые к Tandem Casa 360° / Kitchen by Tandem / MD Production">
-<title>TikTok by Cornello — 7 Секретов Органики</title>
+<meta name="description" content="TikTok by Corneliu — 7 secrete ale algoritmului · strategie pentru Tandem Casa 360° / Kitchen / MD Production">
+<title>TikTok by Corneliu — 7 Secrete ale Algoritmului</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
@@ -77,6 +77,10 @@
   .fix { color: #166534; }
   .apply-card { background: linear-gradient(135deg, rgba(184,153,104,0.06) 0%, rgba(201,123,92,0.06) 100%); border: 1px dashed var(--gold); }
   .scroll-mt { scroll-margin-top: 80px; }
+  .lang-btn { transition: all 0.15s; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; border: none; }
+  .lang-btn.active { background: var(--brand); color: white; }
+  .lang-btn:not(.active) { color: var(--text-muted); background: transparent; }
+  .lang-btn:not(.active):hover { background: #ede4d6; color: var(--brand); }
 </style>
 </head>
 <body>
@@ -87,19 +91,23 @@
     <div class="flex items-center gap-2">
       <span class="text-2xl">🎯</span>
       <div>
-        <div class="font-serif text-lg text-brand leading-none">TikTok by Cornello</div>
-        <div class="text-[10px] uppercase tracking-widest text-muted">7 секретов органики · Tandem application</div>
+        <div class="font-serif text-lg text-brand leading-none">TikTok by Corneliu</div>
+        <div class="text-[10px] uppercase tracking-widest text-muted" data-ro="7 secrete · aplicat la Tandem" data-ru="7 секретов · применение к Tandem">7 secrete · aplicat la Tandem</div>
       </div>
     </div>
     <div class="flex items-center gap-1 flex-wrap">
-      <a href="#hero" class="nav-link">Старт</a>
-      <a href="#mindset" class="nav-link">Mindset</a>
-      <a href="#visp" class="nav-link">ВИСП</a>
-      <a href="#secrets" class="nav-link">7 секретов</a>
-      <a href="#norms" class="nav-link">Нормы</a>
-      <a href="#apply" class="nav-link">Tandem</a>
-      <a href="#actions" class="nav-link">Действия</a>
-      <a href="./index.html" class="ml-3 px-3 py-1.5 rounded-full text-xs font-bold bg-brand text-white hover:bg-gold transition">← Casa 360° Dashboard</a>
+      <a href="#hero" class="nav-link" data-ro="Start" data-ru="Старт">Start</a>
+      <a href="#mindset" class="nav-link" data-ro="Mindset" data-ru="Mindset">Mindset</a>
+      <a href="#visp" class="nav-link" data-ro="VISP" data-ru="ВИСП">VISP</a>
+      <a href="#secrets" class="nav-link" data-ro="7 secrete" data-ru="7 секретов">7 secrete</a>
+      <a href="#norms" class="nav-link" data-ro="Norme" data-ru="Нормы">Norme</a>
+      <a href="#apply" class="nav-link" data-ro="Tandem" data-ru="Tandem">Tandem</a>
+      <a href="#actions" class="nav-link" data-ro="Acțiuni" data-ru="Действия">Acțiuni</a>
+      <a href="./index.html" class="ml-3 px-3 py-1.5 rounded-full text-xs font-bold bg-brand text-white hover:bg-gold transition" data-ro="← Casa 360° Dashboard" data-ru="← Casa 360° Dashboard">← Casa 360° Dashboard</a>
+    </div>
+    <div class="flex items-center gap-1 bg-cream rounded-lg p-1">
+      <button class="lang-btn active" data-lang="ro">RO</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
     </div>
   </div>
 </nav>
@@ -107,37 +115,35 @@
 <!-- ============== HERO ============== -->
 <section id="hero" class="gradient-hero py-20 px-4">
   <div class="max-w-5xl mx-auto text-center">
-    <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-white border border-soft text-xs uppercase tracking-widest text-muted">
-      <span class="text-gold">●</span> Dashboard #2 · pentru Corneliu Său (co-founder Tandem)
-    </div>
-    <h1 class="font-serif text-5xl md:text-6xl mb-4 text-brand leading-tight">7 Секретов <span class="text-gold">Органики</span></h1>
-    <p class="text-xl text-muted mb-2 max-w-3xl mx-auto">Полная стратегия создания контента для TikTok / Instagram Reels / YouTube Shorts<br>применённая к Tandem Casa 360° · Kitchen by Tandem · MD Production</p>
+    <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-white border border-soft text-xs uppercase tracking-widest text-muted" data-ro="● Dashboard #2 · pentru Corneliu Său (co-founder Tandem)" data-ru="● Дашборд #2 · для Corneliu Său (co-founder Tandem)">● Dashboard #2 · pentru Corneliu Său (co-founder Tandem)</div>
+    <h1 class="font-serif text-5xl md:text-6xl mb-4 text-brand leading-tight" data-ro='7 Secrete ale <span class="text-gold">Algoritmului</span>' data-ru='7 Секретов <span class="text-gold">Алгоритма</span>'>7 Secrete ale <span class="text-gold">Algoritmului</span></h1>
+    <p class="text-xl text-muted mb-2 max-w-3xl mx-auto" data-ro="Strategie completă pentru TikTok / Instagram Reels / YouTube Shorts<br>aplicată la Tandem Casa 360° · Kitchen by Tandem · MD Production" data-ru="Полная стратегия для TikTok / Instagram Reels / YouTube Shorts<br>применённая к Tandem Casa 360° · Kitchen by Tandem · MD Production">Strategie completă pentru TikTok / Instagram Reels / YouTube Shorts<br>aplicată la Tandem Casa 360° · Kitchen by Tandem · MD Production</p>
+
     <div class="mt-8 inline-flex items-center gap-4 px-6 py-3 rounded-2xl bg-white border border-soft card-shadow text-sm">
       <div class="text-left">
-        <div class="text-[10px] uppercase tracking-widest text-muted">Источник</div>
-        <div class="font-bold text-brand">Николай Велижанин</div>
-        <div class="text-xs text-muted">«7 секретов ЛЮБОЙ органики» · 47:47 · 11.10.2025</div>
+        <div class="text-[10px] uppercase tracking-widest text-muted" data-ro="Sursă" data-ru="Источник">Sursă</div>
+        <div class="font-bold text-brand">Nikolay Velizhanin</div>
+        <div class="text-xs text-muted" data-ro="«7 secrete ale oricărei organici» · 47:47 · 11.10.2025" data-ru="«7 секретов ЛЮБОЙ органики» · 47:47 · 11.10.2025">«7 secrete ale oricărei organici» · 47:47 · 11.10.2025</div>
       </div>
       <a href="https://youtu.be/xcLSQEe3RbE" target="_blank" rel="noopener" class="px-4 py-2 rounded-full bg-brand text-white text-xs font-bold hover:bg-gold transition">▶ YouTube</a>
     </div>
 
-    <!-- Quick KPI bar -->
     <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
       <div class="bg-white rounded-xl p-5 border border-soft card-shadow">
         <div class="stat-num text-3xl text-gold">7</div>
-        <div class="text-xs uppercase tracking-wider text-muted mt-1">параметров алгоритма</div>
+        <div class="text-xs uppercase tracking-wider text-muted mt-1" data-ro="Parametri ai algoritmului" data-ru="параметров алгоритма">Parametri ai algoritmului</div>
       </div>
       <div class="bg-white rounded-xl p-5 border border-soft card-shadow">
         <div class="stat-num text-3xl text-gold">4</div>
-        <div class="text-xs uppercase tracking-wider text-muted mt-1">элемента ВИСП</div>
+        <div class="text-xs uppercase tracking-wider text-muted mt-1" data-ro="Elemente VISP" data-ru="элемента ВИСП">Elemente VISP</div>
       </div>
       <div class="bg-white rounded-xl p-5 border border-soft card-shadow">
         <div class="stat-num text-3xl text-gold">3s</div>
-        <div class="text-xs uppercase tracking-wider text-muted mt-1">решающий хук shorts</div>
+        <div class="text-xs uppercase tracking-wider text-muted mt-1" data-ro="Cârligul decisiv (shorts)" data-ru="решающий хук shorts">Cârligul decisiv (shorts)</div>
       </div>
       <div class="bg-white rounded-xl p-5 border border-soft card-shadow">
         <div class="stat-num text-3xl text-gold">100%</div>
-        <div class="text-xs uppercase tracking-wider text-muted mt-1">переносимо на TikTok/Reels</div>
+        <div class="text-xs uppercase tracking-wider text-muted mt-1" data-ro="Aplicabil pe TikTok/Reels" data-ru="переносимо на TikTok/Reels">Aplicabil pe TikTok/Reels</div>
       </div>
     </div>
   </div>
@@ -147,106 +153,102 @@
 <section id="mindset" class="py-20 px-4 bg-section-deep scroll-mt">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-12">
-      <div class="section-eyebrow"><span class="num">00</span> MINDSET FOUNDATION</div>
-      <h2 class="font-serif text-4xl mb-3 text-brand">Главный сдвиг сознания</h2>
-      <div class="section-goal-line">Цель: понять ЗАЧЕМ соцсеть продвигает чей-то контент — иначе все 7 секретов не сработают</div>
+      <div class="section-eyebrow"><span class="num">00</span> <span data-ro="MINDSET DE BAZĂ" data-ru="БАЗОВЫЙ MINDSET">MINDSET DE BAZĂ</span></div>
+      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Schimbarea principală de gândire" data-ru="Главная смена мышления">Schimbarea principală de gândire</h2>
+      <div class="section-goal-line" data-ro="Scop: să înțelegem DE CE rețeaua promovează conținut — altfel cele 7 secrete nu funcționează" data-ru="Цель: понять ЗАЧЕМ соцсеть продвигает контент — иначе 7 секретов не сработают">Scop: să înțelegem DE CE rețeaua promovează conținut — altfel cele 7 secrete nu funcționează</div>
     </div>
 
     <div class="grid md:grid-cols-2 gap-6 items-stretch">
       <div class="bg-white rounded-2xl p-8 border-2 border-red-200 card-shadow">
-        <div class="text-xs uppercase tracking-widest text-red-700 font-bold mb-2">❌ Старое мышление</div>
-        <div class="font-serif text-2xl text-brand mb-3 leading-snug">«Как мне заработать денег на контенте?»</div>
-        <p class="text-muted text-sm leading-relaxed">Снимаем то, что хотим продать. Думаем о себе. Пихаем CTA «купите». Алгоритм видит эгоистичный контент — не пушит. 100 просмотров. Сливаемся.</p>
+        <div class="text-xs uppercase tracking-widest text-red-700 font-bold mb-2" data-ro="❌ Gândire veche" data-ru="❌ Старое мышление">❌ Gândire veche</div>
+        <div class="font-serif text-2xl text-brand mb-3 leading-snug" data-ro="«Cum câștig bani cu conținutul meu?»" data-ru="«Как мне заработать денег на контенте?»">«Cum câștig bani cu conținutul meu?»</div>
+        <p class="text-muted text-sm leading-relaxed" data-ro="Filmăm ce vrem să vindem. Ne gândim la noi. Băgăm CTA «cumpărați». Algoritmul vede conținut egoist — nu-l împinge. 100 de vizualizări. Renunțăm." data-ru="Снимаем то, что хотим продать. Думаем о себе. Пихаем CTA «купите». Алгоритм видит эгоистичный контент — не пушит. 100 просмотров. Сливаемся.">Filmăm ce vrem să vindem. Ne gândim la noi. Băgăm CTA «cumpărați». Algoritmul vede conținut egoist — nu-l împinge. 100 de vizualizări. Renunțăm.</p>
       </div>
 
       <div class="bg-white rounded-2xl p-8 border-2 card-shadow" style="border-color: var(--gold)">
-        <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">✅ Новое мышление (Велижанин)</div>
-        <div class="font-serif text-2xl text-brand mb-3 leading-snug">«Как мне помочь TikTok заработать денег?»</div>
-        <p class="text-muted text-sm leading-relaxed">У соцсети одна задача: <strong>удержать пользователя как можно дольше в приложении</strong>, чтобы он увидел больше рекламы. Если я делаю контент, который удерживает — алгоритм пушит меня. <strong>Мы и TikTok — партнёры по удержанию зрителя.</strong></p>
+        <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="✅ Gândire nouă (Velizhanin)" data-ru="✅ Новое мышление (Велижанин)">✅ Gândire nouă (Velizhanin)</div>
+        <div class="font-serif text-2xl text-brand mb-3 leading-snug" data-ro="«Cum ajut TikTok-ul să câștige bani?»" data-ru="«Как помочь TikTok заработать денег?»">«Cum ajut TikTok-ul să câștige bani?»</div>
+        <p class="text-muted text-sm leading-relaxed" data-ro="Rețeaua are o singură sarcină: <strong>să țină utilizatorul cât mai mult în aplicație</strong>, ca să vadă mai multă reclamă. Dacă fac conținut care reține — algoritmul mă împinge. <strong>Noi și TikTok-ul suntem parteneri în a reține privitorul.</strong>" data-ru="У соцсети одна задача: <strong>удержать пользователя как можно дольше в приложении</strong>, чтобы он увидел больше рекламы. Если я делаю контент, который удерживает — алгоритм пушит меня. <strong>Мы и TikTok — партнёры по удержанию зрителя.</strong>">Rețeaua are o singură sarcină: <strong>să țină utilizatorul cât mai mult în aplicație</strong>, ca să vadă mai multă reclamă. Dacă fac conținut care reține — algoritmul mă împinge. <strong>Noi și TikTok-ul suntem parteneri în a reține privitorul.</strong></p>
       </div>
     </div>
 
     <div class="mt-8 p-6 rounded-2xl gradient-brand text-white text-center">
-      <div class="text-xs uppercase tracking-widest text-gold-soft mb-2">Главный принцип</div>
-      <div class="font-serif text-2xl md:text-3xl leading-snug">«Делайте контент, который люди смотрят взахлёб — а TikTok за вас всё остальное сделает»</div>
+      <div class="text-xs uppercase tracking-widest text-gold-soft mb-2" data-ro="Principiul de bază" data-ru="Главный принцип">Principiul de bază</div>
+      <div class="font-serif text-2xl md:text-3xl leading-snug" data-ro="«Faceți conținut pe care oamenii îl privesc pe nerăsuflate — restul îl face TikTok-ul»" data-ru="«Делайте контент, который люди смотрят взахлёб — а TikTok за вас всё остальное сделает»">«Faceți conținut pe care oamenii îl privesc pe nerăsuflate — restul îl face TikTok-ul»</div>
     </div>
   </div>
 </section>
 
-<!-- ============== ВИСП TECHNIQUE ============== -->
+<!-- ============== VISP TECHNIQUE ============== -->
 <section id="visp" class="py-20 px-4 bg-section-light scroll-mt">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-12">
-      <div class="section-eyebrow"><span class="num">★</span> AUTHORS TECHNIQUE</div>
-      <h2 class="font-serif text-4xl mb-3 text-brand">ВИСП — главная техника Велижанина</h2>
-      <div class="section-goal-line">Цель: 4 струны, на которые надо «дёрнуть» зрителя — применяется к хуку, превью, заголовку, сценарию</div>
+      <div class="section-eyebrow"><span class="num">★</span> <span data-ro="TEHNICA AUTORULUI" data-ru="ТЕХНИКА АВТОРА">TEHNICA AUTORULUI</span></div>
+      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="VISP — tehnica principală a lui Velizhanin" data-ru="ВИСП — главная техника Велижанина">VISP — tehnica principală a lui Velizhanin</h2>
+      <div class="section-goal-line" data-ro="Scop: 4 strune pe care trebuie să le «atingem» — se aplică la cârlig, miniatură (preview), titlu, scenariu" data-ru="Цель: 4 струны на которые надо «дёрнуть» зрителя — применяется к хуку, превью, заголовку, сценарию">Scop: 4 strune pe care trebuie să le «atingem» — se aplică la cârlig, miniatură, titlu, scenariu</div>
     </div>
 
-    <p class="text-center text-muted mb-8 max-w-3xl mx-auto">ВИСП — авторская техника, которая «закрывает 90% вопросов по кликабельности превью» и работает во всех 7 секретах. Каждое видео должно «дёргать» хотя бы 2 из 4 струн.</p>
+    <p class="text-center text-muted mb-8 max-w-3xl mx-auto" data-ro="VISP — tehnica autorului care «rezolvă 90% din problemele de click-uri pe miniatură». Fiecare video ar trebui să atingă cel puțin 2 din 4 strune." data-ru="ВИСП — авторская техника которая «закрывает 90% вопросов по кликабельности превью». Каждое видео должно «дёргать» хотя бы 2 из 4 струн.">VISP — tehnica autorului care «rezolvă 90% din problemele de click-uri pe miniatură». Fiecare video ar trebui să atingă cel puțin 2 din 4 strune.</p>
 
     <div class="grid md:grid-cols-4 gap-5 mb-8">
-      <!-- В -->
       <div class="bg-white rounded-2xl p-6 border border-soft card-shadow card-hover text-center">
-        <div class="visp-letter mx-auto mb-4" style="background:#6b8aa8">В</div>
-        <h3 class="font-serif text-xl text-brand mb-2">Выгода</h3>
-        <p class="text-xs text-muted mb-3 leading-relaxed">Что зритель ПОЛУЧИТ от просмотра. Польза.</p>
-        <div class="text-xs italic text-brand bg-cream rounded-lg p-3">«Кухня за €5K вместо €25K — показываем как»</div>
+        <div class="visp-letter mx-auto mb-4" style="background:#6b8aa8">V</div>
+        <h3 class="font-serif text-xl text-brand mb-2" data-ro="Valoare" data-ru="Выгода">Valoare</h3>
+        <p class="text-xs text-muted mb-3 leading-relaxed" data-ro="Ce PRIMEȘTE privitorul. Beneficiul lui." data-ru="Что зритель ПОЛУЧИТ от просмотра. Польза.">Ce PRIMEȘTE privitorul. Beneficiul lui.</p>
+        <div class="text-xs italic text-brand bg-cream rounded-lg p-3" data-ro="«Bucătărie €5K în loc de €25K — arătăm cum»" data-ru="«Кухня за €5K вместо €25K — показываем как»">«Bucătărie €5K în loc de €25K — arătăm cum»</div>
       </div>
 
-      <!-- И -->
       <div class="bg-white rounded-2xl p-6 border border-soft card-shadow card-hover text-center">
-        <div class="visp-letter mx-auto mb-4" style="background:#b89968">И</div>
-        <h3 class="font-serif text-xl text-brand mb-2">Интрига</h3>
-        <p class="text-xs text-muted mb-3 leading-relaxed">Чего зритель НЕ ЗНАЕТ. Что в кадре непонятно.</p>
-        <div class="text-xs italic text-brand bg-cream rounded-lg p-3">«Что находится ВНУТРИ дивана за €4.000?»</div>
+        <div class="visp-letter mx-auto mb-4" style="background:#b89968">I</div>
+        <h3 class="font-serif text-xl text-brand mb-2" data-ro="Intrigă" data-ru="Интрига">Intrigă</h3>
+        <p class="text-xs text-muted mb-3 leading-relaxed" data-ro="Ce NU știe privitorul. Ce e ascuns în cadru." data-ru="Чего зритель НЕ ЗНАЕТ. Что в кадре непонятно.">Ce NU știe privitorul. Ce e ascuns în cadru.</p>
+        <div class="text-xs italic text-brand bg-cream rounded-lg p-3" data-ro="«Ce e ÎN INTERIORUL canapelei de €4.000?»" data-ru="«Что находится ВНУТРИ дивана за €4.000?»">«Ce e ÎN INTERIORUL canapelei de €4.000?»</div>
       </div>
 
-      <!-- С -->
       <div class="bg-white rounded-2xl p-6 border border-soft card-shadow card-hover text-center">
-        <div class="visp-letter mx-auto mb-4" style="background:#c97b5c">С</div>
-        <h3 class="font-serif text-xl text-brand mb-2">Срочность</h3>
-        <p class="text-xs text-muted mb-3 leading-relaxed">Почему НАДО посмотреть СЕЙЧАС. Лёгкость.</p>
-        <div class="text-xs italic text-brand bg-cream rounded-lg p-3">«3 простых способа удешевить ремонт на 40%»</div>
+        <div class="visp-letter mx-auto mb-4" style="background:#c97b5c">S</div>
+        <h3 class="font-serif text-xl text-brand mb-2" data-ro="Sense de urgență" data-ru="Срочность">Sense de urgență</h3>
+        <p class="text-xs text-muted mb-3 leading-relaxed" data-ro="De ce trebuie privit ACUM. Ușor. Rapid." data-ru="Почему НАДО посмотреть СЕЙЧАС. Лёгкость.">De ce trebuie privit ACUM. Ușor. Rapid.</p>
+        <div class="text-xs italic text-brand bg-cream rounded-lg p-3" data-ro="«3 moduri simple să reduci renovarea cu 40%»" data-ru="«3 простых способа удешевить ремонт на 40%»">«3 moduri simple să reduci renovarea cu 40%»</div>
       </div>
 
-      <!-- П -->
       <div class="bg-white rounded-2xl p-6 border border-soft card-shadow card-hover text-center">
-        <div class="visp-letter mx-auto mb-4" style="background:#6a8e6e">П</div>
-        <h3 class="font-serif text-xl text-brand mb-2">Причастность</h3>
-        <p class="text-xs text-muted mb-3 leading-relaxed">«Это про МЕНЯ?» Узнаваемость ситуации.</p>
-        <div class="text-xs italic text-brand bg-cream rounded-lg p-3">«POV: ты только купил квартиру в Bucureşti»</div>
+        <div class="visp-letter mx-auto mb-4" style="background:#6a8e6e">P</div>
+        <h3 class="font-serif text-xl text-brand mb-2" data-ro="Personal (apartenență)" data-ru="Причастность">Personal (apartenență)</h3>
+        <p class="text-xs text-muted mb-3 leading-relaxed" data-ro="«Asta e despre MINE?» Recunoaștere a situației." data-ru="«Это про МЕНЯ?» Узнаваемость ситуации.">«Asta e despre MINE?» Recunoaștere a situației.</p>
+        <div class="text-xs italic text-brand bg-cream rounded-lg p-3" data-ro="«POV: tocmai ai cumpărat apartament în București»" data-ru="«POV: ты только купил квартиру в Bucureşti»">«POV: tocmai ai cumpărat apartament în București»</div>
       </div>
     </div>
 
     <div class="bg-white rounded-2xl p-8 border-2 card-shadow" style="border-color:var(--gold)">
       <div class="text-center mb-4">
-        <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">★ ПРАКТИКА ★</div>
-        <h3 class="font-serif text-2xl text-brand">Как Велижанин раскручивает ВИСП на примере (видео про воду)</h3>
+        <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="★ EXEMPLU PRACTIC ★" data-ru="★ ПРАКТИКА ★">★ EXEMPLU PRACTIC ★</div>
+        <h3 class="font-serif text-2xl text-brand" data-ro="Cum Velizhanin construiește VISP — exemplu video despre apă" data-ru="Как Велижанин раскручивает ВИСП на примере (видео про воду)">Cum Velizhanin construiește VISP — exemplu video despre apă</h3>
       </div>
       <div class="bg-cream rounded-xl p-5">
         <div class="space-y-2 text-sm">
-          <div class="flex gap-3"><span class="font-bold text-brand min-w-[120px]">Клиент сказал:</span> <span class="text-muted">«Хочу видео про систему очистки воды в доме»</span></div>
-          <div class="flex gap-3"><span class="font-bold text-brand min-w-[120px]">Велижанин:</span> <span class="text-muted">«Стоп. Что должно быть на превью?»</span></div>
+          <div class="flex gap-3"><span class="font-bold text-brand min-w-[120px]" data-ro="Clientul a spus:" data-ru="Клиент сказал:">Clientul a spus:</span> <span class="text-muted" data-ro="«Vreau video despre sistemul de filtrare apă»" data-ru="«Хочу видео про систему очистки воды»">«Vreau video despre sistemul de filtrare apă»</span></div>
+          <div class="flex gap-3"><span class="font-bold text-brand min-w-[120px]">Velizhanin:</span> <span class="text-muted" data-ro="«Stop. Ce trebuie să fie pe miniatură?»" data-ru="«Стоп. Что должно быть на превью?»">«Stop. Ce trebuie să fie pe miniatură?»</span></div>
           <div class="border-t border-soft my-3"></div>
-          <div class="flex gap-3"><span class="font-bold" style="color:#6a8e6e">Причастность П:</span> <span class="text-brand italic">«В ВАШЕМ кране…» (= это про меня, у меня кран есть)</span></div>
-          <div class="flex gap-3"><span class="font-bold" style="color:#6b8aa8">Выгода В:</span> <span class="text-brand italic">«…ЯД» (= узнаю опасность, защищу здоровье)</span></div>
-          <div class="flex gap-3"><span class="font-bold" style="color:#c97b5c">Срочность С:</span> <span class="text-brand italic">«3 ПРОСТЫХ способа очистить» (= лёгкое решение, надо сейчас)</span></div>
-          <div class="flex gap-3"><span class="font-bold" style="color:#b89968">Интрига И:</span> <span class="text-brand italic">«…как сделать воду дома идеальной» (= что за способы?)</span></div>
+          <div class="flex gap-3"><span class="font-bold" style="color:#6a8e6e">P:</span> <span class="text-brand italic" data-ro="«ÎN robinetul TĂU…» (= e despre mine, am robinet acasă)" data-ru="«В ВАШЕМ кране…» (= это про меня, у меня кран есть)">«ÎN robinetul TĂU…» (= e despre mine, am robinet acasă)</span></div>
+          <div class="flex gap-3"><span class="font-bold" style="color:#6b8aa8">V:</span> <span class="text-brand italic" data-ro="«…OTRAVĂ» (= aflu pericolul, îmi protejez sănătatea)" data-ru="«…ЯД» (= узнаю опасность, защищу здоровье)">«…OTRAVĂ» (= aflu pericolul, îmi protejez sănătatea)</span></div>
+          <div class="flex gap-3"><span class="font-bold" style="color:#c97b5c">S:</span> <span class="text-brand italic" data-ro="«3 moduri SIMPLE de a curăța» (= soluție ușoară)" data-ru="«3 ПРОСТЫХ способа очистить» (= лёгкое решение, надо сейчас)">«3 moduri SIMPLE de a curăța» (= soluție ușoară)</span></div>
+          <div class="flex gap-3"><span class="font-bold" style="color:#b89968">I:</span> <span class="text-brand italic" data-ro="«…cum faci apa de acasă ideală» (= ce moduri?)" data-ru="«…как сделать воду дома идеальной» (= что за способы?)">«…cum faci apa de acasă ideală» (= ce moduri?)</span></div>
           <div class="border-t border-soft my-3"></div>
-          <div class="flex gap-3"><span class="font-bold text-brand min-w-[120px]">Итог:</span> <span class="text-muted">Превью «В вашем кране ЯД» + название «3 простых способа сделать воду дома идеальной» = 4/4 струны ВИСП</span></div>
+          <div class="flex gap-3"><span class="font-bold text-brand min-w-[120px]" data-ro="Rezultat:" data-ru="Итог:">Rezultat:</span> <span class="text-muted" data-ro="Miniatură «În robinetul tău OTRAVĂ» + titlu «3 moduri simple să faci apa ideală» = 4/4 strune VISP" data-ru="Превью «В вашем кране ЯД» + название «3 простых способа сделать воду дома идеальной» = 4/4 струны ВИСП">Miniatură «În robinetul tău OTRAVĂ» + titlu «3 moduri simple să faci apa ideală» = 4/4 strune VISP</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============== 7 СЕКРЕТОВ ============== -->
+<!-- ============== 7 SECRETS ============== -->
 <section id="secrets" class="py-20 px-4 bg-section-deep scroll-mt">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12">
-      <div class="section-eyebrow"><span class="num">01—07</span> 7 СЕКРЕТОВ</div>
-      <h2 class="font-serif text-4xl mb-3 text-brand">7 параметров алгоритма, которые мы должны «маньячить»</h2>
-      <div class="section-goal-line">Цель: у каждого автора 4-5 из 7 уже «вшиты», 2-3 нужно дозашивать. Идентифицировать наши 4-5 + докрутить 2-3.</div>
+      <div class="section-eyebrow"><span class="num">01—07</span> <span data-ro="7 SECRETE" data-ru="7 СЕКРЕТОВ">7 SECRETE</span></div>
+      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="7 parametri ai algoritmului pe care trebuie să-i urmărim atent" data-ru="7 параметров алгоритма за которыми надо внимательно следить">7 parametri ai algoritmului pe care trebuie să-i urmărim atent</h2>
+      <div class="section-goal-line" data-ro="Scop: fiecare autor are deja 4-5 din 7 «cusute» în el. Trebuie să-i identificăm pe ai noștri + să-i adăugăm pe restul 2-3." data-ru="Цель: у каждого автора 4-5 из 7 уже «вшиты». Найти свои + добавить оставшиеся 2-3.">Scop: fiecare autor are deja 4-5 din 7 «cusute» în el. Trebuie să-i identificăm pe ai noștri + să-i adăugăm pe restul 2-3.</div>
     </div>
 
     <div class="space-y-6">
@@ -256,43 +258,43 @@
         <div class="flex items-start gap-5 mb-5 flex-wrap">
           <div class="secret-num">1</div>
           <div class="flex-1 min-w-[250px]">
-            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1">RETENȚIE · УДЕРЖАНИЕ</div>
-            <h3 class="font-serif text-2xl text-brand mb-1">Удержание в первые 30 сек (3 сек для shorts)</h3>
-            <p class="text-sm text-muted">Самый важный параметр для shorts/reels. Если зритель отвалился в первые 3 сек — алгоритм его не пушит дальше.</p>
+            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1" data-ro="RETENȚIE INIȚIALĂ" data-ru="НАЧАЛЬНОЕ УДЕРЖАНИЕ">RETENȚIE INIȚIALĂ</div>
+            <h3 class="font-serif text-2xl text-brand mb-1" data-ro="Cât timp privitorul rămâne în primele 30 sec (sau 3 sec la shorts)" data-ru="Сколько зритель досматривает первые 30 сек (или 3 сек у shorts)">Cât timp privitorul rămâne în primele 30 sec (sau 3 sec la shorts)</h3>
+            <p class="text-sm text-muted" data-ro="Cel mai important parametru la shorts/reels. Dacă privitorul a plecat în primele 3 sec — algoritmul nu-l mai împinge mai departe." data-ru="Самый важный параметр для shorts/reels. Если зритель отвалился в первые 3 сек — алгоритм его не пушит дальше.">Cel mai important parametru la shorts/reels. Dacă privitorul a plecat în primele 3 sec — algoritmul nu-l mai împinge.</p>
           </div>
-          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap">Норма: 70%+</div>
+          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap" data-ro="Normă: 70%+" data-ru="Норма: 70%+">Normă: 70%+</div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-5">
           <div class="bg-red-50 rounded-xl p-5 border border-red-100">
-            <div class="text-xs uppercase tracking-widest kill font-bold mb-2">❌ Что ГУБИТ удержание</div>
+            <div class="text-xs uppercase tracking-widest kill font-bold mb-2" data-ro="❌ Ce STRICĂ retenția" data-ru="❌ Что СНИЖАЕТ удержание">❌ Ce STRICĂ retenția</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• Плохой звук / плохая камера</li>
-              <li>• Пафосные фразы про себя «меня зовут X, у меня N лет опыта»</li>
-              <li>• Надменность «я вас сейчас научу»</li>
-              <li>• «Серая усталость», кисложопие — зритель чувствует</li>
-              <li>• Долгое intro / реклама себя в первые 5 сек</li>
+              <li data-ro="• Sunet prost / cameră proastă" data-ru="• Плохой звук / плохая камера">• Sunet prost / cameră proastă</li>
+              <li data-ro="• Fraze pompoase despre tine «mă numesc X, am N ani experiență»" data-ru="• Пафосные фразы про себя «меня зовут X, у меня N лет опыта»">• Fraze pompoase despre tine «mă numesc X, am N ani experiență»</li>
+              <li data-ro="• Aroganță «acum vă învăț eu»" data-ru="• Надменность «я вас сейчас научу»">• Aroganță «acum vă învăț eu»</li>
+              <li data-ro="• Obosit, plictisit — privitorul simte" data-ru="• Уставший, скучный — зритель чувствует">• Obosit, plictisit — privitorul simte</li>
+              <li data-ro="• Intro lung / reclamă la tine în primele 5 sec" data-ru="• Долгое вступление / реклама себя в первые 5 сек">• Intro lung / reclamă la tine în primele 5 sec</li>
             </ul>
           </div>
           <div class="bg-green-50 rounded-xl p-5 border border-green-100">
-            <div class="text-xs uppercase tracking-widest fix font-bold mb-2">✅ Что ПОВЫШАЕТ удержание</div>
+            <div class="text-xs uppercase tracking-widest fix font-bold mb-2" data-ro="✅ Ce CREȘTE retenția" data-ru="✅ Что ПОВЫШАЕТ удержание">✅ Ce CREȘTE retenția</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• Говорить О ЗРИТЕЛЕ, его проблеме (не о себе)</li>
-              <li>• История: «У меня был случай…»</li>
-              <li>• Конкретный образ — чтобы зритель «узнал себя»</li>
-              <li>• Артефакт в руке — «знаете что это? сейчас расскажу»</li>
-              <li>• Начать с залетевшего ЧУЖОГО шорса как видеоподложки</li>
-              <li>• ВИСП-хук (Выгода/Интрига/Срочность/Причастность)</li>
+              <li data-ro="• Vorbește DESPRE PRIVITOR, despre problema lui (nu despre tine)" data-ru="• Говори О ЗРИТЕЛЕ, его проблеме (не о себе)">• Vorbește DESPRE PRIVITOR, despre problema lui (nu despre tine)</li>
+              <li data-ro="• Povestire: «am avut un caz…»" data-ru="• История: «У меня был случай…»">• Povestire: «am avut un caz…»</li>
+              <li data-ro="• Imagine concretă — ca privitorul să «se recunoască»" data-ru="• Конкретный образ — чтобы зритель «узнал себя»">• Imagine concretă — ca privitorul să «se recunoască»</li>
+              <li data-ro="• Obiect în mână — «știți ce e? vă spun acum»" data-ru="• Артефакт в руке — «знаете что это? сейчас расскажу»">• Obiect în mână — «știți ce e? vă spun acum»</li>
+              <li data-ro="• Începe cu un short viral STRĂIN ca fundal video" data-ru="• Начать с залетевшего ЧУЖОГО шорса как видеоподложки">• Începe cu un short viral STRĂIN ca fundal video</li>
+              <li data-ro="• Cârlig VISP (Valoare/Intrigă/Sense urgență/Personal)" data-ru="• ВИСП-хук (Выгода/Интрига/Срочность/Причастность)">• Cârlig VISP (Valoare/Intrigă/Sense urgență/Personal)</li>
             </ul>
           </div>
         </div>
 
         <div class="mt-5 apply-card rounded-xl p-5">
-          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">🪑 Применение к TANDEM</div>
+          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="🪑 Aplicare la TANDEM" data-ru="🪑 Применение к TANDEM">🪑 Aplicare la TANDEM</div>
           <div class="text-sm text-brand space-y-1.5">
-            <div><strong>Casa 360°:</strong> «Если вы только купили квартиру в Bucureşti — этот видос сэкономит вам €5K на мебели» (Причастность + Выгода в 3 сек)</div>
-            <div><strong>Kitchen:</strong> Артефакт в руках — кусок фасада кухни → «знаете почему 90% людей выбирают НЕ ту толщину?»</div>
-            <div><strong>MD Factory:</strong> Начать с залетевшего шорса конкурента про фабрику → «вот так делают другие. А вот как делаем мы…»</div>
+            <div data-ro="<strong>Casa 360°:</strong> «Dacă tocmai ai cumpărat apartament în București — acest video îți economisește €5K la mobilier» (Personal + Valoare în 3 sec)" data-ru="<strong>Casa 360°:</strong> «Если вы только купили квартиру в Bucureşti — этот видос сэкономит вам €5K на мебели» (Причастность + Выгода в 3 сек)"><strong>Casa 360°:</strong> «Dacă tocmai ai cumpărat apartament în București — acest video îți economisește €5K la mobilier» (Personal + Valoare în 3 sec)</div>
+            <div data-ro="<strong>Kitchen:</strong> Obiect în mână — bucată de fațadă de bucătărie → «știți de ce 90% aleg GROSIMEA greșită?»" data-ru="<strong>Kitchen:</strong> Артефакт в руках — кусок фасада кухни → «знаете почему 90% людей выбирают НЕ ту толщину?»"><strong>Kitchen:</strong> Obiect în mână — bucată de fațadă de bucătărie → «știți de ce 90% aleg GROSIMEA greșită?»</div>
+            <div data-ro="<strong>MD Factory:</strong> Începe cu short viral al concurentului despre fabrică → «iată cum fac alții. Iar noi facem așa…»" data-ru="<strong>MD Factory:</strong> Начать с залетевшего шорса конкурента про фабрику → «вот так делают другие. А вот как делаем мы…»"><strong>MD Factory:</strong> Începe cu short viral al concurentului despre fabrică → «iată cum fac alții. Iar noi facem așa…»</div>
           </div>
         </div>
       </div>
@@ -302,43 +304,43 @@
         <div class="flex items-start gap-5 mb-5 flex-wrap">
           <div class="secret-num">2</div>
           <div class="flex-1 min-w-[250px]">
-            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1">RETENȚIE TOTALĂ · УДЕРЖАНИЕ ПОЛНОЕ</div>
-            <h3 class="font-serif text-2xl text-brand mb-1">Удержание по всей длине видео</h3>
-            <p class="text-sm text-muted">Сколько % зрителей досмотрели до конца. Качели эмоций как в Marvel-фильмах.</p>
+            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1" data-ro="RETENȚIE PE TOATĂ DURATA" data-ru="УДЕРЖАНИЕ ДО КОНЦА">RETENȚIE PE TOATĂ DURATA</div>
+            <h3 class="font-serif text-2xl text-brand mb-1" data-ro="Câți privitori văd videoul până la sfârșit" data-ru="Сколько % зрителей досматривают до конца">Câți privitori văd videoul până la sfârșit</h3>
+            <p class="text-sm text-muted" data-ro="Procentul celor care au privit până la final. Suișuri și coborâșuri de emoție ca în filmele Marvel." data-ru="Сколько % зрителей досмотрели до конца. Качели эмоций как в Marvel-фильмах.">Procentul celor care au privit până la final. Suișuri și coborâșuri de emoție ca în filmele Marvel.</p>
           </div>
-          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap">Норма: 50%+</div>
+          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap" data-ro="Normă: 50%+" data-ru="Норма: 50%+">Normă: 50%+</div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-5">
           <div class="bg-red-50 rounded-xl p-5 border border-red-100">
-            <div class="text-xs uppercase tracking-widest kill font-bold mb-2">❌ Что ГУБИТ</div>
+            <div class="text-xs uppercase tracking-widest kill font-bold mb-2" data-ro="❌ Ce STRICĂ" data-ru="❌ Что СНИЖАЕТ">❌ Ce STRICĂ</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• Дать ответ на вопрос СРАЗУ («какой витамин? — магний» = скип)</li>
-              <li>• Сложные слова («дигидролиз», «амортизация» — Винни-Пух пугается)</li>
-              <li>• Монотонный голос, одна интонация</li>
-              <li>• Спикер не в безопасности (зажатость, мнётся)</li>
-              <li>• Скучные пояснения, которые «никто не просил»</li>
+              <li data-ro="• A da răspunsul IMEDIAT («ce vitamină? — magneziu» = skip)" data-ru="• Дать ответ на вопрос СРАЗУ («какой витамин? — магний» = скип)">• A da răspunsul IMEDIAT («ce vitamină? — magneziu» = skip)</li>
+              <li data-ro="• Cuvinte complicate («dihidroliza», «amortizare»)" data-ru="• Сложные слова («дигидролиз», «амортизация»)">• Cuvinte complicate («dihidroliza», «amortizare»)</li>
+              <li data-ro="• Voce monotonă, o singură intonație" data-ru="• Монотонный голос, одна интонация">• Voce monotonă, o singură intonație</li>
+              <li data-ro="• Speaker care nu se simte în siguranță (rigid, sfioș)" data-ru="• Спикер не в безопасности (зажатость, мнётся)">• Speaker care nu se simte în siguranță (rigid, sfioș)</li>
+              <li data-ro="• Explicații plictisitoare pe care «nimeni nu le-a cerut»" data-ru="• Скучные пояснения, которые «никто не просил»">• Explicații plictisitoare pe care «nimeni nu le-a cerut»</li>
             </ul>
           </div>
           <div class="bg-green-50 rounded-xl p-5 border border-green-100">
-            <div class="text-xs uppercase tracking-widest fix font-bold mb-2">✅ Что ПОВЫШАЕТ</div>
+            <div class="text-xs uppercase tracking-widest fix font-bold mb-2" data-ro="✅ Ce CREȘTE" data-ru="✅ Что ПОВЫШАЕТ">✅ Ce CREȘTE</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• Эмоциональные качели (Marvel-сценарий: герой → угроза → победа → угроза)</li>
-              <li>• Квадрат Декарта: «Что будет ЕСЛИ сделаете? Что ЕСЛИ НЕ?»</li>
-              <li>• Молчание + смена интонации/громкости/позы</li>
-              <li>• Артефакт в руке (эпоха СДВГ — даёт зацепиться)</li>
-              <li>• Уверенность на съёмке: одежда, обувь, заземление</li>
-              <li>• Растягивать ответ — «магний… а сейчас расскажу ПОЧЕМУ»</li>
+              <li data-ro="• Suișuri-coborâșuri emoționale (scenariu Marvel)" data-ru="• Эмоциональные качели (Marvel-сценарий)">• Suișuri-coborâșuri emoționale (scenariu Marvel)</li>
+              <li data-ro="• Pătratul lui Descartes: «Ce se întâmplă DACĂ faci? DACĂ NU?»" data-ru="• Квадрат Декарта: «Что будет ЕСЛИ сделаете? Что ЕСЛИ НЕ?»">• Pătratul lui Descartes: «Ce se întâmplă DACĂ faci? DACĂ NU?»</li>
+              <li data-ro="• Tăcere + schimbare de intonație/volum/poziție" data-ru="• Молчание + смена интонации/громкости/позы">• Tăcere + schimbare de intonație/volum/poziție</li>
+              <li data-ro="• Obiect în mână (epoca ADHD — ajută concentrarea)" data-ru="• Артефакт в руке (эпоха СДВГ)">• Obiect în mână (epoca ADHD — ajută concentrarea)</li>
+              <li data-ro="• Încredere pe platou: haine, încălțăminte, calm" data-ru="• Уверенность на съёмке: одежда, обувь, заземление">• Încredere pe platou: haine, încălțăminte, calm</li>
+              <li data-ro="• Întârzie răspunsul — «magneziu… acum vă spun DE CE»" data-ru="• Растягивай ответ — «магний… а сейчас расскажу ПОЧЕМУ»">• Întârzie răspunsul — «magneziu… acum vă spun DE CE»</li>
             </ul>
           </div>
         </div>
 
         <div class="mt-5 apply-card rounded-xl p-5">
-          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">🪑 Применение к TANDEM</div>
+          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="🪑 Aplicare la TANDEM" data-ru="🪑 Применение к TANDEM">🪑 Aplicare la TANDEM</div>
           <div class="text-sm text-brand space-y-1.5">
-            <div><strong>Price Honesty videos:</strong> «Эта кухня €25K. Сейчас покажу из чего — но сначала расскажу что я НЕ ВКЛЮЧИЛ в эту сумму…» (растяжка)</div>
-            <div><strong>Insider Reveal:</strong> Designer держит образец материала → молчит 3 сек → «вот это вот стоит €3.000 за м². Знаете почему?»</div>
-            <div><strong>Crash Test:</strong> Качели — «эта канапея для премиум-сегмента» (вверх) → «сейчас попробуем её сломать» (вниз) → «у нас не получилось» (вверх)</div>
+            <div data-ro="<strong>Price Honesty:</strong> «Bucătăria asta €25K. Acum arăt din ce — dar întâi spun ce NU am inclus în această sumă…» (întârzierea răspunsului)" data-ru="<strong>Price Honesty:</strong> «Эта кухня €25K. Сейчас покажу из чего — но сначала расскажу что я НЕ ВКЛЮЧИЛ в эту сумму…» (растяжка)"><strong>Price Honesty:</strong> «Bucătăria asta €25K. Acum arăt din ce — dar întâi spun ce NU am inclus în această sumă…» (întârzierea răspunsului)</div>
+            <div data-ro="<strong>Insider Reveal:</strong> Designer ține un eșantion → tăcere 3 sec → «asta costă €3.000/m². Știți de ce?»" data-ru="<strong>Insider Reveal:</strong> Designer держит образец материала → молчит 3 сек → «вот это вот стоит €3.000 за м². Знаете почему?»"><strong>Insider Reveal:</strong> Designer ține un eșantion → tăcere 3 sec → «asta costă €3.000/m². Știți de ce?»</div>
+            <div data-ro="<strong>Crash Test:</strong> Suișuri — «această canapea e premium» (sus) → «acum încercăm să o rupem» (jos) → «n-am reușit» (sus)" data-ru="<strong>Crash Test:</strong> Качели — «эта канапея для премиум-сегмента» (вверх) → «сейчас попробуем её сломать» (вниз) → «у нас не получилось» (вверх)"><strong>Crash Test:</strong> Suișuri — «această canapea e premium» (sus) → «acum încercăm să o rupem» (jos) → «n-am reușit» (sus)</div>
           </div>
         </div>
       </div>
@@ -348,46 +350,46 @@
         <div class="flex items-start gap-5 mb-5 flex-wrap">
           <div class="secret-num">3</div>
           <div class="flex-1 min-w-[250px]">
-            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1">DURATĂ MEDIE · СРЕДНЕЕ ВРЕМЯ</div>
-            <h3 class="font-serif text-2xl text-brand mb-1">Среднее время просмотра</h3>
-            <p class="text-sm text-muted">Длинные видео алгоритм любит — больше рекламы можно вставить. ГЛАВНЫЙ ТРЮК — истории.</p>
+            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1" data-ro="TIMP MEDIU DE VIZUALIZARE" data-ru="СРЕДНЕЕ ВРЕМЯ ПРОСМОТРА">TIMP MEDIU DE VIZUALIZARE</div>
+            <h3 class="font-serif text-2xl text-brand mb-1" data-ro="Cât timp în medie petrec privitorii pe videoul tău" data-ru="Сколько в среднем времени зритель проводит на твоём видео">Cât timp în medie petrec privitorii pe videoul tău</h3>
+            <p class="text-sm text-muted" data-ro="Algoritmul iubește video-uri lungi — mai multe reclame se pot insera. TRUC PRINCIPAL — povești." data-ru="Длинные видео алгоритм любит — больше рекламы можно вставить. ГЛАВНЫЙ ТРЮК — истории.">Algoritmul iubește video-uri lungi — mai multe reclame se pot insera. TRUC PRINCIPAL — povești.</p>
           </div>
-          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap">Норма: 6-8 мин</div>
+          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap" data-ro="Normă: 6-8 min" data-ru="Норма: 6-8 мин">Normă: 6-8 min</div>
         </div>
 
         <div class="bg-cream rounded-xl p-5 mb-5">
-          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">★ ГЛАВНОЕ ОТКРЫТИЕ ВЕЛИЖАНИНА (после 7 мес. анализа)</div>
-          <p class="text-sm text-brand leading-relaxed">«Запихивание ОГРОМНОГО количества ИСТОРИЙ в контент = удержание не падает. У клиента было видео "5 самых тупых бизнес-идей" — это просто 5 историй про друзей-бизнесменов. <strong>700.000 просмотров.</strong>»</p>
+          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="★ DESCOPERIREA PRINCIPALĂ A LUI VELIZHANIN (după 7 luni de analiză)" data-ru="★ ГЛАВНОЕ ОТКРЫТИЕ ВЕЛИЖАНИНА (после 7 мес. анализа)">★ DESCOPERIREA PRINCIPALĂ A LUI VELIZHANIN (după 7 luni de analiză)</div>
+          <p class="text-sm text-brand leading-relaxed" data-ro="«Cu cât pui MAI MULTE POVEȘTI în conținut = retenția nu scade. Un client a avut un video "5 cele mai stupide idei de business" — sunt doar 5 povești despre prieteni antreprenori. <strong>700.000 de vizualizări.</strong>»" data-ru="«Запихивание ОГРОМНОГО количества ИСТОРИЙ в контент = удержание не падает. У клиента было видео "5 самых тупых бизнес-идей" — это просто 5 историй про друзей-бизнесменов. <strong>700.000 просмотров.</strong>»">«Cu cât pui MAI MULTE POVEȘTI în conținut = retenția nu scade. Un client a avut un video "5 cele mai stupide idei de business" — sunt doar 5 povești despre prieteni antreprenori. <strong>700.000 de vizualizări.</strong>»</p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-5">
           <div class="bg-green-50 rounded-xl p-5 border border-green-100">
-            <div class="text-xs uppercase tracking-widest fix font-bold mb-2">✅ Что РАБОТАЕТ</div>
+            <div class="text-xs uppercase tracking-widest fix font-bold mb-2" data-ro="✅ Ce FUNCȚIONEAZĂ" data-ru="✅ Что РАБОТАЕТ">✅ Ce FUNCȚIONEAZĂ</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• «Был у меня случай…»</li>
-              <li>• «У моего клиента было так…»</li>
-              <li>• «В 2018 году мы…»</li>
-              <li>• «Знакомая открыла маникюрный салон и…»</li>
-              <li>• 6+ историй в одном видео = удержание не падает</li>
+              <li data-ro="• «Am avut un caz…»" data-ru="• «Был у меня случай…»">• «Am avut un caz…»</li>
+              <li data-ro="• «Clientul meu a avut așa…»" data-ru="• «У моего клиента было так…»">• «Clientul meu a avut așa…»</li>
+              <li data-ro="• «În 2018 noi am făcut…»" data-ru="• «В 2018 году мы…»">• «În 2018 noi am făcut…»</li>
+              <li data-ro="• «Cunoscuta a deschis salon manichiură și…»" data-ru="• «Знакомая открыла маникюрный салон и…»">• «Cunoscuta a deschis salon manichiură și…»</li>
+              <li data-ro="• 6+ povești într-un video = retenția nu scade" data-ru="• 6+ историй в одном видео = удержание не падает">• 6+ povești într-un video = retenția nu scade</li>
             </ul>
           </div>
           <div class="bg-amber-50 rounded-xl p-5 border border-amber-100">
-            <div class="text-xs uppercase tracking-widest text-amber-700 font-bold mb-2">⚠ Важное правило</div>
+            <div class="text-xs uppercase tracking-widest text-amber-700 font-bold mb-2" data-ro="⚠ Regulă importantă" data-ru="⚠ Важное правило">⚠ Regulă importantă</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• НЕ снимать часовые подкасты ради длины</li>
-              <li>• Анализировать YouTube-аналитику: где УДЕРЖАНИЕ НЕ ПАДАЕТ</li>
-              <li>• Эти моменты = почти всегда ИСТОРИИ</li>
-              <li>• Кашу маслом не испортишь — историями видео тоже</li>
+              <li data-ro="• NU filma podcast-uri de o oră doar pentru lungime" data-ru="• НЕ снимать часовые подкасты ради длины">• NU filma podcast-uri de o oră doar pentru lungime</li>
+              <li data-ro="• Analizează YouTube Analytics: unde RETENȚIA NU SCADE" data-ru="• Анализируй YouTube-аналитику: где УДЕРЖАНИЕ НЕ ПАДАЕТ">• Analizează YouTube Analytics: unde RETENȚIA NU SCADE</li>
+              <li data-ro="• Aceste momente = aproape întotdeauna POVEȘTI" data-ru="• Эти моменты = почти всегда ИСТОРИИ">• Aceste momente = aproape întotdeauna POVEȘTI</li>
+              <li data-ro="• Cu povești nu strici videoul niciodată" data-ru="• Кашу маслом не испортишь — историями видео тоже">• Cu povești nu strici videoul niciodată</li>
             </ul>
           </div>
         </div>
 
         <div class="mt-5 apply-card rounded-xl p-5">
-          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">🪑 Применение к TANDEM</div>
+          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="🪑 Aplicare la TANDEM" data-ru="🪑 Применение к TANDEM">🪑 Aplicare la TANDEM</div>
           <div class="text-sm text-brand space-y-1.5">
-            <div><strong>Customer Story format:</strong> Не 1 семья × 5 мин, а 5 семей × 1 мин — «Familia Popescu из Cluj купила в 2024…», «Familia Ionescu — три месяца спустя…»</div>
-            <div><strong>Designer Insider:</strong> «У меня был клиент, который…» × 5 разных историй = одно видео на 5-7 мин</div>
-            <div><strong>Factory MD:</strong> 5 историй про разные модели за месяц — каждая семья получает свою кухню</div>
+            <div data-ro="<strong>Customer Story:</strong> nu 1 familie × 5 min, ci 5 familii × 1 min — «Familia Popescu din Cluj a cumpărat în 2024…», «Familia Ionescu — 3 luni mai târziu…»" data-ru="<strong>Customer Story format:</strong> Не 1 семья × 5 мин, а 5 семей × 1 мин — «Familia Popescu из Cluj купила в 2024…», «Familia Ionescu — три месяца спустя…»"><strong>Customer Story:</strong> nu 1 familie × 5 min, ci 5 familii × 1 min — «Familia Popescu din Cluj a cumpărat în 2024…», «Familia Ionescu — 3 luni mai târziu…»</div>
+            <div data-ro="<strong>Designer Insider:</strong> «Am avut un client care…» × 5 povești diferite = un video de 5-7 min" data-ru="<strong>Designer Insider:</strong> «У меня был клиент, который…» × 5 разных историй = одно видео на 5-7 мин"><strong>Designer Insider:</strong> «Am avut un client care…» × 5 povești diferite = un video de 5-7 min</div>
+            <div data-ro="<strong>Factory MD:</strong> 5 povești despre 5 modele diferite — fiecare familie primește bucătăria ei" data-ru="<strong>Factory MD:</strong> 5 историй про разные модели за месяц — каждая семья получает свою кухню"><strong>Factory MD:</strong> 5 povești despre 5 modele diferite — fiecare familie primește bucătăria ei</div>
           </div>
         </div>
       </div>
@@ -397,58 +399,58 @@
         <div class="flex items-start gap-5 mb-5 flex-wrap">
           <div class="secret-num">4</div>
           <div class="flex-1 min-w-[250px]">
-            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1">CTR · КЛИКАБЕЛЬНОСТЬ</div>
-            <h3 class="font-serif text-2xl text-brand mb-1">CTR — превью + название (или первые 3 сек для shorts)</h3>
-            <p class="text-sm text-muted">Конверсия «увидел → кликнул». Топовые блогеры (MrBeast, Casey) — задрачиваются по CTR. ВИСП-техника решает 90%.</p>
+            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1" data-ro="CTR · CLICK-URI PE MINIATURĂ" data-ru="CTR · КЛИКИ ПО ПРЕВЬЮ">CTR · CLICK-URI PE MINIATURĂ</div>
+            <h3 class="font-serif text-2xl text-brand mb-1" data-ro="Cât de des oamenii dau click pe miniatura ta" data-ru="Как часто люди кликают на твоё превью">Cât de des oamenii dau click pe miniatura ta</h3>
+            <p class="text-sm text-muted" data-ro="«A văzut → a dat click». Bloggerii de top (MrBeast, Casey) se obsedează cu CTR. Tehnica VISP rezolvă 90%." data-ru="«Увидел → кликнул». Топовые блогеры (MrBeast, Casey) — задрачиваются по CTR. ВИСП-техника решает 90%.">«A văzut → a dat click». Bloggerii de top (MrBeast, Casey) se obsedează cu CTR. Tehnica VISP rezolvă 90%.</p>
           </div>
-          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap">Норма: 4-5%</div>
+          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap" data-ro="Normă: 4-5%" data-ru="Норма: 4-5%">Normă: 4-5%</div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-5 mb-5">
           <div class="bg-green-50 rounded-xl p-5 border border-green-100">
-            <div class="text-xs uppercase tracking-widest fix font-bold mb-2">✅ ВИСП-приёмы для превью</div>
+            <div class="text-xs uppercase tracking-widest fix font-bold mb-2" data-ro="✅ Trucuri VISP pentru miniatură" data-ru="✅ ВИСП-приёмы для превью">✅ Trucuri VISP pentru miniatură</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• <strong>Стрелки, кружки</strong> — добавляют интригу «куда смотреть?»</li>
-              <li>• <strong>Народные слова</strong> в простых нишах — «тупые», «дерьмовые», «худшие»</li>
-              <li>• <strong>Блюр</strong> — что там скрыто? интрига</li>
-              <li>• <strong>Формат до/после</strong> — «толстая → худая», «комната до → после»</li>
-              <li>• <strong>Что-то мерзкое/страшное</strong> — нога с грибком в нише маникюра</li>
-              <li>• <strong>Узнаваемые логотипы</strong> — IKEA / Mobexpert / Lemn Mobila (с блюром если страх)</li>
-              <li>• <strong>Нестандартные позы</strong> — НЕ постановочные фото, а скриншот из видео с эмоцией</li>
+              <li data-ro="• <strong>Săgeți, cerculețe</strong> — adaugă intrigă «unde să privesc?»" data-ru="• <strong>Стрелки, кружки</strong> — добавляют интригу «куда смотреть?»">• <strong>Săgeți, cerculețe</strong> — adaugă intrigă «unde să privesc?»</li>
+              <li data-ro="• <strong>Cuvinte populare</strong> în nișe simple — «stupide», «proaste», «cele mai rele»" data-ru="• <strong>Народные слова</strong> в простых нишах — «тупые», «дерьмовые», «худшие»">• <strong>Cuvinte populare</strong> în nișe simple — «stupide», «proaste», «cele mai rele»</li>
+              <li data-ro="• <strong>Blur</strong> — ce e ascuns acolo? intrigă" data-ru="• <strong>Блюр</strong> — что там скрыто? интрига">• <strong>Blur</strong> — ce e ascuns acolo? intrigă</li>
+              <li data-ro="• <strong>Format înainte/după</strong> — «grasă → slabă», «cameră înainte → după»" data-ru="• <strong>Формат до/после</strong> — «толстая → худая», «комната до → после»">• <strong>Format înainte/după</strong> — «grasă → slabă», «cameră înainte → după»</li>
+              <li data-ro="• <strong>Ceva scârbos/înfricoșător</strong> — picior cu ciupercă în nișa manichiură" data-ru="• <strong>Что-то мерзкое/страшное</strong> — нога с грибком в нише маникюра">• <strong>Ceva scârbos/înfricoșător</strong> — picior cu ciupercă în nișa manichiură</li>
+              <li data-ro="• <strong>Logo-uri recunoscute</strong> — IKEA / Mobexpert / Lemn Mobila (cu blur dacă te temi)" data-ru="• <strong>Узнаваемые логотипы</strong> — IKEA / Mobexpert / Lemn Mobila (с блюром если страх)">• <strong>Logo-uri recunoscute</strong> — IKEA / Mobexpert / Lemn Mobila (cu blur dacă te temi)</li>
+              <li data-ro="• <strong>Poziții non-standard</strong> — NU foto pozat, ci screenshot din video cu emoție" data-ru="• <strong>Нестандартные позы</strong> — НЕ постановочные фото, а скриншот из видео с эмоцией">• <strong>Poziții non-standard</strong> — NU foto pozat, ci screenshot din video cu emoție</li>
             </ul>
           </div>
           <div class="bg-cream rounded-xl p-5">
-            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">★ ВИСП-формула превью+название</div>
-            <p class="text-sm text-brand leading-relaxed mb-2">Каждое превью+название должно «дёргать» хотя бы 2 струны:</p>
+            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="★ Formula VISP pentru miniatură+titlu" data-ru="★ ВИСП-формула превью+название">★ Formula VISP pentru miniatură+titlu</div>
+            <p class="text-sm text-brand leading-relaxed mb-2" data-ro="Fiecare miniatură+titlu trebuie să «atingă» cel puțin 2 strune:" data-ru="Каждое превью+название должно «дёргать» хотя бы 2 струны:">Fiecare miniatură+titlu trebuie să «atingă» cel puțin 2 strune:</p>
             <div class="space-y-1 text-xs">
-              <div>🔵 <strong>В</strong>ыгода — что зритель получит</div>
-              <div>🟡 <strong>И</strong>нтрига — чего он не знает</div>
-              <div>🔴 <strong>С</strong>рочность — почему «сейчас», «легко», «быстро»</div>
-              <div>🟢 <strong>П</strong>ричастность — «это про меня»</div>
+              <div data-ro="🔵 <strong>V</strong>aloare — ce primește privitorul" data-ru="🔵 <strong>В</strong>ыгода — что зритель получит">🔵 <strong>V</strong>aloare — ce primește privitorul</div>
+              <div data-ro="🟡 <strong>I</strong>ntrigă — ce nu știe" data-ru="🟡 <strong>И</strong>нтрига — чего он не знает">🟡 <strong>I</strong>ntrigă — ce nu știe</div>
+              <div data-ro="🔴 <strong>S</strong>ense urgență — de ce «acum», «ușor», «rapid»" data-ru="🔴 <strong>С</strong>рочность — почему «сейчас», «легко», «быстро»">🔴 <strong>S</strong>ense urgență — de ce «acum», «ușor», «rapid»</div>
+              <div data-ro="🟢 <strong>P</strong>ersonal — «e despre mine»" data-ru="🟢 <strong>П</strong>ричастность — «это про меня»">🟢 <strong>P</strong>ersonal — «e despre mine»</div>
             </div>
             <div class="mt-3 p-3 bg-white rounded-lg text-xs">
-              <strong class="text-gold">Стихийное знание:</strong> думай в масштабе <strong>20 млн зрителей</strong> в Romania+Moldova. Узнают ли они твой логотип/бренд/референс? Если нет — не используй.
+              <strong class="text-gold" data-ro="Recunoaștere generală:" data-ru="Стихийное знание:">Recunoaștere generală:</strong> <span data-ro="gândește la scară de <strong>20 milioane de privitori</strong> în Romania+Moldova. Recunosc ei logoul/brandul/referința ta? Dacă nu — nu o folosi." data-ru="думай в масштабе <strong>20 млн зрителей</strong> в Romania+Moldova. Узнают ли они твой логотип/бренд/референс? Если нет — не используй.">gândește la scară de <strong>20 milioane de privitori</strong> în Romania+Moldova. Recunosc ei logoul/brandul/referința ta? Dacă nu — nu o folosi.</span>
             </div>
           </div>
         </div>
 
         <div class="apply-card rounded-xl p-5">
-          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">🪑 Применение к TANDEM (примеры готовых превью+названий)</div>
+          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="🪑 Aplicare la TANDEM (exemple miniatură+titlu gata)" data-ru="🪑 Применение к TANDEM (примеры готовых превью+названий)">🪑 Aplicare la TANDEM (exemple miniatură+titlu gata)</div>
           <div class="space-y-3 text-sm text-brand">
             <div class="bg-white rounded-lg p-3 border border-soft">
               <div class="font-bold mb-1">Casa 360°</div>
-              <div class="italic">📸 Превью: семья на пустом полу новой квартиры (страх)<br>📝 Название: «3 ошибки которые делают 90% когда обустраивают первую квартиру в Bucureşti»</div>
-              <div class="text-xs text-muted mt-1">ВИСП: И + С + П (мерзкая ситуация + 3 простых + про меня)</div>
+              <div class="italic" data-ro="📸 Miniatură: familie pe podea goală în apartament nou (frică)<br>📝 Titlu: «3 greșeli pe care le fac 90% când mobilează primul apartament în București»" data-ru="📸 Превью: семья на пустом полу новой квартиры (страх)<br>📝 Название: «3 ошибки которые делают 90% когда обустраивают первую квартиру в Bucureşti»">📸 Miniatură: familie pe podea goală în apartament nou (frică)<br>📝 Titlu: «3 greșeli pe care le fac 90% când mobilează primul apartament în București»</div>
+              <div class="text-xs text-muted mt-1" data-ro="VISP: I + S + P (situație neplăcută + 3 simple + e despre mine)" data-ru="ВИСП: И + С + П (мерзкая ситуация + 3 простых + про меня)">VISP: I + S + P (situație neplăcută + 3 simple + e despre mine)</div>
             </div>
             <div class="bg-white rounded-lg p-3 border border-soft">
               <div class="font-bold mb-1">Kitchen</div>
-              <div class="italic">📸 Превью: кухня IKEA размытым логотипом + красный кружок<br>📝 Название: «Почему ваша кухня из IKEA развалится через 3 года»</div>
-              <div class="text-xs text-muted mt-1">ВИСП: В + И + П (узнаваемый логотип + интрига + срок)</div>
+              <div class="italic" data-ro="📸 Miniatură: bucătărie IKEA cu logo blur + cerc roșu<br>📝 Titlu: «De ce bucătăria ta IKEA se va strica în 3 ani»" data-ru="📸 Превью: кухня IKEA размытым логотипом + красный кружок<br>📝 Название: «Почему ваша кухня из IKEA развалится через 3 года»">📸 Miniatură: bucătărie IKEA cu logo blur + cerc roșu<br>📝 Titlu: «De ce bucătăria ta IKEA se va strica în 3 ani»</div>
+              <div class="text-xs text-muted mt-1" data-ro="VISP: V + I + P (logo cunoscut + intrigă + termen)" data-ru="ВИСП: В + И + П (узнаваемый логотип + интрига + срок)">VISP: V + I + P (logo cunoscut + intrigă + termen)</div>
             </div>
             <div class="bg-white rounded-lg p-3 border border-soft">
               <div class="font-bold mb-1">MD Factory</div>
-              <div class="italic">📸 Превью: рука держит дешёвую ткань vs нашу с подписью «угадай»<br>📝 Название: «Канапея за €500 vs €4.000 — что внутри?»</div>
-              <div class="text-xs text-muted mt-1">ВИСП: И + С + П (блюр-интрига + сравнение + любопытство)</div>
+              <div class="italic" data-ro="📸 Miniatură: mână ține material ieftin vs al nostru, semn «ghici»<br>📝 Titlu: «Canapea €500 vs €4.000 — ce e înăuntru?»" data-ru="📸 Превью: рука держит дешёвую ткань vs нашу с подписью «угадай»<br>📝 Название: «Канапея за €500 vs €4.000 — что внутри?»">📸 Miniatură: mână ține material ieftin vs al nostru, semn «ghici»<br>📝 Titlu: «Canapea €500 vs €4.000 — ce e înăuntru?»</div>
+              <div class="text-xs text-muted mt-1" data-ro="VISP: I + S + P (blur-intrigă + comparație + curiozitate)" data-ru="ВИСП: И + С + П (блюр-интрига + сравнение + любопытство)">VISP: I + S + P (blur-intrigă + comparație + curiozitate)</div>
             </div>
           </div>
         </div>
@@ -459,41 +461,41 @@
         <div class="flex items-start gap-5 mb-5 flex-wrap">
           <div class="secret-num">5</div>
           <div class="flex-1 min-w-[250px]">
-            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1">INTERACȚIUNE · ВОВЛЕЧЕНИЕ</div>
-            <h3 class="font-serif text-2xl text-brand mb-1">Вовлечение — лайки + комменты / просмотры</h3>
-            <p class="text-sm text-muted">Кейс: видео «Первые признаки Альцгеймера» 700K просмотров через вовлечение (25-30% — viral driver).</p>
+            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1" data-ro="INTERACȚIUNE · REACȚII" data-ru="ВОВЛЕЧЕНИЕ · РЕАКЦИИ">INTERACȚIUNE · REACȚII</div>
+            <h3 class="font-serif text-2xl text-brand mb-1" data-ro="Like-uri + comentarii / vizualizări" data-ru="Лайки + комментарии / просмотры">Like-uri + comentarii / vizualizări</h3>
+            <p class="text-sm text-muted" data-ro="Caz: videoul «Primele semne ale Alzheimerului» — 700K vizualizări datorită interacțiunii (25-30% = viral driver)." data-ru="Кейс: видео «Первые признаки Альцгеймера» 700K просмотров через вовлечение (25-30% — viral driver).">Caz: videoul «Primele semne ale Alzheimerului» — 700K vizualizări datorită interacțiunii (25-30% = viral driver).</p>
           </div>
-          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap">Норма: 5-15%</div>
+          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap" data-ro="Normă: 5-15%" data-ru="Норма: 5-15%">Normă: 5-15%</div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-5 mb-5">
           <div class="bg-green-50 rounded-xl p-5 border border-green-100">
-            <div class="text-xs uppercase tracking-widest fix font-bold mb-2">✅ 4 способа спровоцировать комменты</div>
+            <div class="text-xs uppercase tracking-widest fix font-bold mb-2" data-ro="✅ 4 moduri de a provoca comentarii" data-ru="✅ 4 способа спровоцировать комменты">✅ 4 moduri de a provoca comentarii</div>
             <ul class="space-y-2 text-sm text-brand">
-              <li><strong>1. История «где они красавчики»</strong> — «расскажите как ловко отбрехались от полиции» (люди ОХОТНО хвастаются)</li>
-              <li><strong>2. История «где другие косякнули»</strong> — «расскажите как ваш знакомый облажался с ремонтом» (люди ОХОТНО хейтят других)</li>
-              <li><strong>3. Чёткое одно слово</strong> — «напишите СВЕТ если хотите видео про освещение» (виртуальная толпа = чёткое ТЗ)</li>
-              <li><strong>4. Польза для других</strong> — «напишите как у вас началось — это поможет другим зрителям»</li>
+              <li data-ro="<strong>1. Povești «unde sunt eroi»</strong> — «spuneți cum v-ați descurcat ingenios cu poliția» (oamenilor le PLACE să se laude)" data-ru="<strong>1. История «где они красавчики»</strong> — «расскажите как ловко отбрехались от полиции» (люди ОХОТНО хвастаются)"><strong>1. Povești «unde sunt eroi»</strong> — «spuneți cum v-ați descurcat ingenios cu poliția» (oamenilor le PLACE să se laude)</li>
+              <li data-ro="<strong>2. Povești «unde alții au greșit»</strong> — «spuneți cum cunoscutul a fost încurcat cu renovarea» (oamenilor le PLACE să critice)" data-ru="<strong>2. История «где другие косякнули»</strong> — «расскажите как ваш знакомый облажался с ремонтом» (люди ОХОТНО хейтят других)"><strong>2. Povești «unde alții au greșit»</strong> — «spuneți cum cunoscutul a fost încurcat cu renovarea» (oamenilor le PLACE să critice)</li>
+              <li data-ro="<strong>3. Un singur cuvânt clar</strong> — «scrieți LUMINĂ dacă vreți video despre iluminat» (mulțimea virtuală = task clar)" data-ru="<strong>3. Чёткое одно слово</strong> — «напишите СВЕТ если хотите видео про освещение» (виртуальная толпа = чёткое ТЗ)"><strong>3. Un singur cuvânt clar</strong> — «scrieți LUMINĂ dacă vreți video despre iluminat» (mulțimea virtuală = task clar)</li>
+              <li data-ro="<strong>4. Folos pentru alții</strong> — «scrieți cum a început la voi — va ajuta alți privitori»" data-ru="<strong>4. Польза для других</strong> — «напишите как у вас началось — это поможет другим зрителям»"><strong>4. Folos pentru alții</strong> — «scrieți cum a început la voi — va ajuta alți privitori»</li>
             </ul>
           </div>
           <div class="bg-red-50 rounded-xl p-5 border border-red-100">
-            <div class="text-xs uppercase tracking-widest kill font-bold mb-2">❌ НЕ работает</div>
+            <div class="text-xs uppercase tracking-widest kill font-bold mb-2" data-ro="❌ NU funcționează" data-ru="❌ НЕ работает">❌ NU funcționează</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• «Напишите что-нибудь в комментариях» (нет ТЗ)</li>
-              <li>• «Пожалуйста, лайкните, для меня это важно» (про себя)</li>
-              <li>• «Что думаете?» — слишком общий вопрос</li>
-              <li>• Анимация-указатель «где комментарий» — но БЕЗ конкретного вопроса</li>
+              <li data-ro="• «Scrieți ceva în comentarii» (fără task clar)" data-ru="• «Напишите что-нибудь в комментариях» (нет ТЗ)">• «Scrieți ceva în comentarii» (fără task clar)</li>
+              <li data-ro="• «Vă rog dați like, e important pentru mine»" data-ru="• «Пожалуйста, лайкните, для меня это важно» (про себя)">• «Vă rog dați like, e important pentru mine»</li>
+              <li data-ro="• «Ce credeți?» — întrebare prea generală" data-ru="• «Что думаете?» — слишком общий вопрос">• «Ce credeți?» — întrebare prea generală</li>
+              <li data-ro="• Animație-indicator «unde e comentariul» — DAR fără întrebare concretă" data-ru="• Анимация-указатель «где комментарий» — но БЕЗ конкретного вопроса">• Animație-indicator «unde e comentariul» — DAR fără întrebare concretă</li>
             </ul>
           </div>
         </div>
 
         <div class="apply-card rounded-xl p-5">
-          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">🪑 Применение к TANDEM — комментарий-провокации</div>
+          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="🪑 Aplicare la TANDEM — provocări comentarii" data-ru="🪑 Применение к TANDEM — комментарий-провокации">🪑 Aplicare la TANDEM — provocări comentarii</div>
           <div class="space-y-2 text-sm text-brand">
-            <div>• «Расскажите вашу <strong>худшую историю ремонта</strong> — какую самую большую ошибку вы сделали? (других зрителей предупредим)»</div>
-            <div>• «Напишите <strong>СТРАНА</strong> где вы живёте — мы покажем ближайший showroom»</div>
-            <div>• «<strong>СКОЛЬКО лет</strong> служит ваша мебель из IKEA? Напишите цифру — у нас будет статистика»</div>
-            <div>• «Расскажите как <strong>вы переплатили за мебель</strong> — и как могли сэкономить» (хвастовство + польза другим)</div>
+            <div data-ro="• «Spuneți cea mai <strong>proastă poveste de renovare</strong> — care a fost cea mai mare greșeală? (vom preveni alți privitori)»" data-ru="• «Расскажите вашу <strong>худшую историю ремонта</strong> — какую самую большую ошибку вы сделали? (других зрителей предупредим)»">• «Spuneți cea mai <strong>proastă poveste de renovare</strong> — care a fost cea mai mare greșeală? (vom preveni alți privitori)»</div>
+            <div data-ro="• «Scrieți <strong>ȚARA</strong> unde locuiți — vă arătăm cel mai apropiat showroom»" data-ru="• «Напишите <strong>СТРАНА</strong> где вы живёте — мы покажем ближайший showroom»">• «Scrieți <strong>ȚARA</strong> unde locuiți — vă arătăm cel mai apropiat showroom»</div>
+            <div data-ro="• «<strong>CÂȚI ani</strong> vă servește mobila IKEA? Scrieți cifra — facem statistică»" data-ru="• «<strong>СКОЛЬКО лет</strong> служит ваша мебель из IKEA? Напишите цифру — у нас будет статистика»">• «<strong>CÂȚI ani</strong> vă servește mobila IKEA? Scrieți cifra — facem statistică»</div>
+            <div data-ro="• «Spuneți cum <strong>ați plătit prea mult pentru mobilier</strong> — și cum puteați economisi» (laudă + folos altora)" data-ru="• «Расскажите как <strong>вы переплатили за мебель</strong> — и как могли сэкономить» (хвастовство + польза другим)">• «Spuneți cum <strong>ați plătit prea mult pentru mobilier</strong> — și cum puteați economisi» (laudă + folos altora)</div>
           </div>
         </div>
       </div>
@@ -503,45 +505,45 @@
         <div class="flex items-start gap-5 mb-5 flex-wrap">
           <div class="secret-num">6</div>
           <div class="flex-1 min-w-[250px]">
-            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1">ABONARE · ПОДПИСКА</div>
-            <h3 class="font-serif text-2xl text-brand mb-1">Конверсия в подписку</h3>
-            <p class="text-sm text-muted">Подписка = «согласие получать ВЕСЬ следующий контент от этого автора». Главный двигатель = МИССИЯ.</p>
+            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1" data-ro="ABONARE · ABONAȚI NOI" data-ru="ПОДПИСКА · НОВЫЕ ПОДПИСЧИКИ">ABONARE · ABONAȚI NOI</div>
+            <h3 class="font-serif text-2xl text-brand mb-1" data-ro="Câți se abonează după ce văd videoul" data-ru="Сколько подписываются после просмотра">Câți se abonează după ce văd videoul</h3>
+            <p class="text-sm text-muted" data-ro="Abonarea = «acord să primesc TOT următorul conținut de la acest autor». Motor principal = MISIUNEA canalului." data-ru="Подписка = «согласие получать ВЕСЬ следующий контент от этого автора». Главный двигатель = МИССИЯ.">Abonarea = «acord să primesc TOT următorul conținut de la acest autor». Motor principal = MISIUNEA canalului.</p>
           </div>
-          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap">Норма: 1%</div>
+          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap" data-ro="Normă: 1%" data-ru="Норма: 1%">Normă: 1%</div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-5 mb-5">
           <div class="bg-red-50 rounded-xl p-5 border border-red-100">
-            <div class="text-xs uppercase tracking-widest kill font-bold mb-2">❌ НЕ делать</div>
+            <div class="text-xs uppercase tracking-widest kill font-bold mb-2" data-ro="❌ NU face" data-ru="❌ НЕ делать">❌ NU face</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• Покупать подписку розыгрышами (книги, плед, бутылка вина)</li>
-              <li>• «Для меня это важно как для автора»</li>
-              <li>• «Пожалуйста, подпишитесь, я буду богатым»</li>
-              <li>• Ставить призыв В САМЫЙ КОНЕЦ видео</li>
-              <li>• Перечислять причины абстрактно</li>
+              <li data-ro="• Cumpără abonați cu tombole (cărți, pătură, vin)" data-ru="• Покупать подписку розыгрышами (книги, плед, бутылка вина)">• Cumpără abonați cu tombole (cărți, pătură, vin)</li>
+              <li data-ro="• «Pentru mine e important ca autor»" data-ru="• «Для меня это важно как для автора»">• «Pentru mine e important ca autor»</li>
+              <li data-ro="• «Vă rog, abonați-vă, voi fi bogat»" data-ru="• «Пожалуйста, подпишитесь, я буду богатым»">• «Vă rog, abonați-vă, voi fi bogat»</li>
+              <li data-ro="• Pune cererea LA FINALUL videoului" data-ru="• Ставить призыв В САМЫЙ КОНЕЦ видео">• Pune cererea LA FINALUL videoului</li>
+              <li data-ro="• Enumeră motive abstracte" data-ru="• Перечислять причины абстрактно">• Enumeră motive abstracte</li>
             </ul>
           </div>
           <div class="bg-green-50 rounded-xl p-5 border border-green-100">
-            <div class="text-xs uppercase tracking-widest fix font-bold mb-2">✅ РАБОТАЕТ</div>
+            <div class="text-xs uppercase tracking-widest fix font-bold mb-2" data-ro="✅ FUNCȚIONEAZĂ" data-ru="✅ РАБОТАЕТ">✅ FUNCȚIONEAZĂ</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• Сильная <strong>МИССИЯ канала</strong> (не «много денег», а «сделать мир лучше»)</li>
-              <li>• Слово «подпишись» — волшебное</li>
-              <li>• Призыв В СЕРЕДИНЕ (после первой ценности)</li>
-              <li>• Говорить на языке АУДИТОРИИ — «каждое видео = ступенька к вашему мастерству»</li>
-              <li>• Все видео = одна нить миссии (а не «сегодня про рыбалку, завтра пикап»)</li>
+              <li data-ro="• <strong>MISIUNE puternică</strong> a canalului (nu «mulți bani», ci «fac lumea mai bună»)" data-ru="• Сильная <strong>МИССИЯ канала</strong> (не «много денег», а «сделать мир лучше»)">• <strong>MISIUNE puternică</strong> a canalului (nu «mulți bani», ci «fac lumea mai bună»)</li>
+              <li data-ro="• Cuvântul «abonează-te» — magic" data-ru="• Слово «подпишись» — волшебное">• Cuvântul «abonează-te» — magic</li>
+              <li data-ro="• Cererea LA MIJLOC (după prima valoare oferită)" data-ru="• Призыв В СЕРЕДИНЕ (после первой ценности)">• Cererea LA MIJLOC (după prima valoare oferită)</li>
+              <li data-ro="• Vorbește în limba PUBLICULUI — «fiecare video = treaptă spre măiestria ta»" data-ru="• Говорить на языке АУДИТОРИИ — «каждое видео = ступенька к вашему мастерству»">• Vorbește în limba PUBLICULUI — «fiecare video = treaptă spre măiestria ta»</li>
+              <li data-ro="• Toate video-urile = un fir comun al misiunii (nu «azi pescuit, mâine pickup»)" data-ru="• Все видео = одна нить миссии (а не «сегодня про рыбалку, завтра пикап»)">• Toate video-urile = un fir comun al misiunii (nu «azi pescuit, mâine pickup»)</li>
             </ul>
           </div>
         </div>
 
         <div class="apply-card rounded-xl p-5">
-          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">🪑 МИССИЯ TANDEM TIKTOK канала (проект)</div>
+          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="🪑 MISIUNEA canalului TANDEM TIKTOK (propunere)" data-ru="🪑 МИССИЯ TANDEM TIKTOK канала (проект)">🪑 MISIUNEA canalului TANDEM TIKTOK (propunere)</div>
           <div class="bg-white rounded-lg p-4 border-2" style="border-color:var(--gold)">
-            <div class="font-serif text-lg text-brand italic">«Помогаем семьям Румынии и Молдовы создать дом, в котором ХОЧЕТСЯ жить — без переплат, без обмана, без компромиссов в качестве.»</div>
+            <div class="font-serif text-lg text-brand italic" data-ro="«Ajutăm familiile din România și Moldova să-și creeze o casă în care VOR să trăiască — fără plată în plus, fără înșelăciune, fără compromisuri la calitate.»" data-ru="«Помогаем семьям Румынии и Молдовы создать дом, в котором ХОЧЕТСЯ жить — без переплат, без обмана, без компромиссов в качестве.»">«Ajutăm familiile din România și Moldova să-și creeze o casă în care VOR să trăiască — fără plată în plus, fără înșelăciune, fără compromisuri la calitate.»</div>
           </div>
           <div class="text-sm text-brand mt-3 space-y-1.5">
-            <div>• Каждое видео должно проводить через эту нить</div>
-            <div>• Призыв на подписку — после первой полезной истории (середина видео)</div>
-            <div>• Текст: «Подпишитесь — каждое следующее видео = +1 идея для вашего дома без переплаты»</div>
+            <div data-ro="• Fiecare video trebuie să treacă prin această linie" data-ru="• Каждое видео должно проводить через эту нить">• Fiecare video trebuie să treacă prin această linie</div>
+            <div data-ro="• Cererea abonare — după prima poveste utilă (mijlocul video)" data-ru="• Призыв на подписку — после первой полезной истории (середина видео)">• Cererea abonare — după prima poveste utilă (mijlocul video)</div>
+            <div data-ro="• Text: «Abonați-vă — fiecare video următor = +1 idee pentru casa voastră fără plată în plus»" data-ru="• Текст: «Подпишитесь — каждое следующее видео = +1 идея для вашего дома без переплаты»">• Text: «Abonați-vă — fiecare video următor = +1 idee pentru casa voastră fără plată în plus»</div>
           </div>
         </div>
       </div>
@@ -551,47 +553,47 @@
         <div class="flex items-start gap-5 mb-5 flex-wrap">
           <div class="secret-num">7</div>
           <div class="flex-1 min-w-[250px]">
-            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1">COMPORTAMENT · ПОВЕДЕНИЕ</div>
-            <h3 class="font-serif text-2xl text-brand mb-1">Поведение зрителя ПОСЛЕ видео</h3>
-            <p class="text-sm text-muted">Что человек делает после просмотра. Если идёт смотреть ЕЩЁ ТВОИ видео — алгоритм пушит x10.</p>
+            <div class="text-xs uppercase tracking-widest text-gold font-bold mb-1" data-ro="COMPORTAMENT DUPĂ VIDEO" data-ru="ПОВЕДЕНИЕ ПОСЛЕ ВИДЕО">COMPORTAMENT DUPĂ VIDEO</div>
+            <h3 class="font-serif text-2xl text-brand mb-1" data-ro="Ce face privitorul DUPĂ ce a văzut videoul tău" data-ru="Что зритель делает ПОСЛЕ просмотра твоего видео">Ce face privitorul DUPĂ ce a văzut videoul tău</h3>
+            <p class="text-sm text-muted" data-ro="Dacă merge să mai vadă ALTE VIDEO-URI ALE TALE = algoritmul te împinge x10." data-ru="Если идёт смотреть ЕЩЁ ТВОИ видео = алгоритм пушит x10.">Dacă merge să mai vadă ALTE VIDEO-URI ALE TALE = algoritmul te împinge x10.</p>
           </div>
-          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap">Multiplier x10</div>
+          <div class="px-4 py-2 rounded-full bg-cream text-sm font-bold text-brand whitespace-nowrap" data-ro="Multiplicator x10" data-ru="Multiplier x10">Multiplicator x10</div>
         </div>
 
         <div class="bg-cream rounded-xl p-5 mb-5">
-          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">★ КАК ЭТО ВИДИТ АЛГОРИТМ</div>
-          <p class="text-sm text-brand leading-relaxed">«Сотни тысяч зрителей впервые посмотрели Колю → потом пошли смотреть его ДРУГИЕ видео → YouTube: «это что такое? почему люди смотрят взахлёб? Загрузить ему миллион просмотров — он крутой».»</p>
+          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="★ CUM VEDE ALGORITMUL" data-ru="★ КАК ЭТО ВИДИТ АЛГОРИТМ">★ CUM VEDE ALGORITMUL</div>
+          <p class="text-sm text-brand leading-relaxed" data-ro="«Sute de mii de privitori au văzut pentru prima dată Kolya → apoi au mers să vadă ALTE video-uri ale lui → YouTube: «ce e asta? de ce oamenii privesc pe nerăsuflate? Dau lui un milion de vizualizări — e tare».»" data-ru="«Сотни тысяч зрителей впервые посмотрели Колю → потом пошли смотреть его ДРУГИЕ видео → YouTube: «это что такое? почему люди смотрят взахлёб? Загрузить ему миллион просмотров — он крутой».»">«Sute de mii de privitori au văzut pentru prima dată Kolya → apoi au mers să vadă ALTE video-uri ale lui → YouTube: «ce e asta? de ce oamenii privesc pe nerăsuflate? Dau lui un milion de vizualizări — e tare».»</p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-5 mb-5">
           <div class="bg-green-50 rounded-xl p-5 border border-green-100">
-            <div class="text-xs uppercase tracking-widest fix font-bold mb-2">✅ Что РАБОТАЕТ</div>
+            <div class="text-xs uppercase tracking-widest fix font-bold mb-2" data-ro="✅ Ce FUNCȚIONEAZĂ" data-ru="✅ Что РАБОТАЕТ">✅ Ce FUNCȚIONEAZĂ</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• В конце ВСЕГДА направлять на другое СВОЁ видео</li>
-              <li>• «Если понравилось — посмотрите ещё это…»</li>
-              <li>• Использовать pinned первый комментарий со ссылкой на следующее</li>
-              <li>• Видео-плейлисты по темам</li>
-              <li>• Тематическая цепочка — каждое видео отсылает к 2-3 другим своим</li>
+              <li data-ro="• La final ÎNTOTDEAUNA direcționează către alt video AL TĂU" data-ru="• В конце ВСЕГДА направлять на другое СВОЁ видео">• La final ÎNTOTDEAUNA direcționează către alt video AL TĂU</li>
+              <li data-ro="• «Dacă v-a plăcut — vedeți și asta…»" data-ru="• «Если понравилось — посмотрите ещё это…»">• «Dacă v-a plăcut — vedeți și asta…»</li>
+              <li data-ro="• Pinned primul comentariu cu link către următorul video" data-ru="• Использовать pinned первый комментарий со ссылкой на следующее">• Pinned primul comentariu cu link către următorul video</li>
+              <li data-ro="• Playlist-uri video pe teme" data-ru="• Видео-плейлисты по темам">• Playlist-uri video pe teme</li>
+              <li data-ro="• Lanț tematic — fiecare video trimite la 2-3 alte ale tale" data-ru="• Тематическая цепочка — каждое видео отсылает к 2-3 другим своим">• Lanț tematic — fiecare video trimite la 2-3 alte ale tale</li>
             </ul>
           </div>
           <div class="bg-amber-50 rounded-xl p-5 border border-amber-100">
-            <div class="text-xs uppercase tracking-widest text-amber-700 font-bold mb-2">📊 7 нормальных параметров = виральность</div>
+            <div class="text-xs uppercase tracking-widest text-amber-700 font-bold mb-2" data-ro="📊 7 parametri normali = viral" data-ru="📊 7 нормальных параметров = виральность">📊 7 parametri normali = viral</div>
             <ul class="space-y-1.5 text-sm text-brand">
-              <li>• Не надо ИДЕАЛЬНЫХ метрик</li>
-              <li>• Хватит НОРМАЛЬНЫХ</li>
-              <li>• Если все 7 = «норма» → алгоритм сам тебя пушит</li>
-              <li>• См. секцию «Нормы» ниже</li>
+              <li data-ro="• NU trebuie cifre IDEALE" data-ru="• Не надо ИДЕАЛЬНЫХ метрик">• NU trebuie cifre IDEALE</li>
+              <li data-ro="• Ajunge NORME" data-ru="• Хватит НОРМАЛЬНЫХ">• Ajunge NORME</li>
+              <li data-ro="• Dacă toate 7 = «normă» → algoritmul te împinge singur" data-ru="• Если все 7 = «норма» → алгоритм сам тебя пушит">• Dacă toate 7 = «normă» → algoritmul te împinge singur</li>
+              <li data-ro="• Vedeți secțiunea «Norme» mai jos" data-ru="• См. секцию «Нормы» ниже">• Vedeți secțiunea «Norme» mai jos</li>
             </ul>
           </div>
         </div>
 
         <div class="apply-card rounded-xl p-5">
-          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2">🪑 Применение к TANDEM — тематические цепочки</div>
+          <div class="text-xs uppercase tracking-widest text-gold font-bold mb-2" data-ro="🪑 Aplicare la TANDEM — lanțuri tematice" data-ru="🪑 Применение к TANDEM — тематические цепочки">🪑 Aplicare la TANDEM — lanțuri tematice</div>
           <div class="space-y-2 text-sm text-brand">
-            <div>• <strong>Цепочка «Кухня»:</strong> Crash Test → Price Honesty → Designer Insider → Customer Story = 4 видео отсылают друг на друга</div>
-            <div>• <strong>Цепочка «Casa 360°»:</strong> POV apartament gol → Designer planning → Furniture Before/After → Customer Story 6 luni later</div>
-            <div>• <strong>Цепочка «MD Factory»:</strong> Vezi cum se face → Material reveal → Crash Test → Customer in MD</div>
-            <div>• <strong>Pinned comment</strong> на каждом видео: «Продолжение этой темы → [ссылка на 2-е видео цепочки]»</div>
+            <div data-ro="• <strong>Lanț «Bucătărie»:</strong> Crash Test → Price Honesty → Designer Insider → Customer Story = 4 video-uri se trimit unul la altul" data-ru="• <strong>Цепочка «Кухня»:</strong> Crash Test → Price Honesty → Designer Insider → Customer Story = 4 видео отсылают друг на друга">• <strong>Lanț «Bucătărie»:</strong> Crash Test → Price Honesty → Designer Insider → Customer Story = 4 video-uri se trimit unul la altul</div>
+            <div data-ro="• <strong>Lanț «Casa 360°»:</strong> POV apartament gol → Designer planning → Furniture Before/After → Customer Story 6 luni later" data-ru="• <strong>Цепочка «Casa 360°»:</strong> POV apartament gol → Designer planning → Furniture Before/After → Customer Story 6 luni later">• <strong>Lanț «Casa 360°»:</strong> POV apartament gol → Designer planning → Furniture Before/After → Customer Story 6 luni later</div>
+            <div data-ro="• <strong>Lanț «MD Factory»:</strong> Vezi cum se face → Material reveal → Crash Test → Customer in MD" data-ru="• <strong>Цепочка «MD Factory»:</strong> Vezi cum se face → Material reveal → Crash Test → Customer in MD">• <strong>Lanț «MD Factory»:</strong> Vezi cum se face → Material reveal → Crash Test → Customer in MD</div>
+            <div data-ro="• <strong>Comentariu fixat</strong> la fiecare video: «Continuarea acestei teme → [link la al 2-lea video din lanț]»" data-ru="• <strong>Pinned comment</strong> на каждом видео: «Продолжение этой темы → [ссылка на 2-е видео цепочки]»">• <strong>Comentariu fixat</strong> la fiecare video: «Continuarea acestei teme → [link la al 2-lea video din lanț]»</div>
           </div>
         </div>
       </div>
@@ -600,13 +602,13 @@
   </div>
 </section>
 
-<!-- ============== NORMS DASHBOARD ============== -->
+<!-- ============== NORMS ============== -->
 <section id="norms" class="py-20 px-4 bg-section-light scroll-mt">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-12">
-      <div class="section-eyebrow"><span class="num">08</span> NORME · НОРМЫ МЕТРИК</div>
-      <h2 class="font-serif text-4xl mb-3 text-brand">Нормальные метрики = виральность</h2>
-      <div class="section-goal-line">Цель: не гнаться за «идеальными» метриками. Достаточно «нормальных» по всем 7 — алгоритм сам начнёт пушить.</div>
+      <div class="section-eyebrow"><span class="num">08</span> <span data-ro="NORME · CIFRE DE REFERINȚĂ" data-ru="НОРМЫ · ЦИФРЫ-ОРИЕНТИРЫ">NORME · CIFRE DE REFERINȚĂ</span></div>
+      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Cifre normale = viral" data-ru="Нормальные цифры = виральность">Cifre normale = viral</h2>
+      <div class="section-goal-line" data-ro="Scop: nu urmări cifre «ideale». Ajung «normale» pe toate 7 — algoritmul începe singur să te împingă." data-ru="Цель: не гнаться за «идеальными» цифрами. Достаточно «нормальных» по всем 7 — алгоритм сам начнёт пушить.">Scop: nu urmări cifre «ideale». Ajung «normale» pe toate 7 — algoritmul începe singur să te împingă.</div>
     </div>
 
     <div class="bg-white rounded-2xl border border-soft card-shadow overflow-hidden">
@@ -614,62 +616,20 @@
         <thead>
           <tr class="gradient-brand text-white">
             <th class="px-4 py-3 text-left text-xs uppercase tracking-wider">#</th>
-            <th class="px-4 py-3 text-left text-xs uppercase tracking-wider">Параметр</th>
-            <th class="px-4 py-3 text-center text-xs uppercase tracking-wider">Норма</th>
-            <th class="px-4 py-3 text-center text-xs uppercase tracking-wider">Хорошо</th>
-            <th class="px-4 py-3 text-center text-xs uppercase tracking-wider">Viral driver</th>
+            <th class="px-4 py-3 text-left text-xs uppercase tracking-wider" data-ro="Parametru" data-ru="Параметр">Parametru</th>
+            <th class="px-4 py-3 text-center text-xs uppercase tracking-wider" data-ro="Normă" data-ru="Норма">Normă</th>
+            <th class="px-4 py-3 text-center text-xs uppercase tracking-wider" data-ro="Bine" data-ru="Хорошо">Bine</th>
+            <th class="px-4 py-3 text-center text-xs uppercase tracking-wider" data-ro="Viral driver" data-ru="Viral driver">Viral driver</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-soft">
-          <tr class="hover:bg-cream">
-            <td class="px-4 py-3 stat-num text-gold">1</td>
-            <td class="px-4 py-3 font-bold text-brand">Удержание в первые 30 сек / 3 сек shorts</td>
-            <td class="px-4 py-3 text-center font-bold text-brand">70%</td>
-            <td class="px-4 py-3 text-center text-green-700">80%+</td>
-            <td class="px-4 py-3 text-center text-gold font-bold">90%+</td>
-          </tr>
-          <tr class="hover:bg-cream">
-            <td class="px-4 py-3 stat-num text-gold">2</td>
-            <td class="px-4 py-3 font-bold text-brand">Удержание по всей длине</td>
-            <td class="px-4 py-3 text-center font-bold text-brand">50%</td>
-            <td class="px-4 py-3 text-center text-green-700">60%+</td>
-            <td class="px-4 py-3 text-center text-gold font-bold">70%+</td>
-          </tr>
-          <tr class="hover:bg-cream">
-            <td class="px-4 py-3 stat-num text-gold">3</td>
-            <td class="px-4 py-3 font-bold text-brand">Среднее время просмотра</td>
-            <td class="px-4 py-3 text-center font-bold text-brand">6-8 мин</td>
-            <td class="px-4 py-3 text-center text-green-700">10+ мин</td>
-            <td class="px-4 py-3 text-center text-gold font-bold">15+ мин</td>
-          </tr>
-          <tr class="hover:bg-cream">
-            <td class="px-4 py-3 stat-num text-gold">4</td>
-            <td class="px-4 py-3 font-bold text-brand">CTR (clicks / impressions)</td>
-            <td class="px-4 py-3 text-center font-bold text-brand">4-5%</td>
-            <td class="px-4 py-3 text-center text-green-700">7%+</td>
-            <td class="px-4 py-3 text-center text-gold font-bold">10%+</td>
-          </tr>
-          <tr class="hover:bg-cream">
-            <td class="px-4 py-3 stat-num text-gold">5</td>
-            <td class="px-4 py-3 font-bold text-brand">Вовлечение (лайки+комменты / views)</td>
-            <td class="px-4 py-3 text-center font-bold text-brand">10%</td>
-            <td class="px-4 py-3 text-center text-green-700">15%+</td>
-            <td class="px-4 py-3 text-center text-gold font-bold">25%+</td>
-          </tr>
-          <tr class="hover:bg-cream">
-            <td class="px-4 py-3 stat-num text-gold">6</td>
-            <td class="px-4 py-3 font-bold text-brand">Конверсия в подписку</td>
-            <td class="px-4 py-3 text-center font-bold text-brand">1%</td>
-            <td class="px-4 py-3 text-center text-green-700">2%+</td>
-            <td class="px-4 py-3 text-center text-gold font-bold">3%+</td>
-          </tr>
-          <tr class="hover:bg-cream">
-            <td class="px-4 py-3 stat-num text-gold">7</td>
-            <td class="px-4 py-3 font-bold text-brand">Поведение (% идут смотреть ещё)</td>
-            <td class="px-4 py-3 text-center font-bold text-brand">15%</td>
-            <td class="px-4 py-3 text-center text-green-700">25%+</td>
-            <td class="px-4 py-3 text-center text-gold font-bold">40%+</td>
-          </tr>
+          <tr class="hover:bg-cream"><td class="px-4 py-3 stat-num text-gold">1</td><td class="px-4 py-3 font-bold text-brand" data-ro="Retenție 30 sec / 3 sec shorts" data-ru="Удержание 30 сек / 3 сек shorts">Retenție 30 sec / 3 sec shorts</td><td class="px-4 py-3 text-center font-bold text-brand">70%</td><td class="px-4 py-3 text-center text-green-700">80%+</td><td class="px-4 py-3 text-center text-gold font-bold">90%+</td></tr>
+          <tr class="hover:bg-cream"><td class="px-4 py-3 stat-num text-gold">2</td><td class="px-4 py-3 font-bold text-brand" data-ro="Retenție pe toată durata" data-ru="Удержание по всей длине">Retenție pe toată durata</td><td class="px-4 py-3 text-center font-bold text-brand">50%</td><td class="px-4 py-3 text-center text-green-700">60%+</td><td class="px-4 py-3 text-center text-gold font-bold">70%+</td></tr>
+          <tr class="hover:bg-cream"><td class="px-4 py-3 stat-num text-gold">3</td><td class="px-4 py-3 font-bold text-brand" data-ro="Timp mediu de vizualizare" data-ru="Среднее время просмотра">Timp mediu de vizualizare</td><td class="px-4 py-3 text-center font-bold text-brand">6-8 min</td><td class="px-4 py-3 text-center text-green-700">10+ min</td><td class="px-4 py-3 text-center text-gold font-bold">15+ min</td></tr>
+          <tr class="hover:bg-cream"><td class="px-4 py-3 stat-num text-gold">4</td><td class="px-4 py-3 font-bold text-brand" data-ro="CTR (click-uri / impresii)" data-ru="CTR (clicks / impressions)">CTR (click-uri / impresii)</td><td class="px-4 py-3 text-center font-bold text-brand">4-5%</td><td class="px-4 py-3 text-center text-green-700">7%+</td><td class="px-4 py-3 text-center text-gold font-bold">10%+</td></tr>
+          <tr class="hover:bg-cream"><td class="px-4 py-3 stat-num text-gold">5</td><td class="px-4 py-3 font-bold text-brand" data-ro="Interacțiune (like+com / vizualizări)" data-ru="Вовлечение (лайки+комменты / views)">Interacțiune (like+com / vizualizări)</td><td class="px-4 py-3 text-center font-bold text-brand">10%</td><td class="px-4 py-3 text-center text-green-700">15%+</td><td class="px-4 py-3 text-center text-gold font-bold">25%+</td></tr>
+          <tr class="hover:bg-cream"><td class="px-4 py-3 stat-num text-gold">6</td><td class="px-4 py-3 font-bold text-brand" data-ro="Conversie în abonare" data-ru="Конверсия в подписку">Conversie în abonare</td><td class="px-4 py-3 text-center font-bold text-brand">1%</td><td class="px-4 py-3 text-center text-green-700">2%+</td><td class="px-4 py-3 text-center text-gold font-bold">3%+</td></tr>
+          <tr class="hover:bg-cream"><td class="px-4 py-3 stat-num text-gold">7</td><td class="px-4 py-3 font-bold text-brand" data-ro="Comportament (% merg să vadă mai mult)" data-ru="Поведение (% идут смотреть ещё)">Comportament (% merg să vadă mai mult)</td><td class="px-4 py-3 text-center font-bold text-brand">15%</td><td class="px-4 py-3 text-center text-green-700">25%+</td><td class="px-4 py-3 text-center text-gold font-bold">40%+</td></tr>
         </tbody>
       </table>
     </div>
@@ -677,30 +637,30 @@
     <div class="mt-8 grid md:grid-cols-3 gap-5">
       <div class="bg-cream rounded-xl p-5">
         <div class="text-3xl mb-2">🎯</div>
-        <h3 class="font-serif text-lg text-brand mb-2">Фокус 1: «4-5 уже есть»</h3>
-        <p class="text-xs text-muted">У каждого автора 4-5 из 7 параметров уже «вшиты». Найди свои сильные — используй.</p>
+        <h3 class="font-serif text-lg text-brand mb-2" data-ro="Focus 1: «4-5 deja există»" data-ru="Фокус 1: «4-5 уже есть»">Focus 1: «4-5 deja există»</h3>
+        <p class="text-xs text-muted" data-ro="Fiecare autor are deja 4-5 din 7 parametri «cusute». Găsește-le pe ale tale puternice — folosește-le." data-ru="У каждого автора 4-5 из 7 параметров уже «вшиты». Найди свои сильные — используй.">Fiecare autor are deja 4-5 din 7 parametri «cusute». Găsește-le pe ale tale puternice — folosește-le.</p>
       </div>
       <div class="bg-cream rounded-xl p-5">
         <div class="text-3xl mb-2">🔧</div>
-        <h3 class="font-serif text-lg text-brand mb-2">Фокус 2: «2-3 дозашить»</h3>
-        <p class="text-xs text-muted">Остальные 2-3 — это твоя ЗОНА РОСТА. По одному за раз, не сразу всё.</p>
+        <h3 class="font-serif text-lg text-brand mb-2" data-ro="Focus 2: «2-3 de adăugat»" data-ru="Фокус 2: «2-3 дозашить»">Focus 2: «2-3 de adăugat»</h3>
+        <p class="text-xs text-muted" data-ro="Restul 2-3 — este ZONA TA DE CREȘTERE. Câte unul pe rând, nu toate odată." data-ru="Остальные 2-3 — это твоя ЗОНА РОСТА. По одному за раз, не сразу всё.">Restul 2-3 — este ZONA TA DE CREȘTERE. Câte unul pe rând, nu toate odată.</p>
       </div>
       <div class="bg-cream rounded-xl p-5">
         <div class="text-3xl mb-2">🚀</div>
-        <h3 class="font-serif text-lg text-brand mb-2">Фокус 3: «Все 7 в норме = пуш»</h3>
-        <p class="text-xs text-muted">НЕ надо идеала. Норма по всем 7 = алгоритм сам делает виральность.</p>
+        <h3 class="font-serif text-lg text-brand mb-2" data-ro="Focus 3: «Toate 7 normale = împins»" data-ru="Фокус 3: «Все 7 в норме = пуш»">Focus 3: «Toate 7 normale = împins»</h3>
+        <p class="text-xs text-muted" data-ro="NU trebuie ideal. Normă pe toate 7 = algoritmul face singur viralitatea." data-ru="НЕ надо идеала. Норма по всем 7 = алгоритм сам делает виральность.">NU trebuie ideal. Normă pe toate 7 = algoritmul face singur viralitatea.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============== APPLY TO TANDEM ============== -->
+<!-- ============== APPLY ============== -->
 <section id="apply" class="py-20 px-4 bg-section-deep scroll-mt">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-12">
-      <div class="section-eyebrow"><span class="num">09</span> TANDEM APPLICATION</div>
-      <h2 class="font-serif text-4xl mb-3 text-brand">Применение ко всем 3 нашим направлениям</h2>
-      <div class="section-goal-line">Цель: за 5 минут команда видит — какой контент снимать по Casa 360° / Kitchen / MD Factory под каждый из 7 секретов.</div>
+      <div class="section-eyebrow"><span class="num">09</span> <span data-ro="APLICARE LA TANDEM" data-ru="ПРИМЕНЕНИЕ К TANDEM">APLICARE LA TANDEM</span></div>
+      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="Aplicare la toate cele 3 direcții ale noastre" data-ru="Применение ко всем 3 нашим направлениям">Aplicare la toate cele 3 direcții ale noastre</h2>
+      <div class="section-goal-line" data-ro="Scop: în 5 minute echipa vede — ce conținut să filmeze pentru Casa 360° / Kitchen / MD Factory sub fiecare din cele 7 secrete." data-ru="Цель: за 5 минут команда видит — какой контент снимать по Casa 360° / Kitchen / MD Factory под каждый из 7 секретов.">Scop: în 5 minute echipa vede — ce conținut să filmeze pentru Casa 360° / Kitchen / MD Factory sub fiecare din cele 7 secrete.</div>
     </div>
 
     <div class="grid md:grid-cols-3 gap-6">
@@ -716,28 +676,28 @@
         </div>
         <div class="space-y-3 text-sm">
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Hook (3 сек):</strong>
+            <strong class="text-brand" data-ro="Cârlig (3 sec):" data-ru="Хук (3 сек):">Cârlig (3 sec):</strong>
             <p class="text-muted italic">«POV: ai cumpărat un apartament gol în Bucureşti. 30 zile mai târziu…»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Истории (Sec 3):</strong>
-            <p class="text-muted">5 семей × мини-история «как мы обустроили их квартиру за €30K вместо €50K»</p>
+            <strong class="text-brand" data-ro="Povești (Secret 3):" data-ru="Истории (Sec 3):">Povești (Secret 3):</strong>
+            <p class="text-muted" data-ro="5 familii × mini-poveste «cum am mobilat apartamentul lor pentru €30K în loc de €50K»" data-ru="5 семей × мини-история «как мы обустроили их квартиру за €30K вместо €50K»">5 familii × mini-poveste «cum am mobilat apartamentul lor pentru €30K în loc de €50K»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">CTR превью:</strong>
-            <p class="text-muted italic">📸 пустая квартира + стрелка на ценник «€30K all-in» · название «3 ошибки которые дорого стоят»</p>
+            <strong class="text-brand" data-ro="Miniatură (CTR):" data-ru="CTR превью:">Miniatură (CTR):</strong>
+            <p class="text-muted italic" data-ro="📸 apartament gol + săgeată la preț «€30K all-in» · titlu «3 greșeli care costă scump»" data-ru="📸 пустая квартира + стрелка на ценник «€30K all-in» · название «3 ошибки которые дорого стоят»">📸 apartament gol + săgeată la preț «€30K all-in» · titlu «3 greșeli care costă scump»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Engagement:</strong>
-            <p class="text-muted italic">«Напишите СУММУ которую вы потратили на ремонт — другим зрителям пригодится»</p>
+            <strong class="text-brand" data-ro="Interacțiune:" data-ru="Engagement:">Interacțiune:</strong>
+            <p class="text-muted italic" data-ro="«Scrieți SUMA pe care ați cheltuit-o pe renovare — altor privitori le va prinde bine»" data-ru="«Напишите СУММУ которую вы потратили на ремонт — другим зрителям пригодится»">«Scrieți SUMA pe care ați cheltuit-o pe renovare — altor privitori le va prinde bine»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Подписка:</strong>
-            <p class="text-muted italic">«Подпишитесь — каждое видео = идея, как обустроить дом без переплаты»</p>
+            <strong class="text-brand" data-ro="Abonare:" data-ru="Подписка:">Abonare:</strong>
+            <p class="text-muted italic" data-ro="«Abonați-vă — fiecare video = idee cum să mobilați casa fără plată în plus»" data-ru="«Подпишитесь — каждое видео = идея, как обустроить дом без переплаты»">«Abonați-vă — fiecare video = idee cum să mobilați casa fără plată în plus»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Поведение:</strong>
-            <p class="text-muted italic">Pinned: «Хочешь посмотреть КАК мы делали эту квартиру? → ссылка»</p>
+            <strong class="text-brand" data-ro="Comportament:" data-ru="Поведение:">Comportament:</strong>
+            <p class="text-muted italic" data-ro="Pinned: «Vrei să vezi CUM am făcut acest apartament? → link»" data-ru="Pinned: «Хочешь посмотреть КАК мы делали эту квартиру? → ссылка»">Pinned: «Vrei să vezi CUM am făcut acest apartament? → link»</p>
           </div>
         </div>
       </div>
@@ -753,28 +713,28 @@
         </div>
         <div class="space-y-3 text-sm">
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Hook (3 сек):</strong>
+            <strong class="text-brand" data-ro="Cârlig (3 sec):" data-ru="Хук (3 сек):">Cârlig (3 sec):</strong>
             <p class="text-muted italic">«Această bucătărie costă €25.000. Ghici de ce?»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Истории (Sec 3):</strong>
-            <p class="text-muted">5 кухонь × разная история — «у этой семьи 3 детей, у другой холостяк-повар…»</p>
+            <strong class="text-brand" data-ro="Povești (Secret 3):" data-ru="Истории (Sec 3):">Povești (Secret 3):</strong>
+            <p class="text-muted" data-ro="5 bucătării × poveste diferită — «la familia asta sunt 3 copii, la cealaltă bucătar singur…»" data-ru="5 кухонь × разная история — «у этой семьи 3 детей, у другой холостяк-повар…»">5 bucătării × poveste diferită — «la familia asta sunt 3 copii, la cealaltă bucătar singur…»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">CTR превью:</strong>
-            <p class="text-muted italic">📸 IKEA кухня (блюр logo) + красный крест · название «Почему ваша кухня IKEA развалится за 3 года»</p>
+            <strong class="text-brand" data-ro="Miniatură (CTR):" data-ru="CTR превью:">Miniatură (CTR):</strong>
+            <p class="text-muted italic" data-ro="📸 bucătărie IKEA (blur logo) + cruce roșie · titlu «De ce bucătăria ta IKEA se va strica în 3 ani»" data-ru="📸 кухня IKEA размытым логотипом · название «Почему ваша кухня из IKEA развалится через 3 года»">📸 bucătărie IKEA (blur logo) + cruce roșie · titlu «De ce bucătăria ta IKEA se va strica în 3 ani»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Engagement:</strong>
-            <p class="text-muted italic">«Напишите БРЕНД своей нынешней кухни — расскажу, что с ней будет через 5 лет»</p>
+            <strong class="text-brand" data-ro="Interacțiune:" data-ru="Engagement:">Interacțiune:</strong>
+            <p class="text-muted italic" data-ro="«Scrieți BRANDUL bucătăriei voastre actuale — vă spun ce se va întâmpla cu ea peste 5 ani»" data-ru="«Напишите БРЕНД своей нынешней кухни — расскажу, что с ней будет через 5 лет»">«Scrieți BRANDUL bucătăriei voastre actuale — vă spun ce se va întâmpla cu ea peste 5 ani»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Подписка:</strong>
-            <p class="text-muted italic">«Подписка = каждое видео про кухни, которые служат 20+ лет»</p>
+            <strong class="text-brand" data-ro="Abonare:" data-ru="Подписка:">Abonare:</strong>
+            <p class="text-muted italic" data-ro="«Abonare = fiecare video despre bucătării care servesc 20+ ani»" data-ru="«Подписка = каждое видео про кухни, которые служат 20+ лет»">«Abonare = fiecare video despre bucătării care servesc 20+ ani»</p>
           </div>
           <div class="border-l-2 border-gold pl-3">
-            <strong class="text-brand">Поведение:</strong>
-            <p class="text-muted italic">Pinned: «Crash test этой кухни → ссылка»</p>
+            <strong class="text-brand" data-ro="Comportament:" data-ru="Поведение:">Comportament:</strong>
+            <p class="text-muted italic" data-ro="Pinned: «Crash test al acestei bucătării → link»" data-ru="Pinned: «Crash test этой кухни → ссылка»">Pinned: «Crash test al acestei bucătării → link»</p>
           </div>
         </div>
       </div>
@@ -785,33 +745,33 @@
           <span class="text-4xl">🏭</span>
           <div>
             <h3 class="font-serif text-2xl text-brand">MD Factory</h3>
-            <div class="text-xs uppercase tracking-widest font-bold" style="color:#7d4e8c">MD HERO · Distribuie pe ambele țări</div>
+            <div class="text-xs uppercase tracking-widest font-bold" style="color:#7d4e8c" data-ro="MD HERO · Distribuie pe ambele țări" data-ru="MD HERO · Дистрибуция на обе страны">MD HERO · Distribuie pe ambele țări</div>
           </div>
         </div>
         <div class="space-y-3 text-sm">
           <div class="border-l-2 pl-3" style="border-color:#7d4e8c">
-            <strong class="text-brand">Hook (3 сек):</strong>
-            <p class="text-muted italic">«Vezi ce e ÎN ÎNTRE această canapea de €4.000»</p>
+            <strong class="text-brand" data-ro="Cârlig (3 sec):" data-ru="Хук (3 сек):">Cârlig (3 sec):</strong>
+            <p class="text-muted italic">«Vezi ce e ÎN INTERIORUL acestei canapele de €4.000»</p>
           </div>
           <div class="border-l-2 pl-3" style="border-color:#7d4e8c">
-            <strong class="text-brand">Истории (Sec 3):</strong>
-            <p class="text-muted">5 материалов × история «откуда» (дуб из Carpaţi, ткань из Italia…)</p>
+            <strong class="text-brand" data-ro="Povești (Secret 3):" data-ru="Истории (Sec 3):">Povești (Secret 3):</strong>
+            <p class="text-muted" data-ro="5 materiale × poveste «de unde» (stejar din Carpaţi, material din Italia…)" data-ru="5 материалов × история «откуда» (дуб из Carpaţi, ткань из Italia…)">5 materiale × poveste «de unde» (stejar din Carpaţi, material din Italia…)</p>
           </div>
           <div class="border-l-2 pl-3" style="border-color:#7d4e8c">
-            <strong class="text-brand">CTR превью:</strong>
-            <p class="text-muted italic">📸 рука разрывает дешёвую ткань vs нашу · название «€500 vs €4.000 — что внутри?»</p>
+            <strong class="text-brand" data-ro="Miniatură (CTR):" data-ru="CTR превью:">Miniatură (CTR):</strong>
+            <p class="text-muted italic" data-ro="📸 mâna rupe material ieftin vs al nostru · titlu «€500 vs €4.000 — ce e înăuntru?»" data-ru="📸 рука разрывает дешёвую ткань vs нашу · название «€500 vs €4.000 — что внутри?»">📸 mâna rupe material ieftin vs al nostru · titlu «€500 vs €4.000 — ce e înăuntru?»</p>
           </div>
           <div class="border-l-2 pl-3" style="border-color:#7d4e8c">
-            <strong class="text-brand">Engagement:</strong>
-            <p class="text-muted italic">«Напишите ГОД сколько служит ваш диван — соберём статистику»</p>
+            <strong class="text-brand" data-ro="Interacțiune:" data-ru="Engagement:">Interacțiune:</strong>
+            <p class="text-muted italic" data-ro="«Scrieți ANUL câți ani vă servește canapeaua — strângem statistică»" data-ru="«Напишите ГОД сколько служит ваш диван — соберём статистику»">«Scrieți ANUL câți ani vă servește canapeaua — strângem statistică»</p>
           </div>
           <div class="border-l-2 pl-3" style="border-color:#7d4e8c">
-            <strong class="text-brand">Подписка:</strong>
-            <p class="text-muted italic">«Подписка = видим как делается мебель, которая служит десятилетиями»</p>
+            <strong class="text-brand" data-ro="Abonare:" data-ru="Подписка:">Abonare:</strong>
+            <p class="text-muted italic" data-ro="«Abonare = vedem cum se face mobila care servește decenii»" data-ru="«Подписка = видим как делается мебель, которая служит десятилетиями»">«Abonare = vedem cum se face mobila care servește decenii»</p>
           </div>
           <div class="border-l-2 pl-3" style="border-color:#7d4e8c">
-            <strong class="text-brand">Поведение:</strong>
-            <p class="text-muted italic">Pinned: «Эта семья получила свою канапею → видео доставки»</p>
+            <strong class="text-brand" data-ro="Comportament:" data-ru="Поведение:">Comportament:</strong>
+            <p class="text-muted italic" data-ro="Pinned: «Această familie a primit canapeaua sa → video livrare»" data-ru="Pinned: «Эта семья получила свою канапею → видео доставки»">Pinned: «Această familie a primit canapeaua sa → video livrare»</p>
           </div>
         </div>
       </div>
@@ -824,62 +784,62 @@
 <section id="actions" class="py-20 px-4 bg-section-light scroll-mt">
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-12">
-      <div class="section-eyebrow"><span class="num">10</span> ACTIONS · ЧТО ДЕЛАТЬ ЗАВТРА</div>
-      <h2 class="font-serif text-4xl mb-3 text-brand">5 действий чтобы запустить эту стратегию</h2>
-      <div class="section-goal-line">Цель: эту страницу мало читать — её надо превращать в съёмку и публикации. 5 next steps на следующие 2 недели.</div>
+      <div class="section-eyebrow"><span class="num">10</span> <span data-ro="ACȚIUNI · CE FACEM MÂINE" data-ru="ДЕЙСТВИЯ · ЧТО ДЕЛАЕМ ЗАВТРА">ACȚIUNI · CE FACEM MÂINE</span></div>
+      <h2 class="font-serif text-4xl mb-3 text-brand" data-ro="5 acțiuni pentru a lansa această strategie" data-ru="5 действий чтобы запустить эту стратегию">5 acțiuni pentru a lansa această strategie</h2>
+      <div class="section-goal-line" data-ro="Scop: această pagină nu trebuie doar citită — trebuie transformată în filmări și publicări. 5 pași pentru următoarele 2 săptămâni." data-ru="Цель: эту страницу мало читать — её надо превращать в съёмку и публикации. 5 next steps на следующие 2 недели.">Scop: această pagină nu trebuie doar citită — trebuie transformată în filmări și publicări. 5 pași pentru următoarele 2 săptămâni.</div>
     </div>
 
     <div class="space-y-4">
       <div class="bg-white rounded-2xl p-6 border border-soft card-shadow flex items-start gap-5">
         <div class="secret-num" style="background:var(--brand)">1</div>
         <div class="flex-1">
-          <h3 class="font-serif text-xl text-brand mb-1">Сформулировать МИССИЮ TikTok-канала Tandem</h3>
-          <p class="text-sm text-muted mb-2">Cornel + CEO сидят 30 мин и формулируют 1 фразу миссии (не «много денег», а «сделать мир лучше»). Эту миссию вшиваем в КАЖДОЕ видео.</p>
-          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold">DEADLINE: 7 дней</span></div>
+          <h3 class="font-serif text-xl text-brand mb-1" data-ro="Formulează MISIUNEA canalului TikTok Tandem" data-ru="Сформулировать МИССИЮ TikTok-канала Tandem">Formulează MISIUNEA canalului TikTok Tandem</h3>
+          <p class="text-sm text-muted mb-2" data-ro="Corneliu + CEO stau 30 min și formulează o singură frază de misiune (nu «mulți bani», ci «fac lumea mai bună»). Această misiune o cusăm în FIECARE video." data-ru="Corneliu + CEO сидят 30 мин и формулируют 1 фразу миссии (не «много денег», а «сделать мир лучше»). Эту миссию вшиваем в КАЖДОЕ видео.">Corneliu + CEO stau 30 min și formulează o singură frază de misiune (nu «mulți bani», ci «fac lumea mai bună»). Această misiune o cusăm în FIECARE video.</p>
+          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold" data-ro="TERMEN: 7 zile" data-ru="DEADLINE: 7 дней">TERMEN: 7 zile</span></div>
         </div>
       </div>
 
       <div class="bg-white rounded-2xl p-6 border border-soft card-shadow flex items-start gap-5">
         <div class="secret-num" style="background:var(--brand)">2</div>
         <div class="flex-1">
-          <h3 class="font-serif text-xl text-brand mb-1">Снять первое ВИСП-видео (Price Honesty + Crash Test)</h3>
-          <p class="text-sm text-muted mb-2">Кухня за €25K в showroom · 1 designer держит образец · «€25K — покажу за что» · 30 сек ВИСП-хук с 4 струнами · истории 5 материалов · breakdown в конце.</p>
-          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold">DEADLINE: 14 дней</span></div>
+          <h3 class="font-serif text-xl text-brand mb-1" data-ro="Filmează primul video VISP (Price Honesty + Crash Test)" data-ru="Снять первое ВИСП-видео (Price Honesty + Crash Test)">Filmează primul video VISP (Price Honesty + Crash Test)</h3>
+          <p class="text-sm text-muted mb-2" data-ro="Bucătărie de €25K în showroom · 1 designer ține un eșantion · «€25K — arăt pentru ce» · cârlig VISP de 30 sec cu 4 strune · povești 5 materiale · breakdown la final." data-ru="Кухня за €25K в showroom · 1 designer держит образец · «€25K — покажу за что» · 30 сек ВИСП-хук с 4 струнами · истории 5 материалов · breakdown в конце.">Bucătărie de €25K în showroom · 1 designer ține un eșantion · «€25K — arăt pentru ce» · cârlig VISP de 30 sec cu 4 strune · povești 5 materiale · breakdown la final.</p>
+          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold" data-ro="TERMEN: 14 zile" data-ru="DEADLINE: 14 дней">TERMEN: 14 zile</span></div>
         </div>
       </div>
 
       <div class="bg-white rounded-2xl p-6 border border-soft card-shadow flex items-start gap-5">
         <div class="secret-num" style="background:var(--brand)">3</div>
         <div class="flex-1">
-          <h3 class="font-serif text-xl text-brand mb-1">Запустить тематическую цепочку (Поведение)</h3>
-          <p class="text-sm text-muted mb-2">3 видео по кухне Tandem связанные pinned-комментариями: Crash → Price → Customer Story. Цепочка = алгоритм видит «после моего идут смотреть ещё моё» → пуш x10.</p>
-          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold">DEADLINE: 21 день</span></div>
+          <h3 class="font-serif text-xl text-brand mb-1" data-ro="Lansează un lanț tematic (Comportament)" data-ru="Запустить тематическую цепочку (Поведение)">Lansează un lanț tematic (Comportament)</h3>
+          <p class="text-sm text-muted mb-2" data-ro="3 video-uri pe bucătăria Tandem legate prin pinned-comments: Crash → Price → Customer Story. Lanț = algoritmul vede «după videoul meu merg să vadă încă al meu» → împins x10." data-ru="3 видео по кухне Tandem связанные pinned-комментариями: Crash → Price → Customer Story. Цепочка = алгоритм видит «после моего идут смотреть ещё моё» → пуш x10.">3 video-uri pe bucătăria Tandem legate prin pinned-comments: Crash → Price → Customer Story. Lanț = algoritmul vede «după videoul meu merg să vadă încă al meu» → împins x10.</p>
+          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold" data-ro="TERMEN: 21 zile" data-ru="DEADLINE: 21 день">TERMEN: 21 zile</span></div>
         </div>
       </div>
 
       <div class="bg-white rounded-2xl p-6 border border-soft card-shadow flex items-start gap-5">
         <div class="secret-num" style="background:var(--brand)">4</div>
         <div class="flex-1">
-          <h3 class="font-serif text-xl text-brand mb-1">Завести трекинг 7 метрик (TikTok Analytics)</h3>
-          <p class="text-sm text-muted mb-2">Простая таблица: дата · видео · 7 метрик с цветовой подсветкой «норма / хорошо / viral». Каждую неделю смотрим где НИЖЕ нормы — там «дозашиваем».</p>
-          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold">DEADLINE: 30 дней (после первых 5 видео)</span></div>
+          <h3 class="font-serif text-xl text-brand mb-1" data-ro="Pornește urmărirea celor 7 cifre (TikTok Analytics)" data-ru="Завести трекинг 7 метрик (TikTok Analytics)">Pornește urmărirea celor 7 cifre (TikTok Analytics)</h3>
+          <p class="text-sm text-muted mb-2" data-ro="Tabel simplu: data · video · 7 cifre cu evidențiere colorată «normă / bine / viral». În fiecare săptămână privim unde e SUB normă — acolo «adăugăm»." data-ru="Простая таблица: дата · видео · 7 метрик с цветовой подсветкой «норма / хорошо / viral». Каждую неделю смотрим где НИЖЕ нормы — там «дозашиваем».">Tabel simplu: data · video · 7 cifre cu evidențiere colorată «normă / bine / viral». În fiecare săptămână privim unde e SUB normă — acolo «adăugăm».</p>
+          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold" data-ro="TERMEN: 30 zile (după primele 5 video)" data-ru="DEADLINE: 30 дней (после первых 5 видео)">TERMEN: 30 zile (după primele 5 video)</span></div>
         </div>
       </div>
 
       <div class="bg-white rounded-2xl p-6 border border-soft card-shadow flex items-start gap-5">
         <div class="secret-num" style="background:var(--brand)">5</div>
         <div class="flex-1">
-          <h3 class="font-serif text-xl text-brand mb-1">Идентифицировать «свои 4-5 из 7» сильных сторон</h3>
-          <p class="text-sm text-muted mb-2">После 10 первых видео — смотрим аналитику. У какого видоса наша лучшая метрика? Это наш «вшитый» секрет. По остальным 2-3 — целенаправленно учимся.</p>
-          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold">DEADLINE: 60 дней</span></div>
+          <h3 class="font-serif text-xl text-brand mb-1" data-ro="Identifică «cele 4-5 puternice ale noastre din 7»" data-ru="Идентифицировать «свои 4-5 из 7» сильных сторон">Identifică «cele 4-5 puternice ale noastre din 7»</h3>
+          <p class="text-sm text-muted mb-2" data-ro="După primele 10 video — privim analytics. La care video avem cea mai bună cifră? Acesta e secretul nostru «cusut». La restul 2-3 — învățăm țintit." data-ru="После 10 первых видео — смотрим аналитику. У какого видоса наша лучшая метрика? Это наш «вшитый» секрет. По остальным 2-3 — целенаправленно учимся.">După primele 10 video — privim analytics. La care video avem cea mai bună cifră? Acesta e secretul nostru «cusut». La restul 2-3 — învățăm țintit.</p>
+          <div class="text-xs"><span class="px-2 py-0.5 rounded-full bg-cream text-gold font-bold" data-ro="TERMEN: 60 zile" data-ru="DEADLINE: 60 дней">TERMEN: 60 zile</span></div>
         </div>
       </div>
     </div>
 
     <div class="mt-10 p-8 rounded-2xl gradient-brand text-white text-center">
-      <div class="text-xs uppercase tracking-widest text-gold-soft mb-3">★ ГЛАВНОЕ ПРАВИЛО ★</div>
-      <div class="font-serif text-2xl md:text-3xl leading-snug mb-4">«Не идеала. Норма по всем 7. И алгоритм сам делает виральность.»</div>
-      <div class="text-sm opacity-80">— Николай Велижанин, 11.10.2025</div>
+      <div class="text-xs uppercase tracking-widest text-gold-soft mb-3" data-ro="★ REGULA PRINCIPALĂ ★" data-ru="★ ГЛАВНОЕ ПРАВИЛО ★">★ REGULA PRINCIPALĂ ★</div>
+      <div class="font-serif text-2xl md:text-3xl leading-snug mb-4" data-ro="«Nu trebuie ideal. Normă pe toate cele 7. Și algoritmul face singur viralitatea.»" data-ru="«Не идеала. Норма по всем 7. И алгоритм сам делает виральность.»">«Nu trebuie ideal. Normă pe toate cele 7. Și algoritmul face singur viralitatea.»</div>
+      <div class="text-sm opacity-80">— Nikolay Velizhanin, 11.10.2025</div>
     </div>
   </div>
 </section>
@@ -887,17 +847,35 @@
 <!-- ============== FOOTER ============== -->
 <footer class="py-12 px-4 bg-section-deep border-t border-soft">
   <div class="max-w-5xl mx-auto text-center">
-    <div class="font-serif text-lg text-brand mb-2">TikTok by Cornello · Dashboard #2</div>
-    <p class="text-sm text-muted mb-4">Стратегия создания TikTok-контента для Tandem Casa 360° · Kitchen by Tandem · MD Factory<br>основанная на видео «7 секретов ЛЮБОЙ органики» (Николай Велижанин, 47:47, 11.10.2025)</p>
+    <div class="font-serif text-lg text-brand mb-2">TikTok by Corneliu · Dashboard #2</div>
+    <p class="text-sm text-muted mb-4" data-ro="Strategie de creare conținut TikTok pentru Tandem Casa 360° · Kitchen by Tandem · MD Factory<br>bazată pe videoul «7 secrete ale oricărei organici» (Nikolay Velizhanin, 47:47, 11.10.2025)" data-ru="Стратегия создания TikTok-контента для Tandem Casa 360° · Kitchen by Tandem · MD Factory<br>основанная на видео «7 секретов ЛЮБОЙ органики» (Николай Велижанин, 47:47, 11.10.2025)">Strategie de creare conținut TikTok pentru Tandem Casa 360° · Kitchen by Tandem · MD Factory<br>bazată pe videoul «7 secrete ale oricărei organici» (Nikolay Velizhanin, 47:47, 11.10.2025)</p>
     <div class="flex items-center justify-center gap-4 flex-wrap">
-      <a href="https://youtu.be/xcLSQEe3RbE" target="_blank" rel="noopener" class="text-xs text-gold hover:underline">▶ Источник на YouTube</a>
+      <a href="https://youtu.be/xcLSQEe3RbE" target="_blank" rel="noopener" class="text-xs text-gold hover:underline" data-ro="▶ Sursă pe YouTube" data-ru="▶ Источник на YouTube">▶ Sursă pe YouTube</a>
       <span class="text-muted">·</span>
-      <a href="./index.html" class="text-xs text-gold hover:underline">← Dashboard #1: Casa 360° TikTok Factory</a>
+      <a href="./index.html" class="text-xs text-gold hover:underline" data-ro="← Dashboard #1: Casa 360° TikTok Factory" data-ru="← Dashboard #1: Casa 360° TikTok Factory">← Dashboard #1: Casa 360° TikTok Factory</a>
       <span class="text-muted">·</span>
-      <a href="./references.html" class="text-xs text-gold hover:underline">Inspiration Library</a>
+      <a href="./references.html" class="text-xs text-gold hover:underline" data-ro="Bibliotecă Inspirație" data-ru="Inspiration Library">Bibliotecă Inspirație</a>
     </div>
   </div>
 </footer>
 
+<script>
+function switchLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-ro][data-ru]').forEach(el => {
+    const text = el.getAttribute('data-' + lang);
+    if (text) el.innerHTML = text;
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+  localStorage.setItem('tandem-tiktok-lang', lang);
+}
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => switchLang(btn.dataset.lang));
+});
+const savedLang = localStorage.getItem('tandem-tiktok-lang') || 'ro';
+switchLang(savedLang);
+</script>
 </body>
 </html>
